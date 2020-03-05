@@ -1,16 +1,10 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
-import React from "react"
+import React from "react";
+import { Helmet } from "react-helmet";
+import Footer from "./footer";
+import Navbar from "./navbar";
+import "../scss/layout.scss";
+import { useStaticQuery, graphql, withPrefix } from "gatsby";
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
-import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,28 +18,51 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
-    </>
-  )
-}
+    <div className="site-container">
+      <Helmet>
+        <html lang="en" />
+        <title>{data.site.siteMetadata.title}</title>
+        <meta name="description" content={data.site.siteMetadata.description} />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href={`${withPrefix("/")}img/apple-touch-icon.png`}
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href={`${withPrefix("/")}img/favicon-32x32.png`}
+          sizes="32x32"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href={`${withPrefix("/")}img/favicon-16x16.png`}
+          sizes="16x16"
+        />
+        <link
+          rel="mask-icon"
+          href={`${withPrefix("/")}img/safari-pinned-tab.svg`}
+          color="#ff4400"
+        />
+        <meta name="theme-color" content="#fff" />
+        <meta property="og:type" content="business.business" />
+        <meta property="og:title" content={data.site.siteMetadata.title} />
+        <meta property="og:url" content="/" />
+        <meta
+          property="og:image"
+          content={`${withPrefix("/")}img/og-image.jpg`}
+        />
+      </Helmet>
+      <Navbar />
+      <div className="content-container">{children}</div>
+      <Footer />
+    </div>
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default Layout;

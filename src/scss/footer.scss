@@ -1,0 +1,81 @@
+@import "./global.scss";
+
+.footer {
+  background-color: $color-black;
+  color: $color-white;
+
+  .container {
+    justify-content: space-between;
+
+    @include devices(ipad) {
+      flex-direction: row;
+    }
+
+    .footer-brand {
+      flex: 0 1 auto;
+
+      a.navbar-item {
+        display: block;
+        font-size: 0;
+        margin-bottom: $spacing-small;
+
+        @include devices(ipad) {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+
+      .divider {
+        display: none;
+        width: 1px;
+        height: 19px;
+        background-color: $color-white;
+
+        @include devices(ipad) {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+
+      .slogan {
+        display: block;
+        margin: $spacing-small 0;
+
+        @include devices(ipad) {
+          display: inline-block;
+          vertical-align: middle;
+          margin: unset;
+        }
+
+        p {
+          font-family: $ScandiaMedium;
+          font-size: 12px;
+          line-height: 19px;
+        }
+      }
+    }
+
+    .footer-menu {
+      flex: 0 1 auto;
+      margin-top: $spacing-small;
+      display: flex;
+      align-items: center;
+
+      @include devices(ipad) {
+        margin-top: unset;
+      }
+
+      .content {
+        p {
+          font-family: $ScandiaMedium;
+          font-size: 12px;
+          line-height: 19px;
+        }
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}

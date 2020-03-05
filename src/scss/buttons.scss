@@ -1,0 +1,44 @@
+@import "./global.scss";
+
+.buttons-section {
+  border-top: 1px solid $color-grey;
+  
+  .container {
+    display: flex;
+    justify-content: center;
+
+    @include devices(ipad) {
+      flex-direction: row;
+    }
+
+    .btn {
+      margin: $spacing-small 0;
+
+      @include devices(ipad) {
+	margin: $spacing-small;
+      }
+    }
+  }
+}
+
+button,
+.btn {
+  font-family: $ScandiaMedium;
+  border: 1px solid $color-black;
+  padding: $spacing-extra-small $spacing-extra-large;
+  text-decoration: none;
+  text-align: center;
+  background-color: $color-white;
+  color: $color-black;
+  transition: all .2s ease;
+
+  &.btn-invert {
+    background-color: $color-black;
+    color: $color-white;
+  }
+
+  &:hover {
+    filter: invert(100%);
+    border: 1px solid $color-white;
+  }
+}

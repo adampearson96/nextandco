@@ -1,0 +1,72 @@
+@import "./global.scss";
+
+// Site wide layout
+// Specific styles go in each module
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.section {
+  &.section-invert {
+  }
+}
+
+.section-full-height {
+  min-height: 100vh;
+  background-color: $color-black;
+  color: $color-white;
+
+  &.section-invert {
+    background-color: $color-white;
+    color: $color-black;
+  }
+}  
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: $spacing-medium;
+  max-width: 100%;
+
+  &.container-hero {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  color: $color-grey;
+}
+
+.divider {
+  border-right: 1px solid $color-black;
+  margin: 0 .5em;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.line-link {
+  display: inline-flex;
+
+  &:before {
+    content: " ";
+    border-bottom: 1px solid;
+    display: block;
+    width: $spacing-large;
+    margin-bottom: $spacing-extra-small;
+    margin-right: $spacing-extra-small;
+  }
+}
