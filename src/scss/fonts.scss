@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Scandia Bold";
+  src: url("../fonts/Scandia-Bold.woff2") format("woff2"), url("../fonts/Scandia-Bold.woff") format("woff"), url("../fonts/Scandia-Bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Scandia Medium";
+  src: url("../fonts/Scandia-Medium.woff2") format("woff2"), url("../fonts/Scandia-Medium.woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Abhaya Libre";
+  src: url("../fonts/AbhayaLibre-Regular.woff2") format("woff2"), url("../fonts/AbhayaLibre-Regular.woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+$AbhayaLibre: "Abhaya Libre";
+$ScandiaBold: "Scandia Bold";
+$ScandiaMedium: "Scandia Medium";
+
+body {
+  font-family: $AbhayaLibre;
+  font-size: calc(0.75em + 1vmin);
+}
+
+h1,
+h2,
+h3 {
+  font-family: $ScandiaBold;
+}
+
+h4,
+h5,
+h6 {
+  font-family: $ScandiaMedium;
+}
+
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive)=='vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+
+  @if $fallback {
+    font-size: $fallback;
+  }
+
+  font-size: $responsive;
+}
+
+body {}
+
+h1 {
+  @include responsive-font(5vw, 32px, 96px);
+}
+
+h2 {
+  @include responsive-font(4.5vw, 28px, 64px);
+}
+
+h3 {
+  @include responsive-font(4vw, 22px, 48px);
+}
+
+h4 {
+  @include responsive-font(3vw, 20px, 42px);
+}
+
+h5 {
+  @include responsive-font(2vw, 18px, 42px);
+}
+
+h6 {
+  @include responsive-font(1vw, 16px, 40px);
+}
+
+p,a,span,strong {
+  @include responsive-font(1vw, 14px, 38px);
+}
+
+a {
+  color: $color-black;
+}

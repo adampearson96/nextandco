@@ -1,0 +1,62 @@
+@mixin devices($media) {
+  @if $media == mobile {
+    @media only screen and (min-width:320px) {
+      @content;
+    }
+  }
+  
+  @if $media == ipad {
+    @media only screen and (min-width:768px) {
+      @content;
+    }
+  }
+
+  @if $media == computer {
+    @media only screen and (min-width:992px) {
+      @content;
+    }
+  }
+
+  @if $media == computer-widescreen {
+    @media only screen and (min-width:1280px) {
+      @content;
+    }
+  }
+
+  @else if $media == computer-hd {
+    @media only screen and (min-width:1600px) {
+      @content;
+    }
+  }
+}
+
+
+//Specifies style for mobile devices
+@include devices(mobile) {
+  * {
+    // outline: 1px solid yellow;
+  }
+}
+
+//Specifies style for ipads
+@include devices(ipad) {
+  * {
+    // outline: 1px solid orange;
+  }
+}
+
+@include devices(computer) {
+  * {
+    // outline: 1px solid red;
+  }
+}
+@include devices(computer-widescreen) {
+  * {
+    // outline: 1px solid fuchsia;
+  }
+}
+@include devices(computer-hd) {
+  * {
+    // outline: 1px solid blue;
+  }
+}
