@@ -13,7 +13,6 @@ const IndexPage = () => {
         description="Next&amp;Co partnered with Vanguard Investments to launch their new digital experience."
         image={image}
       />
-      
       <Buttons
         linktitle1="Our Capabilities"
         link1="/link1"

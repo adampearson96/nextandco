@@ -1,0 +1,127 @@
+@import "global";
+
+.audit-hero-section {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 20vh $spacing-small $spacing-small $spacing-small;
+  background-color: $color-black;
+  @include devices(computer) {
+    padding: 20vh $spacing-large $spacing-large $spacing-large;
+  }
+  .outer-container {
+    display: flex;
+    flex-flow: column nowrap;
+    @include devices(computer) {
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+    .col-one {
+      flex: 0 1 auto;
+      color: $color-white;
+      @include devices(computer) {
+        width: 60%;
+        max-width: 500px;
+        padding: $spacing-small;
+      }
+      h1 {
+        font-size: 34px;
+        line-height: 1.5294117647;
+        font-family: $ScandiaMedium;
+        font-weight: 500;
+        margin-top: 0;
+        @include devices(computer) {
+          font-size: 60px;
+          line-height: 1;
+        }
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.7777777778;
+        margin-top: 0;
+        &.subheading {
+          margin-bottom: $spacing-large;
+        }
+      }
+      .list-item {
+        display: block;
+        margin-bottom: $spacing-large;
+        h2 {
+          font-size: 24px;
+          line-height: 1.2916666667;
+          font-family: $ScandiaMedium;
+          font-weight: 500;
+          margin: 0;
+        }
+      }
+    }
+    .col-two {
+      flex: 0 1 auto;
+      @include devices(computer) {
+        width: 40%;
+        padding: $spacing-small;
+      }
+      .form-container {
+        background-color: $color-white;
+        padding: $spacing-small;
+        border-radius: 3px;
+        margin-top: $spacing-extra-large;
+        @include devices(computer) {
+          padding: $spacing-medium;
+        }
+        h2 {
+          font-size: 16px;
+          line-height: 2.25;
+          text-align: center;
+          margin-top: 0;
+          @include devices(computer) {
+            font-size: 21px;
+            line-height: 1.5238095238;
+          }
+        }
+        form {
+          display: block;
+          label {
+            display: block;
+            font-family: $ScandiaBold;
+            font-size: 10px;
+            line-height: 1;
+            font-weight: 700;
+            margin-bottom: $spacing-large;
+            text-transform: uppercase;
+            input,
+            textarea {
+              display: block;
+              width: 100%;
+              font-family: $AbhayaLibre;
+              font-size: 16px;
+              line-height: 48px;
+              color: $color-grey;
+              padding: 0 $spacing-small;
+              border: 1px solid $color-light-grey;
+              border-radius: 3px;
+              margin-top: $spacing-extra-small;
+            }
+            textarea {
+              padding: $spacing-small;
+              line-height: 1.5;
+            }
+          }
+          button.submit {
+            display: block;
+            background-color: $color-blue;
+            color: $color-white;
+            border: none;
+            font-family: $ScandiaBold;
+            font-size: 16px;
+            line-height: 48px;
+            font-weight: 700;
+            padding: 0 $spacing-small;
+            max-width: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
