@@ -14,8 +14,8 @@ const IndexPage = () => {
         image={image}
       />
       <Buttons
-        linktitle1="Our Capabilities"
-        link1="/link1"
+        linktitle1="About Us"
+        link1="/about"
         linktitle2="Get in touch"
         link2="/link2"
       />
