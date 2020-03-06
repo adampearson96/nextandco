@@ -3,14 +3,14 @@ import Layout from "../components/layout"
 import HeroSection from "../components/herosection";
 import Buttons from "../components/buttons";
 
-import image from "../images/hero1.jpg";
+import image from "../images/hero2.jpg";
 
 const IndexPage = () => {
   return (
     <Layout>
       <HeroSection
-        heading="Putting investors interest first."
-        description="Next&amp;Co partnered with Vanguard Investments to launch their new digital experience."
+        heading="Clean your house mate."
+        description="Our full service strategy made these guys some money."
         image={image}
       />
       <Buttons
