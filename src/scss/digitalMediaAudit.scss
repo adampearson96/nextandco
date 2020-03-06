@@ -1,0 +1,153 @@
+@import "global";
+
+#digital-media-audit {
+  #row-two {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: $spacing-small;
+    @include devices(computer) {
+      padding: $spacing-large;
+    }
+    .outer-container {
+      display: flex;
+      flex-flow: row nowrap;
+      overflow-y: hidden;
+      overflow-x: scroll;
+      @include devices(computer) {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        max-width: 900px;
+        margin: 0 auto;
+        overflow-x: unset;
+        overflow-y: unset;
+      }
+      .col-one,
+      .col-two,
+      .col-three {
+        display: flex;
+        flex: 0 0 auto;
+        flex-flow: column nowrap;
+        width: 200px;
+        margin-right: $spacing-small;
+        text-align: center;
+        padding: $spacing-small;
+        @include devices(computer) {
+          margin-right: unset;
+        }
+        h3 {
+          flex: 0 1 auto;
+          font-family: $ScandiaMedium;
+          font-size: 24px;
+          line-height: 1.2916666667;
+        }
+        p {
+          flex: 0 1 auto;
+          font-size: 18px;
+          line-height: 1.7777777778;
+          span {
+            display: block;
+            font-size: 18px;
+            line-height: 1.7777777778;
+          }
+        }
+      }
+    }
+  }
+  #row-three {
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: $color-black;
+    padding: $spacing-large;
+    .outer-container {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      @include devices(computer) {
+        max-width: 600px;
+      }
+      .col-one {
+        display: block;
+        flex: 0 1 auto;
+        width: 100%;
+        max-width: 100%;
+        h2 {
+          font-family: $ScandiaMedium;
+          font-size: 36px;
+          line-height: 1.4444444444;
+          font-weight: 500;
+          color: $color-white;
+          text-align: center;
+        }
+        .scorecard {
+          display: flex;
+          flex-flow: column wrap;
+          border: 1px solid $color-grey;
+          justify-content: space-between;
+          padding: $spacing-small;
+          @include devices(ipad) {
+            padding: $spacing-large;
+          }
+          .row {
+            display: flex;
+            flex-flow: row nowrap;
+            flex: 0 1 auto;
+            align-items: center;
+            justify-content: space-between;
+            h3 {
+              flex: 0 1 auto;
+              font-family: $ScandiaMedium;
+              font-size: 24px;
+              line-height: 1.2916666667;
+              font-weight: 500;
+              color: $color-grey;
+              margin: 0;
+            }
+            p {
+              flex: 0 1 auto;
+              font-size: 18px;
+              line-height: 1.7777777778;
+              color: $color-white;
+              max-width: 175px;
+              @include devices(computer) {
+                max-width: 260px;
+              }
+            }
+          }
+          .col-two {
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+  #row-four {
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: unset;
+    padding: $spacing-small;
+    @include devices(computer) {
+      padding: $spacing-extra-large;
+    }
+    .outer-container {
+      display: flex;
+      flex-flow: column nowrap;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      .col-one {
+        flex: 0 1 auto;
+        text-align: center;
+        h3 {
+          font-family: $AbhayaLibre;
+          @include responsive-font(2vw, 30px, 30px);
+        }
+        a.btn {
+          align-self: center;
+        }
+      }
+    }
+  }
+}
