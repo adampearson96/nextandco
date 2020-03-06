@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import PropTypes from "prop-types"
 import Navbar from "./navbar";
 import Footer from "./footer";
+import ContactForm from "./contactform";
 import "../scss/layout.scss";
 
 const Layout = ({ children }) => {
@@ -32,6 +33,7 @@ const Layout = ({ children }) => {
       <Navbar />
       <div className="content-container">{children}</div>
       <Footer />
+      <ContactForm />
     </div>
   );
 };
