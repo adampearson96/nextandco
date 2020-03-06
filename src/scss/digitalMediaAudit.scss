@@ -26,14 +26,18 @@
       .col-two,
       .col-three {
         display: flex;
-        flex: 0 0 auto;
+        flex: 0 1 auto;
         flex-flow: column nowrap;
         width: 200px;
         margin-right: $spacing-small;
         text-align: center;
-        padding: $spacing-small;
         @include devices(computer) {
           margin-right: unset;
+        }
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
         }
         h3 {
           flex: 0 1 auto;
