@@ -1,0 +1,107 @@
+@import "./global.scss";
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  padding: $spacing-medium;
+  min-height: 100vh;
+  background: $color-wf-blue;
+  box-sizing: border-box;
+
+  @include devices(ipad) {
+    padding: 5em $spacing-medium $spacing-medium;
+  }
+
+  .outer-container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1080px;
+
+    @include devices (ipad) {
+      max-width: calc(1080px + (#{$spacing-extra-large} * 2));
+    }
+
+    .copy-content {
+      flex: 0 1 auto;
+      color: $color-white;
+      max-width: 100%;
+      position: relative;
+
+      @include devices(computer) {
+	max-width: 54%;
+      }
+
+      h1 {
+	font-family: $ScandiaMedium;
+      }
+
+      p {
+	font-family: $AbhayaLibre;
+	line-height: 1.7777777778;
+      }
+    }
+  }
+
+  .slider-information-container {
+    .slider-information {
+      transition: all .2s ease;
+      @include devices (computer) {
+      }
+      @include devices (computer-widescreen) {
+	margin-left: calc(-1 * 2vw);
+      }
+      @include devices (computer-hd) {
+	margin-left: calc(-1 * 7vw);
+      }
+    }
+
+    .slider-header {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .header-line {
+      width: 120px;
+      display: inline-block;
+      margin: 0 $spacing-small;
+      border-bottom: 1px solid;
+    }
+  }
+
+  .social-links-container {
+    opacity: 0;
+    click-events: none;
+    transition: opacity 200ms linear;
+    click-events: default;
+    position: absolute;
+    bottom: $spacing-small;
+    left: $spacing-small;
+
+    @include devices(ipad) {
+      opacity: 1;
+      click-events: initial;
+    }
+
+    .social-links-header {
+      margin: 0 #{$spacing-extra-small} 0 #{$spacing-extra-small};
+      color: $color-white;
+      font-family: $ScandiaMedium;
+      font-weight: 100;
+    }
+
+    .social-links {
+      transform: rotate(-90deg);
+      transform-origin: 1em;
+      display: flex;
+      align-items: center;
+      padding-left: $spacing-small;
+
+      .social-link {
+	max-height: 25px;
+	max-width: 25px;
+	margin: 0 #{$spacing-extra-small};
+	display: flex;
+      }
+    }
+  }
+}
