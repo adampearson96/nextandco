@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import "../../scss/careers.scss";
+import "../scss/careers.scss";
 
 class Careers extends React.Component {
   render() {
