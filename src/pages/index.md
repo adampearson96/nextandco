@@ -15,5 +15,5 @@ careers:
   linktitle3: React Guru
   link3: /link
   description3: comfortable with abstract concepts and apps.
-featuredimage: ../img/hero2.jpg
+featuredimage: ../images/hero1.jpg
 ---
