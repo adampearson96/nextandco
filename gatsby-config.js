@@ -8,26 +8,27 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/images/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/src/pages`,
+        path: `${__dirname}/src/pages/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `case studies`,
-        path: `${__dirname}/src/case-studies`,
+        path: `${__dirname}/src/case-studies/`,
       },
     },
     {

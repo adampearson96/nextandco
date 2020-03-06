@@ -1,0 +1,32 @@
+@import "./global.scss";
+
+.careers-section {
+  background-color: $color-white;
+  color: $color-black;
+
+  .section-header {
+  }
+
+  .column-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-left: -$spacing-small;
+    margin-right: -$spacing-small;
+    margin-bottom: $spacing-small;
+
+    @include devices(ipad) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .column {
+      margin: $spacing-small;
+
+      p,a {
+	  @include responsive-font(2vw, 18px, 30px);
+      }
+    }
+  }
+}
