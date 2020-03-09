@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
+import BackgroundImage from "gatsby-background-image"
 import Layout from "../components/layout";
 import Careers from "../components/careers";
 
@@ -36,7 +37,14 @@ const CaseStudy = ({ data }) => {
             </div>
           </div>
         </section>
-        <section id="row-four">
+        <BackgroundImage
+          Tag="section"
+          id="row-four"
+          fluid={frontmatter._01sectionbackgroundimage.childImageSharp.fluid}
+          style={{
+            backgroundPosition: `center`,
+            backgroundSize: `cover`
+          }}>
           <div className="col-one">
             <span className="number">01</span>
             <h2>{frontmatter._01section.title}</h2>
@@ -47,7 +55,7 @@ const CaseStudy = ({ data }) => {
           <div className="col-three">
             <Img fluid={frontmatter._01sectionbottomimage.childImageSharp.fluid} alt="" />
           </div>
-        </section>
+        </BackgroundImage>
         <section id="row-five">
           <div className="row-one">
             <span className="number">02</span>
@@ -230,6 +238,13 @@ export const pageQuery = graphql`
           }
         }
         _01sectionbottomimage {
+          childImageSharp {
+            fluid(maxWidth: 2880) {
+              ...GatsbyImageSharpFluid_noBase64
+            }
+          }
+        }
+        _01sectionbackgroundimage {
           childImageSharp {
             fluid(maxWidth: 2880) {
               ...GatsbyImageSharpFluid_noBase64

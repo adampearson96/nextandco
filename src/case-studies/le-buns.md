@@ -40,6 +40,7 @@ careers:
 featuredimage: ./le-buns/00/le-buns-00-hero.jpg
 01sectiontopimage: ./le-buns/01/le-buns-01-ipad.jpg
 01sectionbottomimage: ./le-buns/01/le-buns-01-devices.jpg
+01sectionbackgroundimage: ./le-buns/01/le-buns-01-background.jpg
 02sectiontopleftimage: ./le-buns/02/le-buns-02-top-left.jpg
 02sectiontoprightimage: ./le-buns/02/le-buns-02-top-right.jpg
 02sectionbottomleftimage: ./le-buns/02/le-buns-02-bottom-left.jpg

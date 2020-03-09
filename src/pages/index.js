@@ -1,13 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import HomepageHeroSection from "../components/homepageherosection"
+import HeroSection from "../components/herosection"
 import Buttons from "../components/buttons"
 
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <HomepageHeroSection
+      <HeroSection
         heading="Clean your house mate."
         description="Our full service strategy made these guys some money."
         image={data.file.childImageSharp.fluid}

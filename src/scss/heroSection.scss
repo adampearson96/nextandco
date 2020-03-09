@@ -1,5 +1,14 @@
 @import "./global.scss";
 
+.hero-section,
+.hero-section:before,
+.hero-section:after {
+  background-attachment: fixed!important;
+  background-position: center!important;
+  background-size: cover!important;
+  background-repeat: no-repeat!important;
+}
+
 .hero-section {
   display: flex;
   align-items: center;

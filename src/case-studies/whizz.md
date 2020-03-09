@@ -46,6 +46,7 @@ careers:
 featuredimage: ./whizz/00/whizz-00-hero.jpg
 01sectiontopimage: ./whizz/01/whizz-01-iphone.jpg
 01sectionbottomimage: ./whizz/01/whizz-01-ipad.jpg
+01sectionbackgroundimage: ./whizz/01/whizz-01-background.png
 02sectiontopleftimage: ./whizz/02/whizz-02-top-left.jpg
 02sectiontoprightimage: ./whizz/02/whizz-02-top-right.jpg
 02sectionbottomleftimage: ./whizz/02/whizz-02-bottom-left.jpg

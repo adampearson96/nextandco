@@ -1,8 +1,9 @@
 import React from "react"
+import BackgroundImage from "gatsby-background-image"
 
 import "../scss/heroSection.scss"
 
-class HeroSection extends React.Component {
+class HomepageHeroSection extends React.Component {
   render() {
     const hasHeading = this.props.heading;
     const hasDescription = this.props.description;
@@ -18,7 +19,11 @@ class HeroSection extends React.Component {
     }
 
     return (
-      <section className="hero-section">
+      <BackgroundImage
+        Tag="section"
+        className="hero-section"
+        fluid={this.props.image}
+        >
         <div className="outer-container">
           <div className="copy-content rellax" data-rellax-speed="6">
             <div className="slider-information-container">
@@ -66,9 +71,9 @@ class HeroSection extends React.Component {
             </div>
           </div>
         </div>
-      </section>
+      </BackgroundImage>
     );
   }
 }
 
-export default HeroSection;
+export default HomepageHeroSection;

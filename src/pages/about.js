@@ -1,22 +1,17 @@
 import React from "react";
-import { Link } from "gatsby";
+import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import HeroSection from "../components/herosection";
 
-import featuredimage from "../images/about-herosection-image.jpg";
-// import section02image from "../images/hero1.jpg";
-// import section03image from "../images/hero1.jpg";
-
 import "../scss/about.scss";
 
-const AboutPage = () => {
+const AboutPage = ({ data }) => {
   return (
     <div className="about-us-page">
-
       <Layout>
         <HeroSection
           heading="About Us"
-          image={featuredimage}
+          image={data.file.childImageSharp.fluid}
         />
         <section id="row-one">
           <div className="outer-container">
@@ -97,3 +92,18 @@ const AboutPage = () => {
 }
 
 export default AboutPage;
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "about-herosection-image.jpg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fluid(maxWidth: 2880, quality: 100) {
+          ...GatsbyImageSharpFluid
+          presentationWidth
+        }
+      }
+    }
+  }
+`
