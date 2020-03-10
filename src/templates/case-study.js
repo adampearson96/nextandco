@@ -146,7 +146,7 @@ const CaseStudy = ({ data }) => {
             </div>
           </div>
         </section>
-        <Careers 
+        {/* <Careers 
           linktitle1={frontmatter.careers.linktitle1}
           link1={frontmatter.careers.link1}
           description1={frontmatter.careers.description1}
@@ -155,7 +155,7 @@ const CaseStudy = ({ data }) => {
           description2={frontmatter.careers.description2}
           linktitle3={frontmatter.careers.linktitle3}
           link3={frontmatter.careers.link3}
-          description3={frontmatter.careers.description3} />
+          description3={frontmatter.careers.description3} /> */}
       </article>
     </Layout>
   );

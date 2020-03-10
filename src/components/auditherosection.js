@@ -1,4 +1,5 @@
 import React from "react";
+import Img from "gatsby-image";
 import "../scss/auditHeroSection.scss";
 
 class AuditHeroSection extends React.Component {
@@ -7,23 +8,41 @@ class AuditHeroSection extends React.Component {
       <section className="audit-hero-section">
         <div className="outer-container">
           <div className="col-one">
-            <h1>{this.props.heading}</h1>
-            <p className="subheading">{this.props.subheading}</p>
             <div className="list-item">
-              <h2>{this.props.paragraph1heading}</h2>
-              <p>{this.props.paragraph1description}</p>
+              <div className="icon">
+                <img src={this.props.paragraph1icon} alt="" />
+              </div>
+              <div className="content">
+                <h2>{this.props.paragraph1heading}</h2>
+                <p>{this.props.paragraph1description}</p>
+              </div>
             </div>
             <div className="list-item">
-              <h2>{this.props.paragraph2heading}</h2>
-              <p>{this.props.paragraph2description}</p>
+              <div className="icon">
+              <img src={this.props.paragraph2icon} alt="" />
+              </div>
+              <div className="content">
+                <h2>{this.props.paragraph2heading}</h2>
+                <p>{this.props.paragraph2description}</p>
+              </div>
             </div>
             <div className="list-item">
-              <h2>{this.props.paragraph3heading}</h2>
-              <p>{this.props.paragraph3description}</p>
+              <div className="icon">
+                <img src={this.props.paragraph3icon} alt="" />
+              </div>
+              <div className="content">
+                <h2>{this.props.paragraph3heading}</h2>
+                <p>{this.props.paragraph3description}</p>
+              </div>
             </div>
             <div className="list-item">
-              <h2>{this.props.paragraph4heading}</h2>
-              <p>{this.props.paragraph4description}</p>
+              <div className="icon">
+                <img src={this.props.paragraph4icon} alt="" />
+              </div>
+              <div className="content">
+                <h2>{this.props.paragraph4heading}</h2>
+                <p>{this.props.paragraph4description}</p>
+              </div>
             </div>
           </div>
           <div className="col-two">
@@ -40,7 +59,11 @@ class AuditHeroSection extends React.Component {
                 </label>
                 <label>
                   Email
-                  <input type="email" name="email" placeholder="Email" />
+                  <input type="email" name="email" placeholder="Your email" />
+                </label>
+                <label>
+                  Phone
+                  <input type="tel" name="phone" placeholder="Your phone" />
                 </label>
                 <label>
                   Message

@@ -1,6 +1,40 @@
 @import "global";
 
 #digital-media-audit {
+  #row-one {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 20vh $spacing-small $spacing-small $spacing-small;
+    @include devices(computer) {
+      padding: 20vh $spacing-large $spacing-large $spacing-large;
+    }
+    .outer-container {
+      display: flex;
+      flex-flow: column nowrap;
+      max-width: 1086px;
+      margin: 0 auto;
+      @include devices(computer) {
+        flex-flow: row nowrap;
+      }
+      .col-one {
+        display: block;
+        flex: 0 1 auto;
+        width: 100%;
+        @include devices(computer) {
+          width: 50%;
+        }
+      }
+      .col-two {
+        display: block;
+        flex: 0 1 auto;
+        width: 100%;
+        @include devices(computer) {
+          width: 50%;
+        }
+      }
+    }
+  }
   #row-two {
     display: block;
     position: relative;

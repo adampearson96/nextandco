@@ -18,6 +18,7 @@ const IndexPage = ({ data }) => {
         linktitle2="Get in touch"
         link2="/link2"
       />
+      <div id="capabilities"></div>
     </Layout>
   )
 }

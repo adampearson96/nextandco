@@ -4,10 +4,10 @@
   display: block;
   position: relative;
   width: 100%;
-  padding: 20vh $spacing-small $spacing-small $spacing-small;
+  padding: $spacing-small;
   background-color: $color-black;
   @include devices(computer) {
-    padding: 20vh $spacing-large $spacing-large $spacing-large;
+    padding: $spacing-large;
   }
   .outer-container {
     display: flex;
@@ -24,34 +24,32 @@
         max-width: 500px;
         padding: $spacing-small;
       }
-      h1 {
-        font-size: 34px;
-        line-height: 1.5294117647;
-        font-family: $ScandiaMedium;
-        font-weight: 500;
-        margin-top: 0;
-        @include devices(computer) {
-          font-size: 60px;
-          line-height: 1;
-        }
-      }
-      p {
-        font-size: 18px;
-        line-height: 1.7777777778;
-        margin-top: 0;
-        &.subheading {
-          margin-bottom: $spacing-large;
-        }
-      }
       .list-item {
-        display: block;
+        display: flex;
+        flex-flow: row nowrap;
         margin-bottom: $spacing-large;
-        h2 {
-          font-size: 24px;
-          line-height: 1.2916666667;
-          font-family: $ScandiaMedium;
-          font-weight: 500;
-          margin: 0;
+        .icon {
+          display: block;
+          flex: 0 0 auto;
+          width: 30px;
+          margin-right: $spacing-small;
+          img {
+            display: block;
+            width: 100%;
+            height: auto;
+            font-size: 0;
+          }  
+        }
+        .content {
+          display: block;
+          flex: 0 1 auto;
+          h2 {
+            font-size: 24px;
+            line-height: 1.2916666667;
+            font-family: $ScandiaMedium;
+            font-weight: 500;
+            margin: 0;
+          }
         }
       }
     }
@@ -65,7 +63,6 @@
         background-color: $color-white;
         padding: $spacing-small;
         border-radius: 3px;
-        margin-top: $spacing-extra-large;
         @include devices(computer) {
           padding: $spacing-medium;
         }

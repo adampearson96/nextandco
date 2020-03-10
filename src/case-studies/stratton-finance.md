@@ -1,19 +1,19 @@
 ---
 templateKey: case-study-page
-title: 'Australia’s No. 1 Professional Home Cleaning'
-posttitle: 'Whizz'
+title: 'Australia's No.1 Finance Website'
+posttitle: 'Stratton Finance'
 date: 2020-01-04T15:04:10.000Z
 featuredpost: true
 description: >-
-  Whizz are Australia’s leading home cleaning services with over 5,000 cleaners on demand platform for both mobile and web applications.
+  Stratton Finance are the leading car finance website in Australia, assisting Australians with buying their new car.
 tags:
   - whizz
 01section:
   heading: The Challenge.
-  description: Whizz we’re looking for rapid scale from new customer acquisitions and increasing share of wallet from existing customers. The key challenge for Whizz was that they needed significant improvements in both the digital media efficiencies and simultaneous improvement within the front-end digital customer experience.
-  title: Experience
+  description: Stratton were not seeing growth in organic traffic and rankings for relevant ‘car finance’ related keywords and were looking to an agency who could significantly influence uplift within their organic search presence.
+  title: SEO
 02section:
-  title: Design  
+  title: Design
   heading: Methodology
   description: Next&Co conducted an end-to-end audit of the current digital experience including all digital media, web assets and customer life-cycle communications. Using analytics to determine key points of uplift within the customer journey – a roadmap of activity was prioritised and rolled out. Significant effort was put into setting up the correct reporting and optimisation cadence to ensure application of efforts was yielding continuous improvement from results.
 03section:

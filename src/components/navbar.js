@@ -68,7 +68,7 @@ class Navbar extends React.Component {
             <div className="navbar-items">
               <Link
                 className="navbar-item"
-                to="/capabilities"
+                to="/#capabilities"
                 activeClassName="active">
                 Capabilities
               </Link>
