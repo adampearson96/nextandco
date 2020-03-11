@@ -48,6 +48,7 @@ featuredimage: ./le-buns/00/le-buns-00-hero.jpg
 03sectionimage1: ./le-buns/03/le-buns-03-01.jpg
 03sectionimage2: ./le-buns/03/le-buns-03-02.jpg
 03sectionimage3: ./le-buns/03/le-buns-03-02.jpg
+03sectionbackgroundimage: ./le-buns/03/le-buns-03-background.jpg
 relatedworkimage1: ./whizz/00/whizz-00-hero.jpg
 relatedworkimage2: ./whizz/00/whizz-00-hero.jpg
 ---

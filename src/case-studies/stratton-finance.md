@@ -1,38 +1,36 @@
 ---
 templateKey: case-study-page
-title: 'Australia's No.1 Finance Website'
+title: 'Australia’s No.1 finance website'
 posttitle: 'Stratton Finance'
-date: 2020-01-04T15:04:10.000Z
+date: 2020-02-04T15:04:10.000Z
 featuredpost: true
 description: >-
   Stratton Finance are the leading car finance website in Australia, assisting Australians with buying their new car.
 tags:
-  - whizz
+  - stratton-finance
 01section:
   heading: The Challenge.
   description: Stratton were not seeing growth in organic traffic and rankings for relevant ‘car finance’ related keywords and were looking to an agency who could significantly influence uplift within their organic search presence.
-  title: SEO
+  title: Experience
 02section:
-  title: Design
+  title: Experience
   heading: Methodology
-  description: Next&Co conducted an end-to-end audit of the current digital experience including all digital media, web assets and customer life-cycle communications. Using analytics to determine key points of uplift within the customer journey – a roadmap of activity was prioritised and rolled out. Significant effort was put into setting up the correct reporting and optimisation cadence to ensure application of efforts was yielding continuous improvement from results.
+  description: Next&Co reverse engineered the ranking factors that were working for the websites who held top page ranking for Stratton’s target phrases.  The gap in between these sites and Stratton was identified, with a projectised plan to close the gap and thereby improve Stratton’s rankings. This involved a variety of different tactics such as expanding on-site content and outreach activities designed to build up the domain authority.
 03section:
-  title: Data  
-  heading1: 300%
-  description1: Increase in revenue year on year
-  heading2: 60%
-  description2: Increase in conversion rate
-  heading3: 50%
-  description3: Increase in customer lifetime value
-  heading4: 135%
-  description4: increase in new customer acquisition
+  title: SEO  
+  heading1: '500'
+  description1: New keywords ranking on page one
+  heading2: 30%
+  description2: Increase in organic traffic
+  heading3: 60%
+  description3: Increase in new visitors from organic traffic
+  heading4: 20%
+  description4: Increase in conversions
 relatedwork:
   heading1: Work 01
   description1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend volutpat libero.
-  image1: /le-buns/00/le-buns-00-hero.jpg
   heading2: Work 02
   description2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend volutpat libero.
-  image2: /le-buns/00/le-buns-00-hero.jpg
 careers:
   description1: ", eager to learn, create, and collaborate."
   link1: /link1
@@ -43,17 +41,18 @@ careers:
   description3: ", comfortable with abstract concepts and apps."
   link3: /link3
   linktitle3: React guru
-featuredimage: ./whizz/00/whizz-00-hero.jpg
-01sectiontopimage: ./whizz/01/whizz-01-iphone.jpg
-01sectionbottomimage: ./whizz/01/whizz-01-ipad.jpg
-01sectionbackgroundimage: ./whizz/01/whizz-01-background.png
-02sectiontopleftimage: ./whizz/02/whizz-02-top-left.jpg
-02sectiontoprightimage: ./whizz/02/whizz-02-top-right.jpg
-02sectionbottomleftimage: ./whizz/02/whizz-02-bottom-left.jpg
-02sectionbottomrightimage: ./whizz/02/whizz-02-bottom-right.jpg
-03sectionimage1: ./whizz/03/whizz-03-01.jpg
-03sectionimage2: ./whizz/03/whizz-03-02.jpg
-03sectionimage3: ./whizz/03/whizz-03-03.jpg
-relatedworkimage1: ./le-buns/00/le-buns-00-hero.jpg
-relatedworkimage2: ./le-buns/00/le-buns-00-hero.jpg
+featuredimage: ./stratton-finance/00/stratton-finance-00-hero.jpg
+01sectiontopimage: ./le-buns/01/le-buns-01-ipad.jpg
+01sectionbottomimage: ./le-buns/01/le-buns-01-devices.jpg
+01sectionbackgroundimage: ./stratton-finance/01/stratton-finance-01-background.png
+02sectiontopleftimage: ./stratton-finance/02/stratton-finance-02-top-left.jpg
+02sectiontoprightimage: ./stratton-finance/02/stratton-finance-02-top-right.jpg
+02sectionbottomleftimage: ./stratton-finance/02/stratton-finance-02-bottom-left.jpg
+02sectionbottomrightimage: ./stratton-finance/02/stratton-finance-02-bottom-right.jpg
+03sectionimage1: ./stratton-finance/03/stratton-finance-03-01.jpg
+03sectionimage2: ./stratton-finance/03/stratton-finance-03-02.jpg
+03sectionimage3: ./stratton-finance/03/stratton-finance-03-03.jpg
+03sectionbackgroundimage: ./stratton-finance/03/stratton-finance-03-background.png
+relatedworkimage1: ./whizz/00/whizz-00-hero.jpg
+relatedworkimage2: ./whizz/00/whizz-00-hero.jpg
 ---

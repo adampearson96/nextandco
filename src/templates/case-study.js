@@ -39,56 +39,16 @@ const CaseStudy = ({ data }) => {
         </section>
         <BackgroundImage
           Tag="section"
-          id="row-four"
-          fluid={frontmatter._01sectionbackgroundimage.childImageSharp.fluid}
+          id="row-seven"
+          fluid={frontmatter._03sectionbackgroundimage.childImageSharp.fluid}
           style={{
             backgroundPosition: `center`,
             backgroundSize: `cover`
           }}>
-          <div className="col-one">
-            <span className="number">01</span>
-            <h2>{frontmatter._01section.title}</h2>
-          </div>
-          <div className="col-two">
-            <Img fluid={frontmatter._01sectiontopimage.childImageSharp.fluid} alt="" />
-          </div>
-          <div className="col-three">
-            <Img fluid={frontmatter._01sectionbottomimage.childImageSharp.fluid} alt="" />
-          </div>
-        </BackgroundImage>
-        <section id="row-five">
-          <div className="row-one">
-            <span className="number">02</span>
-            <h2>{frontmatter._02section.title}</h2>
-          </div>
-          <div className="row-two">
-            <div className="image-container">
-              <Img fluid={frontmatter._02sectiontopleftimage.childImageSharp.fluid} alt="" />
-            </div>
-            <div className="image-container">
-              <Img fluid={frontmatter._02sectiontoprightimage.childImageSharp.fluid} alt="" />
-            </div>
-            <div className="image-container">
-              <Img fluid={frontmatter._02sectionbottomleftimage.childImageSharp.fluid} alt="" />
-            </div>
-            <div className="image-container">
-              <Img fluid={frontmatter._02sectionbottomrightimage.childImageSharp.fluid} alt="" />
-            </div>
-          </div>
-        </section>
-        <section id="row-six">
-          <div className="outer-container">
-            <div className="col-one">
-              <h2>{frontmatter._02section.heading}</h2>
-              <p>{frontmatter._02section.description}</p>
-            </div>
-          </div>
-        </section>
-        <section id="row-seven">
           <div className="row-one">
             <div className="content">
               <h2>{frontmatter._03section.title}</h2>
-              <span className="number">03</span>
+              <span className="number">01</span>
             </div>
             <div className="data">
               <div className="item">
@@ -120,7 +80,54 @@ const CaseStudy = ({ data }) => {
               <Img fluid={frontmatter._03sectionimage3.childImageSharp.fluid} alt="" />
             </div>
           </div>
+        </BackgroundImage>
+        <section id="row-five">
+          <div className="row-one">
+            <span className="number">02</span>
+            <h2>{frontmatter._02section.title}</h2>
+          </div>
+          <div className="row-two">
+            <div className="image-container">
+              <Img fluid={frontmatter._02sectiontopleftimage.childImageSharp.fluid} alt="" />
+            </div>
+            <div className="image-container">
+              <Img fluid={frontmatter._02sectiontoprightimage.childImageSharp.fluid} alt="" />
+            </div>
+            <div className="image-container">
+              <Img fluid={frontmatter._02sectionbottomleftimage.childImageSharp.fluid} alt="" />
+            </div>
+            <div className="image-container">
+              <Img fluid={frontmatter._02sectionbottomrightimage.childImageSharp.fluid} alt="" />
+            </div>
+          </div>
         </section>
+        <section id="row-six">
+          <div className="outer-container">
+            <div className="col-one">
+              <h2>{frontmatter._02section.heading}</h2>
+              <p>{frontmatter._02section.description}</p>
+            </div>
+          </div>
+        </section>
+        <BackgroundImage
+          Tag="section"
+          id="row-four"
+          fluid={frontmatter._01sectionbackgroundimage.childImageSharp.fluid}
+          style={{
+            backgroundPosition: `center`,
+            backgroundSize: `cover`
+          }}>
+          <div className="col-one">
+            <span className="number">01</span>
+            <h2>{frontmatter._01section.title}</h2>
+          </div>
+          <div className="col-two">
+            <Img fluid={frontmatter._01sectiontopimage.childImageSharp.fluid} alt="" />
+          </div>
+          <div className="col-three">
+            <Img fluid={frontmatter._01sectionbottomimage.childImageSharp.fluid} alt="" />
+          </div>
+        </BackgroundImage>
         <section id="row-eight">
           <div className="row-one">
             <h2>Related Works</h2>
@@ -225,92 +232,99 @@ export const pageQuery = graphql`
         }
         featuredimage {
           childImageSharp {
-            fluid(maxWidth: 2880) {
-              ...GatsbyImageSharpFluid_noBase64
+            fluid(maxWidth: 2880, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
         _01sectiontopimage {
           childImageSharp {
-            fluid(maxWidth: 1440) {
-              ...GatsbyImageSharpFluid_noBase64
+            fluid(maxWidth: 1440, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
         _01sectionbottomimage {
           childImageSharp {
-            fluid(maxWidth: 2880) {
-              ...GatsbyImageSharpFluid_noBase64
+            fluid(maxWidth: 2880, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
         _01sectionbackgroundimage {
           childImageSharp {
-            fluid(maxWidth: 2880) {
-              ...GatsbyImageSharpFluid_noBase64
+            fluid(maxWidth: 2880, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
         _02sectiontopleftimage {
           childImageSharp {
-            fluid(maxWidth: 1440) {
-              ...GatsbyImageSharpFluid_noBase64
+            fluid(maxWidth: 1440, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
         _02sectiontoprightimage {
           childImageSharp {
-            fluid(maxWidth: 1440) {
-              ...GatsbyImageSharpFluid_noBase64
+            fluid(maxWidth: 1440, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
         _02sectionbottomleftimage {
           childImageSharp {
-            fluid(maxWidth: 1440) {
-              ...GatsbyImageSharpFluid_noBase64
+            fluid(maxWidth: 1440, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
         _02sectionbottomrightimage {
           childImageSharp {
-            fluid(maxWidth: 1440) {
-              ...GatsbyImageSharpFluid_noBase64
+            fluid(maxWidth: 1440, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
         _03sectionimage1 {
           childImageSharp {
-            fluid(maxWidth: 1440) {
-              ...GatsbyImageSharpFluid_noBase64
+            fluid(maxWidth: 1440, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
         _03sectionimage2 {
           childImageSharp {
-            fluid(maxWidth: 1440) {
-              ...GatsbyImageSharpFluid_noBase64
+            fluid(maxWidth: 1440, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
         _03sectionimage3 {
           childImageSharp {
-            fluid(maxWidth: 1440) {
-              ...GatsbyImageSharpFluid_noBase64
+            fluid(maxWidth: 1440, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        _03sectionbackgroundimage {
+          childImageSharp {
+            fluid(maxWidth: 2880, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
         relatedworkimage1 {
           childImageSharp {
-            fluid(maxWidth: 1440) {
-              ...GatsbyImageSharpFluid_noBase64
+            fluid(maxWidth: 1440, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
         relatedworkimage2 {
           childImageSharp {
-            fluid(maxWidth: 1440) {
-              ...GatsbyImageSharpFluid_noBase64
+            fluid(maxWidth: 1440, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
