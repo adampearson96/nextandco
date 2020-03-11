@@ -3,6 +3,8 @@
 .footer {
   background-color: $color-black;
   color: $color-white;
+  position: relative;
+  z-index: 1;
 
   .container {
     justify-content: space-between;
