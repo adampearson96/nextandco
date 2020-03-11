@@ -5,17 +5,17 @@ import "../scss/heroSection.scss"
 
 class HomepageHeroSection extends React.Component {
   render() {
-    const hasHeading = this.props.heading;
-    const hasDescription = this.props.description;
-    let heading;
-    let description;
+    const hasHeading = this.props.heading
+    const hasDescription = this.props.description
+    let heading
+    let description
 
     if (hasHeading) {
-      heading = <h1>{hasHeading}</h1>;
+      heading = <h1>{hasHeading}</h1>
     }
 
     if (hasDescription) {
-      description = <p>{hasDescription}</p>;
+      description = <p>{hasDescription}</p>
     }
 
     return (
@@ -23,7 +23,7 @@ class HomepageHeroSection extends React.Component {
         Tag="section"
         className="hero-section"
         fluid={this.props.image}
-        >
+      >
         <div className="outer-container">
           <div className="copy-content rellax" data-rellax-speed="6">
             <div className="slider-information-container">
@@ -72,8 +72,8 @@ class HomepageHeroSection extends React.Component {
           </div> */}
         </div>
       </BackgroundImage>
-    );
+    )
   }
 }
 
-export default HomepageHeroSection;
+export default HomepageHeroSection

@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "gatsby";
-import "../scss/careers.scss";
+import React from "react"
+import { Link } from "gatsby"
+import "../scss/careers.scss"
 
 class Careers extends React.Component {
   render() {
@@ -39,8 +39,8 @@ class Careers extends React.Component {
           </Link>
         </div>
       </section>
-    );
+    )
   }
 }
 
-export default Careers;
+export default Careers

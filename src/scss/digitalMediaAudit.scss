@@ -9,10 +9,9 @@
     @include devices(computer) {
       padding: 20vh $spacing-large $spacing-large $spacing-large;
     }
-    .outer-container {
+    .inner-container {
       display: flex;
       flex-flow: column nowrap;
-      max-width: 1086px;
       margin: 0 auto;
       @include devices(computer) {
         flex-flow: row nowrap;
@@ -43,7 +42,7 @@
     @include devices(computer) {
       padding: $spacing-large;
     }
-    .outer-container {
+    .inner-container {
       display: flex;
       flex-flow: row nowrap;
       overflow-y: hidden;
@@ -51,7 +50,6 @@
       @include devices(computer) {
         flex-flow: row nowrap;
         justify-content: space-between;
-        max-width: 900px;
         margin: 0 auto;
         overflow-x: unset;
         overflow-y: unset;
@@ -98,13 +96,10 @@
     width: 100%;
     background-color: $color-black;
     padding: $spacing-large;
-    .outer-container {
+    .inner-container {
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
-      @include devices(computer) {
-        max-width: 600px;
-      }
       .col-one {
         display: block;
         flex: 0 1 auto;
@@ -169,7 +164,7 @@
     @include devices(computer) {
       padding: $spacing-extra-large;
     }
-    .outer-container {
+    .inner-container {
       display: flex;
       flex-flow: column nowrap;
       width: 100%;

@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 
-import "../scss/contactForm.scss";
+import "../scss/contactForm.scss"
 
 class ContactForm extends React.Component {
   render() {
@@ -33,4 +33,4 @@ class ContactForm extends React.Component {
   }
 }
 
-export default ContactForm;
+export default ContactForm

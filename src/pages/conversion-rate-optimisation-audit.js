@@ -1,13 +1,13 @@
-import React from "react";
-import { Link } from "gatsby";
-import Layout from "../components/layout";
-import AuditHeroSection from "../components/auditherosection";
+import React from "react"
+import { Link } from "gatsby"
+import Layout from "../components/layout"
+import AuditHeroSection from "../components/auditherosection"
 
-import icondata from "../images/icon-data.svg";
-import iconroadmap from "../images/icon-roadmap.svg";
-import iconcomputers from "../images/icon-computers.svg";
-import iconcode from "../images/icon-code.svg";
-import "../scss/conversionRateOptimisationAudit.scss";
+import icondata from "../images/icon-data.svg"
+import iconroadmap from "../images/icon-roadmap.svg"
+import iconcomputers from "../images/icon-computers.svg"
+import iconcode from "../images/icon-code.svg"
+import "../scss/conversionRateOptimisationAudit.scss"
 
 const AuditConversionRateOptimisation = () => {
   return (
@@ -15,15 +15,22 @@ const AuditConversionRateOptimisation = () => {
       <Layout>
         <section id="row-one">
           <div className="outer-container">
-            <div className="col-one">
-              <h1>Conversion Rate Optimisation Audit</h1>
-            </div>
-            <div className="col-two">
-              <p>Analyse and benchmark your audience’s digital conversion journey, with a roadmap to continuous improvement</p>
+            <div className="container-max-width">
+              <div className="inner-container">
+                <div className="col-one">
+                  <h1>Conversion Rate Optimisation Audit</h1>
+                </div>
+                <div className="col-two">
+                  <p>
+                    Analyse and benchmark your audience’s digital conversion
+                    journey, with a roadmap to continuous improvement
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
-        <AuditHeroSection 
+        <AuditHeroSection
           paragraph1icon={icondata}
           paragraph1heading="Quantitative Analysis"
           paragraph1description="Each step in your digital experience is assessed and benchmarked with an overall conversion uplift opportunity quantified"
@@ -40,11 +47,18 @@ const AuditConversionRateOptimisation = () => {
         />
         <section id="row-five">
           <div className="outer-container">
-            <div className="col-one">
-              <h3>Many of Australia's leading businesses partner with us, you should too.</h3>
-              <Link 
-                to="/contact"
-                className="btn">Get in touch</Link>
+            <div className="container-max-width">
+              <div className="inner-container">
+                <div className="col-one">
+                  <h3>
+                    Many of Australia's leading businesses partner with us, you
+                    should too.
+                  </h3>
+                  <Link to="/contact" className="btn">
+                    Get in touch
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -53,4 +67,4 @@ const AuditConversionRateOptimisation = () => {
   )
 }
 
-export default AuditConversionRateOptimisation;
+export default AuditConversionRateOptimisation

@@ -65,18 +65,21 @@
       transform: translateX(120%);
       transition: 100ms linear all;
       position: fixed;
-      top: 75px;
-      padding: $spacing-medium;
+      top: 3.5em;
+      padding: $spacing-small;
       left: 0;
       right: 0;
       bottom: 0;
       justify-content: space-between;
       background-color: $color-white;
+      box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.25);
+
       @include devices(ipad) {
         transform: none;
         position: initial;
         padding: 0;
         transition: 0ms linear all;
+        box-shadow: none;
       }
       &.is-active {
         transform: translateX(0%);
@@ -94,6 +97,7 @@
           padding: $spacing-extra-small 0;
           color: $color-black;
           font-family: $ScandiaMedium;
+          display: flex;
 
           &.active {
             text-decoration: underline;

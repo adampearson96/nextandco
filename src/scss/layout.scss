@@ -8,11 +8,6 @@ body {
   box-sizing: border-box;
 }
 
-.section {
-  &.section-invert {
-  }
-}
-
 .section-full-height {
   min-height: 100vh;
   background-color: $color-black;
@@ -27,7 +22,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  padding: $spacing-medium;
+  padding: $spacing-small;
   max-width: 100%;
 
   &.container-hero {
@@ -40,6 +35,16 @@ body {
     padding: 0;
     margin: 0;
   }
+}
+
+.container-max-width {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.inner-container {
+  padding: $spacing-small;
 }
 
 .column {
