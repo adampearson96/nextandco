@@ -18,7 +18,7 @@ tags:
   description: Next&Co conducted an end-to-end audit of the current digital experience including all digital media, web assets and customer life-cycle communications. Using analytics to determine key points of uplift within the customer journey – a roadmap of activity was prioritised and rolled out. Significant effort was put into setting up the correct reporting and optimisation cadence to ensure application of efforts was yielding continuous improvement from results.
 03section:
   title: Data  
-  heading1: 300%
+  heading1: '300'
   description1: Increase in revenue year on year
   heading2: 60%
   description2: Increase in conversion rate

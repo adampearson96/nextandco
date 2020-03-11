@@ -1,7 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { graphql } from "gatsby";
-import Img from "gatsby-image";
+import React from "react"
+import PropTypes from "prop-types"
+import { graphql } from "gatsby"
+import CountUp from "react-countup"
+import VisibilitySensor from "react-visibility-sensor"
+import Img from "gatsby-image"
 import BackgroundImage from "gatsby-background-image"
 import Layout from "../components/layout";
 
@@ -9,6 +11,7 @@ import "../scss/caseStudy.scss";
 
 const CaseStudy = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
+
   return (
     <Layout>
       <article>
@@ -51,19 +54,59 @@ const CaseStudy = ({ data }) => {
             </div>
             <div className="data">
               <div className="item">
-                <h3>{frontmatter._03section.heading1}</h3>
+                <CountUp 
+                  start={0}
+                  end={parseInt(frontmatter._03section.heading1)} 
+                  duration={2}
+                  suffix="%">
+                    {({ countUpRef, start}) => (
+                      <VisibilitySensor onChange={start} delayedCall>
+                        <span ref={countUpRef} />
+                      </VisibilitySensor>
+                    )}
+                  </CountUp>
                 <p>{frontmatter._03section.description1}</p>
               </div>
               <div className="item">
-                <h3>{frontmatter._03section.heading2}</h3>
+                <CountUp 
+                  start={0}
+                  end={parseInt(frontmatter._03section.heading2)} 
+                  duration={2}
+                  suffix="%">
+                    {({ countUpRef, start}) => (
+                      <VisibilitySensor onChange={start} delayedCall>
+                        <span ref={countUpRef} />
+                      </VisibilitySensor>
+                    )}
+                  </CountUp>
                 <p>{frontmatter._03section.description2}</p>
               </div>
               <div className="item">
-                <h3>{frontmatter._03section.heading3}</h3>
+                <CountUp 
+                  start={0}
+                  end={parseInt(frontmatter._03section.heading3)} 
+                  duration={2}
+                  suffix="%">
+                    {({ countUpRef, start}) => (
+                      <VisibilitySensor onChange={start} delayedCall>
+                        <span ref={countUpRef} />
+                      </VisibilitySensor>
+                    )}
+                  </CountUp>
                 <p>{frontmatter._03section.description3}</p>
               </div>
               <div className="item">
-                <h3>{frontmatter._03section.heading4}</h3>
+                <CountUp 
+                  start={0}
+                  end={parseInt(frontmatter._03section.heading4)} 
+                  duration={2}
+                  suffix="%">
+                    {({ countUpRef, start}) => (
+                      <VisibilitySensor onChange={start} delayedCall>
+                        <span ref={countUpRef} />
+                      </VisibilitySensor>
+                    )}
+                  </CountUp>
                 <p>{frontmatter._03section.description4}</p>
               </div>
             </div>
@@ -117,7 +160,7 @@ const CaseStudy = ({ data }) => {
             backgroundSize: `cover`
           }}>
           <div className="col-one">
-            <span className="number">01</span>
+            <span className="number">03</span>
             <h2>{frontmatter._01section.title}</h2>
           </div>
           <div className="col-two">
