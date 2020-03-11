@@ -173,10 +173,10 @@
     position: relative;
     width: 100%;
     background-color: unset;
-    padding: $spacing-small;
+    // padding: $spacing-small;
 
     @include devices(computer) {
-      padding: $spacing-extra-large;
+      // padding: $spacing-extra-large;
     }
 
     .inner-container {

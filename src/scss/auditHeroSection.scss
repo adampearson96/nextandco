@@ -6,43 +6,55 @@
   width: 100%;
   padding: $spacing-small;
   background-color: $color-black;
+
   @include devices(computer) {
     padding: $spacing-large;
   }
+
   .inner-container {
     display: flex;
     flex-flow: column nowrap;
+    padding: 0;
+
     @include devices(computer) {
       flex-flow: row nowrap;
       justify-content: space-between;
+      padding: $spacing-small;
     }
+
     .col-one {
       flex: 0 1 auto;
       color: $color-white;
+
       @include devices(computer) {
         // width: 60%;
         max-width: 500px;
         // padding: $spacing-small;
       }
+
       .list-item {
         display: flex;
         flex-flow: row nowrap;
         margin-bottom: $spacing-large;
+
         .icon {
           display: block;
           flex: 0 0 auto;
           width: 30px;
           margin-right: $spacing-small;
+
           img {
             display: block;
             width: 100%;
             height: auto;
             font-size: 0;
-          }  
+          }
         }
+
         .content {
           display: block;
           flex: 0 1 auto;
+
           h2 {
             font-size: 24px;
             line-height: 1.2916666667;
@@ -53,31 +65,39 @@
         }
       }
     }
+
     .col-two {
       flex: 0 1 auto;
+
       @include devices(computer) {
-        // width: 40%;
-        padding: $spacing-small;
+        width: 40%;
+        // padding: $spacing-small;
       }
+
       .form-container {
         background-color: $color-white;
         padding: $spacing-small;
         border-radius: 3px;
+
         @include devices(computer) {
           padding: $spacing-medium;
         }
+
         h2 {
           font-size: 16px;
           line-height: 2.25;
           text-align: center;
           margin-top: 0;
+
           @include devices(computer) {
             font-size: 21px;
             line-height: 1.5238095238;
           }
         }
+
         form {
           display: block;
+
           label {
             display: block;
             font-family: $ScandiaBold;
@@ -86,6 +106,7 @@
             font-weight: 700;
             margin-bottom: $spacing-large;
             text-transform: uppercase;
+
             input,
             textarea {
               display: block;
@@ -99,11 +120,13 @@
               border-radius: 3px;
               margin-top: $spacing-extra-small;
             }
+
             textarea {
               padding: $spacing-small;
               line-height: 1.5;
             }
           }
+
           button.submit {
             display: block;
             background-color: $color-blue;
