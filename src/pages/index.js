@@ -53,7 +53,7 @@ class IndexPage extends React.Component {
             <div 
               className="background-image" 
               style={{ backgroundImage: `url(${whizz})`}}>
-              <div className="slide-number-wrapper">
+              <div className="slide-number-wrapper container-max-width">
                 01.
                 <span className="line"></span>
                 selected works
@@ -72,7 +72,7 @@ class IndexPage extends React.Component {
                 selected works
               </div>
             </div>
-            <div className="slide-content-wrapper">
+            <div className="slide-content-wrapper container-max-width">
               <h2>Clean your house mate</h2>
               <p>Our full service strategy made these guys some money.</p>
             </div>
@@ -85,14 +85,14 @@ class IndexPage extends React.Component {
                 selected works
               </div>
             </div>
-            <div className="slide-content-wrapper">
+            <div className="slide-content-wrapper container-max-width">
               <h2>Clean your house mate</h2>
               <p>Our full service strategy made these guys some money.</p>
             </div>
           </section>
           <section className={this.state.activeSlide == 4 ? 'home-section home-section-4 is-active' : 'home-section home-section-4'}>
             <div className="background-image" style={{ backgroundImage: `url(${sesamestreet})`}}>
-              <div className="slide-number-wrapper">
+              <div className="slide-number-wrapper container-max-width">
                 04.
                 <span className="line"></span>
                 selected works
