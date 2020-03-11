@@ -354,7 +354,7 @@
   .row-one {
     display: flex;
     flex-flow: column nowrap;
-    padding: $spacing-medium;
+    padding: $spacing-small;
 
     @include devices(computer) {
       flex-flow: row nowrap;
@@ -447,7 +447,7 @@
   .row-two {
     display: flex;
     flex-flow: row nowrap;
-    padding: $spacing-medium;
+    padding: $spacing-small;
     overflow-x: scroll;
     overflow-y: hidden;
 
