@@ -9,24 +9,30 @@
   position: relative;
   width: 100%;
   padding: 20vh $spacing-small $spacing-small $spacing-small;
+
   @include devices(computer) {
     padding: 20vh $spacing-large $spacing-large $spacing-large;
   }
+
   .outer-container {
     display: flex;
     flex-flow: column nowrap;
+
     @include devices(computer) {
       flex-flow: row nowrap;
       align-items: center;
       max-width: 1143px;
       margin: 0 auto;
     }
+
     .col-one {
       flex: 0 1 auto;
+
       @include devices(computer) {
         width: 60%;
         padding: $spacing-small;
       }
+
       span.project-name {
         display: block;
         font-family: $ScandiaBold;
@@ -35,37 +41,45 @@
         font-weight: 700;
         color: #000;
       }
+
       h1 {
         @include responsive-font(5vw, 36px, 96px);
         line-height: 1.2777777778;
         font-weight: 700;
         margin: 0;
+
         @include devices(computer) {
           line-height: 1;
         }
       }
     }
+
     .col-two {
       flex: 0 1 auto;
+
       @include devices(computer) {
         width: 40%;
         padding: $spacing-small;
       }
+
       p {
         @include responsive-font(2vw, 16px, 22px);
         line-height: 1.5454545455;
       }
-  }
+    }
   }
 }
+
 #row-two {
   display: block;
   position: relative;
   width: 100%;
+
   .col-one {
     display: block;
     width: 100%;
     font-size: 0;
+
     img {
       display: block;
       width: 100%;
@@ -74,32 +88,40 @@
     }
   }
 }
+
 #row-three {
   display: block;
   position: relative;
   width: 100%;
   padding: $spacing-small;
+
   @include devices(computer) {
     padding: $spacing-large;
   }
+
   .outer-container {
     display: block;
     width: 100%;
+
     @include devices(computer) {
       max-width: 1143px;
       margin: 0 auto;
     }
+
     .col-one {
       display: block;
       width: 100%;
+
       @include devices(computer) {
         max-width: 80%;
       }
+
       h2 {
         @include responsive-font(3vw, 18px, 36px);
         line-height: 1.4444444444;
         font-weight: 500;
       }
+
       p {
         @include responsive-font(1vw, 18px, 42px);
         line-height: 1.7777777778;
@@ -107,6 +129,7 @@
     }
   }
 }
+
 #row-four {
   display: flex;
   flex-flow: column nowrap;
@@ -114,36 +137,45 @@
   width: 100%;
   padding: $spacing-small 0;
   background-color: $color-black;
+
   @include devices(computer) {
     flex-flow: row wrap;
     align-items: flex-start;
     padding: $spacing-large 0;
   }
+
   .col-one {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     width: 100%;
     flex: 0 0 auto;
+    padding: $spacing-medium;
+
     @include devices(computer) {
       width: 45%;
       flex-flow: column nowrap;
       align-items: flex-start;
+      padding: 0;
     }
+
     span.number {
       flex: 0 0 auto;
       font-family: $ScandiaBold;
       @include responsive-font(5vw, 32px, 100px);
       line-height: 1;
       font-weight: 700;
-      margin-left: -.25em;
       color: $color-white;
+      margin-right: .25em;
+
       @include devices(computer) {
         @include responsive-font(10vw, 100px, 200px);
         line-height: 1;
         order: 2;
+        margin-left: -.25em;
       }
     }
+
     h2 {
       flex: 0 0 auto;
       @include responsive-font(1vw, 16px, 40px);
@@ -151,56 +183,69 @@
       font-weight: 700;
       color: $color-white;
       text-transform: uppercase;
+
       @include devices(computer) {
         order: 1;
         margin-left: 12.5vw;
       }
     }
   }
+
   .col-two {
     display: block;
     width: 100%;
     flex: 0 0 auto;
     font-size: 0;
     margin: 0 0 1.5rem 0;
+
     @include devices(computer) {
       width: 55%;
     }
   }
+
   .col-three {
     display: block;
     width: 100%;
     flex: 0 0 auto;
     font-size: 0;
+
     @include devices(computer) {
       width: 87.5%;
       margin-left: auto;
     }
   }
 }
+
 #row-five {
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
   padding: $spacing-small 0;
   overflow: hidden;
+
   .row-one {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     width: 100%;
     flex: 0 0 auto;
+    padding: $spacing-medium;
+
     @include devices(computer) {
       width: 100%;
       justify-content: space-between;
       align-items: flex-start;
+      padding: $spacing-large 0;
     }
+
     span.number {
       flex: 0 0 auto;
       font-family: $ScandiaBold;
       @include responsive-font(5vw, 32px, 100px);
       line-height: 1;
       font-weight: 700;
+      margin-right: .25em;
+
       @include devices(computer) {
         @include responsive-font(10vw, 100px, 200px);
         line-height: 1;
@@ -208,18 +253,21 @@
         margin-right: -0.15em;
       }
     }
+
     h2 {
       flex: 0 0 auto;
       @include responsive-font(1vw, 16px, 40px);
       line-height: 1;
       font-weight: 700;
       text-transform: uppercase;
+
       @include devices(computer) {
         order: 1;
         margin-left: 12.5vw;
       }
     }
   }
+
   .row-two {
     display: flex;
     flex-flow: row nowrap;
@@ -228,23 +276,28 @@
     overflow-y: hidden;
     overflow-x: scroll;
     font-size: 0;
+
     @include devices(computer) {
       overflow: unset;
       flex-flow: row wrap;
     }
+
     .image-container {
       display: block;
       flex: 0 0 auto;
       width: 315px;
       height: auto;
       margin: 0 1rem 0 0;
-      font-size: 0; 
+      font-size: 0;
+
       @include devices(computer) {
         width: 47.5%;
         margin-right: 5%;
+
         &:first-child {
           margin-top: 0;
         }
+
         &:nth-child(2n) {
           margin-right: 0;
           margin-top: 5%;
@@ -253,29 +306,36 @@
     }
   }
 }
+
 #row-six {
   display: block;
   position: relative;
   width: 100%;
   padding: $spacing-small;
+
   @include devices(computer) {
     padding: $spacing-large;
   }
+
   .outer-container {
     display: block;
     width: 100%;
+
     @include devices(computer) {
       max-width: 1143px;
       margin: 0 auto;
     }
+
     .col-one {
       display: block;
       width: 100%;
+
       h2 {
         @include responsive-font(3vw, 18px, 36px);
         line-height: 1.4444444444;
         font-weight: 500;
       }
+
       p {
         @include responsive-font(1vw, 18px, 42px);
         line-height: 1.7777777778;
@@ -284,46 +344,55 @@
     }
   }
 }
+
 #row-seven {
   display: block;
   position: relative;
   width: 100%;
   background-color: $color-black;
+
   .row-one {
     display: flex;
     flex-flow: column nowrap;
     padding: $spacing-medium;
+
     @include devices(computer) {
       flex-flow: row nowrap;
       padding: $spacing-large 0;
       justify-content: space-between;
       align-items: center;
     }
+
     .content {
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
       width: 100%;
       flex: 0 0 auto;
+
       @include devices(computer) {
-        width: auto;  
+        width: auto;
         flex-flow: column nowrap;
         align-items: flex-start;
       }
+
       span.number {
         flex: 0 0 auto;
         font-family: $ScandiaBold;
         @include responsive-font(5vw, 32px, 100px);
         line-height: 1;
         font-weight: 700;
-        margin-left: -.25em;
+        margin-left: .25em;
         color: $color-white;
+
         @include devices(computer) {
           @include responsive-font(10vw, 100px, 200px);
           line-height: 1;
           order: 2;
+          margin-left: -.25em;
         }
       }
+
       h2 {
         flex: 0 0 auto;
         @include responsive-font(1vw, 16px, 40px);
@@ -331,35 +400,42 @@
         font-weight: 700;
         color: $color-white;
         text-transform: uppercase;
+
         @include devices(computer) {
           order: 1;
           margin-left: 12.5vw;
         }
       }
     }
+
     .data {
       display: flex;
       flex-flow: column nowrap;
       flex: 0 1 auto;
+
       @include devices(computer) {
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
       }
+
       .item {
         display: block;
         flex: 0 1 auto;
         color: $color-white;
         text-align: center;
+
         @include devices(computer) {
           margin: 0 $spacing-small;
         }
+
         h3 {
           @include responsive-font(4vw, 22px, 70px);
           font-size: 70px;
           line-height: 1;
           margin: 0;
         }
+
         p {
           @include responsive-font(1vw, 18px, 42px);
           line-height: 1.5555555556;
@@ -367,18 +443,21 @@
       }
     }
   }
+
   .row-two {
     display: flex;
     flex-flow: row nowrap;
     padding: $spacing-medium;
     overflow-x: scroll;
     overflow-y: hidden;
+
     @include devices(computer) {
       overflow-x: unset;
       overflow-y: unset;
       justify-content: space-between;
       padding: $spacing-large $spacing-extra-large;
     }
+
     .image-container {
       display: block;
       flex: 0 0 auto;
@@ -386,6 +465,7 @@
       width: 315px;
       height: auto;
       margin: 0 1rem 0 0;
+
       @include devices(computer) {
         flex: 0 1 auto;
         width: 31.5%;
@@ -395,61 +475,77 @@
 
   }
 }
+
 #row-eight {
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
+
   .row-one {
     display: block;
     flex: 0 1 auto;
     width: 100%;
     padding: $spacing-small;
+
     h2 {
       font-size: 36px;
       line-height: 1.4444444444;
 
     }
   }
+
   .row-two {
     display: flex;
     flex-direction: row nowrap;
     width: 100%;
     overflow-y: hidden;
     overflow-x: scroll;
-    @include devices(computer) {
+
+    @include devices(ipad) {
       overflow-x: unset;
       overflow-y: unset;
     }
+
     .col-one,
     .col-two {
       display: block;
       flex: 0 0 auto;
       width: 315px;
       margin: 0 $spacing-medium 0 0;
+
+      @include devices(ipad) {
+        margin: 0 $spacing-medium 0 0;
+      }
+
       @include devices(computer) {
         width: 47.5%;
       }
+
       .image-container {
         display: block;
         width: 100%;
         height: auto;
         font-size: 0;
       }
+
       .content {
         display: block;
         text-align: center;
         padding: $spacing-small;
+
         h3 {
           font-size: 36px;
           line-height: 1.4444444444;
           font-weight: 500;
         }
+
         p {
           font-size: 18px;
           line-height: 1.7777777778;
         }
       }
     }
+
     .col-one {
       @include devices(computer) {
         margin-right: 5%;
