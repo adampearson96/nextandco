@@ -1,11 +1,11 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import { useStaticQuery, graphql } from "gatsby";
+import React from "react"
+import { Helmet } from "react-helmet"
+import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
-import Navbar from "./navbar";
-import Footer from "./footer";
-import ContactForm from "./contactform";
-import "../scss/layout.scss";
+import Navbar from "./navbar"
+import Footer from "./footer"
+import ContactForm from "./contactform"
+import "../scss/layout.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,7 +26,10 @@ const Layout = ({ children }) => {
         <title>{data.site.siteMetadata.title}</title>
         <meta name="description" content={data.site.siteMetadata.description} />
         <meta property="og:title" content={data.site.siteMetadata.title} />
-        <meta property="og:description" content={data.site.siteMetadata.description} />
+        <meta
+          property="og:description"
+          content={data.site.siteMetadata.description}
+        />
         <meta property="og:url" content="/" />
         <meta property="twitter:card" content="summary_large_image" />
       </Helmet>
@@ -35,11 +38,11 @@ const Layout = ({ children }) => {
       <Footer />
       <ContactForm />
     </div>
-  );
-};
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout;
+export default Layout

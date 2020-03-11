@@ -9,10 +9,9 @@
     @include devices(computer) {
       padding: 20vh $spacing-large $spacing-large $spacing-large;
     }
-    .outer-container {
+    .inner-container {
       display: flex;
       flex-flow: column nowrap;
-      max-width: 1086px;
       margin: 0 auto;
       @include devices(computer) {
         flex-flow: row nowrap;
@@ -44,7 +43,7 @@
     @include devices(computer) {
       padding: $spacing-extra-large;
     }
-    .outer-container {
+    .inner-container {
       display: flex;
       flex-flow: column nowrap;
       width: 100%;

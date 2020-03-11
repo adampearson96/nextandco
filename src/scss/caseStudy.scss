@@ -8,21 +8,20 @@
   display: block;
   position: relative;
   width: 100%;
-  padding: 20vh $spacing-small $spacing-small $spacing-small;
+  padding-top: 20vh;
 
   @include devices(computer) {
-    padding: 20vh $spacing-large $spacing-large $spacing-large;
+    // padding: 20vh $spacing-large $spacing-large $spacing-large;
   }
 
-  .outer-container {
+  .inner-container {
     display: flex;
     flex-flow: column nowrap;
 
     @include devices(computer) {
       flex-flow: row nowrap;
       align-items: center;
-      max-width: 1143px;
-      margin: 0 auto;
+      // margin: 0 auto;
     }
 
     .col-one {
@@ -93,19 +92,18 @@
   display: block;
   position: relative;
   width: 100%;
-  padding: $spacing-small;
+  // padding: $spacing-small;
 
   @include devices(computer) {
-    padding: $spacing-large;
+    // padding: $spacing-large;
   }
 
-  .outer-container {
+  .inner-container {
     display: block;
     width: 100%;
 
     @include devices(computer) {
-      max-width: 1143px;
-      margin: 0 auto;
+      // margin: 0 auto;
     }
 
     .col-one {
@@ -153,7 +151,7 @@
     padding: $spacing-medium;
 
     @include devices(computer) {
-      width: 45%;
+      // width: 45%;
       flex-flow: column nowrap;
       align-items: flex-start;
       padding: 0;
@@ -199,7 +197,7 @@
     margin: 0 0 1.5rem 0;
 
     @include devices(computer) {
-      width: 55%;
+      // width: 55%;
     }
   }
 
@@ -311,19 +309,18 @@
   display: block;
   position: relative;
   width: 100%;
-  padding: $spacing-small;
+  // padding: $spacing-small;
 
   @include devices(computer) {
-    padding: $spacing-large;
+    // padding: $spacing-large;
   }
 
-  .outer-container {
+  .inner-container {
     display: block;
     width: 100%;
 
     @include devices(computer) {
-      max-width: 1143px;
-      margin: 0 auto;
+      // margin: 0 auto;
     }
 
     .col-one {
@@ -485,7 +482,7 @@
     display: block;
     flex: 0 1 auto;
     width: 100%;
-    padding: $spacing-small;
+    // padding: $spacing-small;
 
     h2 {
       font-size: 36px;

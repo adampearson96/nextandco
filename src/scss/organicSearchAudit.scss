@@ -6,56 +6,68 @@
     position: relative;
     width: 100%;
     padding: 20vh $spacing-small $spacing-small $spacing-small;
+
     @include devices(computer) {
       padding: 20vh $spacing-large $spacing-large $spacing-large;
     }
+
     .outer-container {
       display: flex;
       flex-flow: column nowrap;
-      max-width: 1086px;
       margin: 0 auto;
+
       @include devices(computer) {
         flex-flow: row nowrap;
       }
+
       .col-one {
         display: block;
         flex: 0 1 auto;
         width: 100%;
+
         @include devices(computer) {
           width: 50%;
         }
       }
+
       .col-two {
         display: block;
         flex: 0 1 auto;
         width: 100%;
+
         @include devices(computer) {
           width: 50%;
         }
       }
     }
   }
+
   #row-two {
     display: block;
     position: relative;
     width: 100%;
     padding: $spacing-small;
+
     @include devices(computer) {
       padding: $spacing-large;
     }
+
     .outer-container {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
+
       .col-one {
         flex: 0 1 auto;
         width: 100%;
+
         h2 {
           font-family: $ScandiaMedium;
           font-size: 36px;
           line-height: 1.4444444444;
           font-weight: 500;
           max-width: 600px;
+
           span {
             display: block;
             font-size: 36px;
@@ -63,13 +75,16 @@
           }
         }
       }
+
       .col-two {
         flex: 0 1 auto;
         padding: $spacing-large;
+
         .list-item {
           display: flex;
           flex-flow: row nowrap;
           margin: 0 0 $spacing-large 0;
+
           .circle {
             display: block;
             width: 30px;
@@ -77,6 +92,7 @@
             flex: 0 0 auto;
             border-radius: 50%;
           }
+
           p {
             flex: 0 1 auto;
             font-size: 18px;
@@ -84,16 +100,19 @@
             margin: 0 0 0 $spacing-medium;
 
           }
+
           &.vanguard {
             .circle {
               background-color: #333;
             }
           }
+
           &.blackrock {
             .circle {
               background-color: $color-black;
             }
           }
+
           &.fidelity {
             .circle {
               background-color: $color-blue;
@@ -101,10 +120,12 @@
           }
         }
       }
+
       .col-three {
         flex: 0 1 auto;
         position: relative;
         width: 100%;
+
         @include devices(computer) {
           width: 50%;
           max-width: 532px;
@@ -112,24 +133,29 @@
       }
     }
   }
+
   #row-three {
     display: block;
     position: relative;
     width: 100%;
     background-color: $color-black;
     padding: $spacing-large;
+
     .outer-container {
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
+
       @include devices(computer) {
         max-width: 600px;
       }
+
       .col-one {
         display: block;
         flex: 0 1 auto;
         width: 100%;
         max-width: 100%;
+
         img {
           display: block;
           width: 100%;
@@ -138,39 +164,47 @@
       }
     }
   }
+
   #row-four {
     display: block;
     position: relative;
     width: 100%;
     background-color: $color-white;
+
     img {
       display: block;
       width: 100%;
       height: auto;
     }
   }
+
   #row-five {
     display: block;
     position: relative;
     width: 100%;
     background-color: unset;
     padding: $spacing-small;
+
     @include devices(computer) {
       padding: $spacing-extra-large;
     }
+
     .outer-container {
       display: flex;
       flex-flow: column nowrap;
       width: 100%;
       justify-content: center;
       align-items: center;
+
       .col-one {
         flex: 0 1 auto;
         text-align: center;
+
         h3 {
           font-family: $AbhayaLibre;
           @include responsive-font(2vw, 30px, 30px);
         }
+
         a.btn {
           align-self: center;
         }

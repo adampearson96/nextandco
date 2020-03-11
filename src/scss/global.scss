@@ -2,3 +2,34 @@
 @import "devices";
 @import "fonts";
 @import "spacing";
+
+.circle {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    transform: translateX(-30px) translateY(-30px);
+    pointer-events: none;
+    z-index: 9999;
+    -webkit-transition: transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+    mix-blend-mode: difference;
+    display: none;
+
+    @media (min-width: 769px) {
+	display: block;
+    }
+}
+
+.circle svg {
+    width: 100%;
+    position: absolute;
+    mix-blend-mode: difference;
+}
+
+.circle svg path {
+    width: 100%;
+    height: 100%;
+    fill: $color-black;
+}

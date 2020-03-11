@@ -5,9 +5,9 @@
     display: block;
     position: relative;
     width: 100%;
-    padding: $spacing-small;
+    // padding: $spacing-small;
     @include devices(computer) {
-      padding: $spacing-large;
+      // padding: $spacing-large;
     }
     .outer-container {
       display: flex;
@@ -15,14 +15,13 @@
       @include devices(computer) {
         flex-flow: row nowrap;
         align-items: center;
-        max-width: 1143px;
         margin: 0 auto;
       }
       .col-one {
         flex: 0 1 auto;
         @include devices(computer) {
-          padding: $spacing-small;
-          width: 45%;
+          // padding: $spacing-small;
+          // width: 45%;
         }
         h2 {
           @include responsive-font(3vw, 18px, 36px);
@@ -33,8 +32,8 @@
       .col-two {
         flex: 0 1 auto;
         @include devices(computer) {
-          padding: $spacing-small;
-          width: 55%;
+          // padding: $spacing-small;
+          // width: 55%;
         }
         p {
           @include responsive-font(1vw, 18px, 42px);
@@ -63,7 +62,7 @@
         text-align: center;
         color: $color-white;
         @include devices(computer) {
-          max-width: 40%;
+          // max-width: 40%;
         }
         h2 {
           @include responsive-font(3vw, 18px, 36px);
@@ -90,10 +89,10 @@
     .col-one {
       display: block;
       flex: 0 1 auto;
-      padding: $spacing-small;
+      // padding: $spacing-small;
       @include devices(computer) {
-        width: 55%;
-        padding: $spacing-large;
+        // width: 55%;
+        // padding: $spacing-large;
       }
       h2 {
         @include responsive-font(3vw, 18px, 36px);
@@ -135,7 +134,7 @@
       flex: 0 1 auto;
       background-color: $color-black;
       @include devices(computer) {
-        width: 45%;
+        // width: 45%;
       }
     }
   }
@@ -157,6 +156,7 @@
       .col-one {
         flex: 0 1 auto;
         text-align: center;
+        margin: 0 auto;
         h3 {
           font-family: $AbhayaLibre;
           @include responsive-font(2vw, 30px, 30px);
