@@ -40,14 +40,15 @@ class Navbar extends React.Component {
                 style={{ width: "175px" }} />
             </Link>
             {/* Hamburger menu */}
-            <div
+            <button
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
-              onClick={() => this.toggleHamburger()} role="navigation">
+              label="Toggle Navigation"
+              onClick={() => this.toggleHamburger()}>
               <span className="top"/>
               <span className="middle"/>
               <span className="bottom"/>
-            </div>
+            </button>
           </div>
           <div
             id="navMenu"

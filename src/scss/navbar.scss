@@ -27,18 +27,33 @@
         flex: 0;
       }
     }
-    .navbar-burger {
-      height: 30px;
+    button.navbar-burger {
+      display: block;
+      position: relative;
       width: 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      flex: 0 1 auto;
+      height: 30px;
+      padding: 0;
+      border: none;
+      outline: none;
+      background-color: unset;
+      filter: none;
       span {
-        border-top: 2px solid $color-black;
+        display: block;
+        position: absolute;
         width: 100%;
+        height: 2px;
         transition: 100ms linear all;
-        transform:translate3d(0,0,0) rotate(0);
+        transform: translate3d(0,0,0) rotate(0);
+        background-color: $color-black;
+        &.top {
+          top: 0;
+        }
+        &.middle {
+          top: calc(50% - 1px);
+        }
+        &.bottom {
+          top: calc(100% - 2px);
+        }
       }
       @include devices(ipad) {
         display: none;
@@ -140,14 +155,14 @@
     }
     .is-active {
       .top {
-        transform:translate3d(-8px,10px,0) rotate(90deg);
+        transform:translate3d(-8px,14px,0) rotate(90deg);
         width: 85%;
       }
       .middle {
         transform: rotate(50deg);
       }
       .bottom {
-        transform:translate3d(12px,-10px,0) rotate(-90deg);
+        transform:translate3d(12px,-14px,0) rotate(-90deg);
         width: 85%;
       }
     }
