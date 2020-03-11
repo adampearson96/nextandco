@@ -21,7 +21,6 @@ class IndexPage extends React.Component {
     const height = window.innerHeight;
     window.addEventListener('scroll', () => {
       let activeSlide = this.state.activeSlide;
-      console.log(window.scrollY);
 
       if(window.scrollY <= height * 2) {
         activeSlide = 1;
@@ -32,15 +31,35 @@ class IndexPage extends React.Component {
       } else {
         activeSlide = 4;
       }
-      this.setState({ activeSlide })
+      this.setState({ activeSlide: activeSlide })
+    })
+
+    window.addEventListener('keydown', (e) => {
+      e.preventDefault();
+      let activeSlide = this.state.activeSlide;
+      if(e.keyCode === 38 ) {
+        if(activeSlide > 1 ) {
+          activeSlide--;
+        }
+        this.setState({ activeSlide: activeSlide })
+      }
+      if(e.keyCode === 40) {
+        if(activeSlide < 4) {
+          activeSlide++;
+        }
+        if(activeSlide === 4) {
+          
+        }
+        this.setState({ activeSlide: activeSlide })
+      }
     })
   }
   
-  render() {
+  render() {    
     return (
       <Layout>
         <div id="homepage-scroller">
-          <section className={this.state.activeSlide == 1 ? 'home-section home-section-1 is-active' : 'home-section home-section-1'}>
+          <section className={this.state.activeSlide === 1 ? 'home-section home-section-1 is-active' : 'home-section home-section-1'}>
             <div 
               className="background-image" 
               style={{ backgroundImage: `url(${whizz})`}}>
@@ -55,7 +74,7 @@ class IndexPage extends React.Component {
               <p>Our full service strategy made these guys some money.</p>
             </div>
           </section>
-          <section className={this.state.activeSlide == 2 ? 'home-section home-section-2 is-active' : 'home-section home-section-2'}>
+          <section className={this.state.activeSlide === 2 ? 'home-section home-section-2 is-active' : 'home-section home-section-2'}>
             <div className="background-image" style={{ backgroundImage: `url(${lebuns})`}}>
               <div className="slide-number-wrapper container-max-width">
                 02.
@@ -68,7 +87,7 @@ class IndexPage extends React.Component {
               <p>Our full service strategy made these guys some money.</p>
             </div>
           </section>
-          <section className={this.state.activeSlide == 3 ? 'home-section home-section-3 is-active' : 'home-section home-section-3'}>
+          <section className={this.state.activeSlide === 3 ? 'home-section home-section-3 is-active' : 'home-section home-section-3'}>
             <div className="background-image" style={{ backgroundImage: `url(${strattonfinance})`}}>
               <div className="slide-number-wrapper container-max-width">
                 03.
@@ -81,7 +100,7 @@ class IndexPage extends React.Component {
               <p>Our full service strategy made these guys some money.</p>
             </div>
           </section>
-          <section className={this.state.activeSlide == 4 ? 'home-section home-section-4 is-active' : 'home-section home-section-4'}>
+          <section className={this.state.activeSlide === 4 ? 'home-section home-section-4 is-active' : 'home-section home-section-4'}>
             <div className="background-image" style={{ backgroundImage: `url(${sesamestreet})`}}>
               <div className="slide-number-wrapper container-max-width">
                 04.
