@@ -22,21 +22,12 @@ class IndexPage extends React.Component {
     window.addEventListener('scroll', () => {
       let activeSlide = this.state.activeSlide;
       console.log(window.scrollY);
-      // console.log(height * 4);
-      // console.log(height * 3);
-      // console.log(height * 2);
-      // console.log(height);
 
-      // if(window.scrollY >= height && window.scrollY < (height * 2)) {
-      //   activeSlide = 2;
-      // }
-
-
-      if(window.scrollY <= height) {
+      if(window.scrollY <= height * 2) {
         activeSlide = 1;
-      } else if(window.scrollY <= (height * 2)) {
+      } else if(window.scrollY <= (height * 4)) {
         activeSlide = 2;
-      } else if(window.scrollY <= (height * 3)) {
+      } else if(window.scrollY <= (height * 6)) {
         activeSlide = 3;
       } else {
         activeSlide = 4;
