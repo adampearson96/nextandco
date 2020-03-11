@@ -42,7 +42,7 @@ class HomepageHeroSection extends React.Component {
             {heading}
             {description}
           </div>
-          <div className="social-links-container">
+          {/* <div className="social-links-container">
             <div className="social-links">
               <h6 className="social-links-header">FOLLOW US</h6>
               <a href="https://www.instagram.com" className="social-link instagram">
@@ -69,7 +69,7 @@ class HomepageHeroSection extends React.Component {
                 </svg>
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </BackgroundImage>
     );
