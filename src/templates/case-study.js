@@ -4,7 +4,6 @@ import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import BackgroundImage from "gatsby-background-image"
 import Layout from "../components/layout";
-import Careers from "../components/careers";
 
 import "../scss/caseStudy.scss";
 
