@@ -25,22 +25,13 @@ class HomepageHeroSection extends React.Component {
         fluid={this.props.image}
       >
         <div className="outer-container">
-          <div className="copy-content rellax" data-rellax-speed="6">
-            <div className="slider-information-container">
-              <div className="slider-information">
-                <h6 className="slider-header">
-                  <span className="slider-number">
-                    {/* TODO: Array slider length */}
-                    01
-                  </span>
-                  <span className="header-line"></span>
-                  SELECTED WORKS
-                </h6>
+          <div className="container-max-width">
+            <div className="inner-container">
+              <div className="copy-content">
+                {heading}
+                {description}
               </div>
             </div>
-            {/* TODO: Swap out heading and description from array? */}
-            {heading}
-            {description}
           </div>
           {/* <div className="social-links-container">
             <div className="social-links">

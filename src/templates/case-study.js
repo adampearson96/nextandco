@@ -31,18 +31,14 @@ const CaseStudy = ({ data }) => {
           </div>
         </section>
         <div className="outer-container">
-          <div className="container-max-width">
-            <div className="inner-container">
-              <section id="row-two">
-                <div className="col-one">
-                  <Img
-                    fluid={frontmatter.featuredimage.childImageSharp.fluid}
-                    alt=""
-                  />
-                </div>
-              </section>
+          <section id="row-two">
+            <div className="col-one">
+              <Img
+                fluid={frontmatter.featuredimage.childImageSharp.fluid}
+                alt=""
+              />
             </div>
-          </div>
+          </section>
         </div>
         <section id="row-three">
           <div className="outer-container">
@@ -58,8 +54,6 @@ const CaseStudy = ({ data }) => {
         </section>
 
         <div className="outer-container">
-          <div className="container-max-width">
-            <div className="inner-container">
               <BackgroundImage
                 Tag="section"
                 id="row-seven"
@@ -71,6 +65,8 @@ const CaseStudy = ({ data }) => {
                   backgroundSize: `cover`,
                 }}
               >
+          <div className="container-max-width">
+            <div className="inner-container">
                 <div className="row-one">
                   <div className="content">
                     <h2>{frontmatter._03section.title}</h2>
@@ -159,9 +155,9 @@ const CaseStudy = ({ data }) => {
                     />
                   </div>
                 </div>
-              </BackgroundImage>
             </div>
           </div>
+              </BackgroundImage>
         </div>
         <section id="row-five">
           <div className="outer-container">
@@ -228,8 +224,6 @@ const CaseStudy = ({ data }) => {
         </section>
 
         <div className="outer-container">
-          <div className="container-max-width">
-            <div className="inner-container">
               <BackgroundImage
                 Tag="section"
                 id="row-four"
@@ -241,6 +235,8 @@ const CaseStudy = ({ data }) => {
                   backgroundSize: `cover`,
                 }}
               >
+          <div className="container-max-width">
+            <div className="inner-container">
                 <div className="col-one">
                   <span className="number">03</span>
                   <h2>{frontmatter._01section.title}</h2>
@@ -259,9 +255,9 @@ const CaseStudy = ({ data }) => {
                     alt=""
                   />
                 </div>
-              </BackgroundImage>
             </div>
           </div>
+              </BackgroundImage>
         </div>
         <section id="row-eight">
           <div className="outer-container">
