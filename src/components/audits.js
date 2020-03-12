@@ -6,7 +6,9 @@ class Audits extends React.Component {
   render() {
     return (
       <section className="section audits-section">
-        <div className="container">
+          <div className="outer-container">
+            <div className="container-max-width">
+              <div className="inner-container">
           <h5 className="section-header">Our audits</h5>
           <div className="column-container">
             <div className="column">
@@ -28,6 +30,8 @@ class Audits extends React.Component {
               <p>Get more bang for your buck</p>
             </div>
           </div>
+        </div>
+        </div>
         </div>
       </section>
     )
