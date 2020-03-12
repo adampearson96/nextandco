@@ -69,7 +69,7 @@ class AuditHeroSection extends React.Component {
                       Your Name
                       <input
                         type="text"
-                        required={true}
+                        required
                         name="your-name"
                         placeholder="Your name"
                       />
@@ -78,7 +78,7 @@ class AuditHeroSection extends React.Component {
                       URL
                       <input
                         type="text"
-                        required={true}
+                        required
                         name="website-url"
                         placeholder="Website URL"
                       />
@@ -87,7 +87,7 @@ class AuditHeroSection extends React.Component {
                       Email
                       <input
                         type="email"
-                        required={true}
+                        required
                         name="email"
                         placeholder="Your email"
                       />
@@ -97,7 +97,7 @@ class AuditHeroSection extends React.Component {
                       <input
                         type="tel"
                         name="phone"
-                        required={true}
+                        required
                         placeholder="Your phone"
                       />
                     </label>
@@ -105,7 +105,7 @@ class AuditHeroSection extends React.Component {
                       Message
                       <textarea
                         name="your-message"
-                        required={true}
+                        required
                         rows="3"
                         placeholder="Your message"
                       />

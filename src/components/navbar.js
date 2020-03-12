@@ -169,7 +169,7 @@ class Navbar extends React.Component {
                             <br />
                             <input
                               type="text"
-                              required={true}
+                              required
                               name="name"
                               id="name"
                               onChange={this.handleChange}
@@ -182,7 +182,7 @@ class Navbar extends React.Component {
                             <br />
                             <input
                               type="email"
-                              required={true}
+                              required
                               name="email"
                               id="email"
                               onChange={this.handleChange}
@@ -195,7 +195,7 @@ class Navbar extends React.Component {
                             <br />
                             <input
                               type="phone"
-                              required={true}
+                              required
                               name="phone"
                               id="phone"
                               onChange={this.handleChange}
@@ -209,7 +209,7 @@ class Navbar extends React.Component {
                             <textarea
                               name="message"
                               id="message"
-                              required={true}
+                              required
                               onChange={this.handleChange}
                             />
                           </label>
