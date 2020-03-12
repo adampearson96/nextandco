@@ -101,6 +101,14 @@
           position: relative;
           margin: 0 $spacing-small;
 
+          &.navbar-item-contact {
+            display: none;
+            
+            @include devices(ipad) {
+              display: block;
+            }
+          }
+
           &:after {
             display: block;
             position: absolute;

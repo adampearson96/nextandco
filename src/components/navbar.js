@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import logoBlack from "../images/logo-black.svg"
 import mobileBackground from "../images/mobilebackground.png"
 import "../scss/navbar.scss"
+import "../scss/contactForm.scss"
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -10,6 +11,7 @@ class Navbar extends React.Component {
     this.state = {
       active: false,
       navBarActiveClass: "",
+      contactActiveClass: "",
     }
   }
 
@@ -25,6 +27,22 @@ class Navbar extends React.Component {
         this.state.active
           ? this.setState({ navBarActiveClass: "is-active" })
           : this.setState({ navBarActiveClass: "" })
+      }
+    )
+  }
+
+  toggleContact = () => {
+    // toggle the active boolean in the state
+    this.setState(
+      {
+        active: !this.state.active,
+      },
+      // after state has been updated,
+      () => {
+        // set the class in state for the navbar accordingly
+        this.state.active
+          ? this.setState({ contactActiveClass: "is-active" })
+          : this.setState({ contactActiveClass: "" })
       }
     )
   }
@@ -61,13 +79,7 @@ class Navbar extends React.Component {
             <div
               id="navMenu"
               style={{
-                // TODO: Get something like this happening once image has loaded
-                // opacity: this.state.loaded ? 0 : 1,
-                backgroundImage: `url(${
-                  mobileBackground
-                  // TODO: Get something like this getting best image size
-                  // !!this.props.image.childImageSharp ? this.props.image.childImageSharp.fluid.src : this.props.image
-                })`,
+                backgroundImage: `url(${mobileBackground})`,
                 backgroundPosition: `center center`,
                 backgroundSize: `100% 50%`,
                 backgroundRepeat: `no-repeat`,
@@ -104,15 +116,91 @@ class Navbar extends React.Component {
                 >
                   Our Audits
                 </Link>
-                <Link
-                  className="navbar-item"
-                  to="/contact"
-                  activeClassName="active"
+                <button
+                  className={`navbar-item navbar-item-contact ${this.state.contactActiveClass}`}
+                  data-target="navMenu"
+                  label="Toggle Navigation"
+                  onClick={() => this.toggleContact()}
                 >
                   Contact
-                </Link>
+                </button>
               </div>
-              <button className="get-in-touch btn">Get in touch</button>
+              <section
+                id="contact-form-container"
+                className={`${this.state.contactActiveClass}`}
+              >
+                <div className="outer-container">
+                  <div className="container-max-width">
+                    <button
+                      className={`contact-close ${this.state.navBarActiveClass}`}
+                      data-target="navMenu"
+                      label="Toggle Navigation"
+                      onClick={() => this.toggleContact()}
+                    >
+                      <span className="left" />
+                      <span className="right" />
+                    </button>
+                    <div className="inner-container">
+                      <div className="form-title">
+                        <h2>Talk to us</h2>
+                      </div>
+                      <form
+          name="contact"
+          method="post"
+          action="/thanks/"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          onSubmit={this.handleSubmit}
+        >
+          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label>
+              Don’t fill this out:{" "}
+              <input name="bot-field" onChange={this.handleChange} />
+            </label>
+          </p>
+          <p>
+            <label>
+              Name<br />
+              <input type="text" name="name" onChange={this.handleChange} />
+            </label>
+          </p>
+          <p>
+            <label>
+              Email:<br />
+              <input type="email" name="email" onChange={this.handleChange} />
+            </label>
+          </p>
+          <p>
+            <label>
+              Phone:<br />
+              <input type="phone" name="phone" onChange={this.handleChange} />
+            </label>
+          </p>
+          <p>
+            <label>
+              Message<br />
+              <textarea name="message" onChange={this.handleChange} />
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <button
+                className="get-in-touch btn"
+                data-target="navMenu"
+                label="Toggle Navigation"
+                onClick={() => this.toggleContact()}
+              >
+                Get in touchy
+              </button>
               <div className="navbar-footer">
                 <div className="links-bar">
                   <a className="phone-number" href="tel:1300191950">

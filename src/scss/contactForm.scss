@@ -1,3 +1,5 @@
+@import "./global.scss";
+
 #contact-form-container {
   display: block;
   position: fixed;
@@ -6,9 +8,16 @@
   top: 0;
   left: 0;
   z-index: 99;
-  background: red;
-  transform: translateX(120%);
+  background: $color-white;
+  transform: translateX(150%);
   transition: 100ms linear all;
+  padding: $spacing-small;
+
+  .container-max-width {
+    position: relative;
+    height: 100%;
+  }
+
   .outer-container {
     display: flex;
     flex-flow: column;
@@ -16,28 +25,85 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+    position: relative;
+    height: 100%;
+
+    .contact-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 22px;
+      width: 22px;
+      padding: 0;
+      border: none;
+
+      span {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        transition: 100ms linear all;
+        transform: translate3d(0, 0, 0) rotate(0);
+        background-color: $color-black;
+
+        &.left {
+          transform: rotate(50deg);
+        }
+
+        &.right {
+          transform: rotate(310deg);
+        }
+      }
+    }
+
     h2 {
       flex: 0 1 auto;
+      text-align: center;
     }
+
     form {
       display: flex;
       flex-flow: column;
       flex: 0 1 auto;
       max-width: 500px;
+      margin: 0 auto;
+
       label {
         flex: 0 1 auto;
         width: 100%;
-        input {
-          display: block;
+        font-size: 12px;
+
+        input, textarea {
+          display: inline-block;
           width: 100%;
+          line-height: 1.3;
+          box-sizing: border-box;
+          background: transparent;
+          resize: none;
+          border: none;
+          border-radius: 0px;
+          font-weight: normal;
+          margin: 0px;
+          padding: 6px 0;
+          letter-spacing: 3px;
+          font-weight: bold;
+          max-height: 64px;
+          font-size: 26px;
+          border-bottom: 2px solid $color-black;
+          margin-bottom: $spacing-small;
+        }
+        .textarea {
+          resize: initial;
         }
       }
+
       button {
         flex: 0 1 auto;
         width: 100%;
       }
     }
   }
+
   &.is-active {
     transform: translateX(0%);
   }
