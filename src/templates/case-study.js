@@ -54,111 +54,41 @@ const CaseStudy = ({ data }) => {
         </section>
 
         <div className="outer-container">
-              <BackgroundImage
-                Tag="section"
-                id="row-seven"
-                fluid={
-                  frontmatter._03sectionbackgroundimage.childImageSharp.fluid
-                }
-                style={{
-                  backgroundPosition: `center`,
-                  backgroundSize: `cover`,
-                }}
-              >
-          <div className="container-max-width">
-            <div className="inner-container">
-                <div className="row-one">
-                  <div className="content">
-                    <h2>{frontmatter._03section.title}</h2>
-                    <span className="number">01</span>
-                  </div>
-                  <div className="data">
-                    <div className="item">
-                      <CountUp
-                        start={0}
-                        end={parseInt(frontmatter._03section.heading1)}
-                        duration={2}
-                        suffix="%"
-                      >
-                        {({ countUpRef, start }) => (
-                          <VisibilitySensor onChange={start} delayedCall>
-                            <span ref={countUpRef} />
-                          </VisibilitySensor>
-                        )}
-                      </CountUp>
-                      <p>{frontmatter._03section.description1}</p>
-                    </div>
-                    <div className="item">
-                      <CountUp
-                        start={0}
-                        end={parseInt(frontmatter._03section.heading2)}
-                        duration={2}
-                        suffix="%"
-                      >
-                        {({ countUpRef, start }) => (
-                          <VisibilitySensor onChange={start} delayedCall>
-                            <span ref={countUpRef} />
-                          </VisibilitySensor>
-                        )}
-                      </CountUp>
-                      <p>{frontmatter._03section.description2}</p>
-                    </div>
-                    <div className="item">
-                      <CountUp
-                        start={0}
-                        end={parseInt(frontmatter._03section.heading3)}
-                        duration={2}
-                        suffix="%"
-                      >
-                        {({ countUpRef, start }) => (
-                          <VisibilitySensor onChange={start} delayedCall>
-                            <span ref={countUpRef} />
-                          </VisibilitySensor>
-                        )}
-                      </CountUp>
-                      <p>{frontmatter._03section.description3}</p>
-                    </div>
-                    <div className="item">
-                      <CountUp
-                        start={0}
-                        end={parseInt(frontmatter._03section.heading4)}
-                        duration={2}
-                        suffix="%"
-                      >
-                        {({ countUpRef, start }) => (
-                          <VisibilitySensor onChange={start} delayedCall>
-                            <span ref={countUpRef} />
-                          </VisibilitySensor>
-                        )}
-                      </CountUp>
-                      <p>{frontmatter._03section.description4}</p>
-                    </div>
-                  </div>
+          <BackgroundImage
+            Tag="section"
+            id="row-four"
+            fluid={frontmatter._01sectionbackgroundimage.childImageSharp.fluid}
+            style={{
+              backgroundPosition: `center`,
+              backgroundSize: `cover`,
+            }}
+          >
+            <div className="container-max-width">
+              <div className="inner-container">
+                <div className="col-one">
+                  <span className="number">01</span>
+                  <h2>{frontmatter._01section.title}</h2>
                 </div>
-                <div className="row-two">
-                  <div className="image-container">
-                    <Img
-                      fluid={frontmatter._03sectionimage1.childImageSharp.fluid}
-                      alt=""
-                    />
-                  </div>
-                  <div className="image-container">
-                    <Img
-                      fluid={frontmatter._03sectionimage2.childImageSharp.fluid}
-                      alt=""
-                    />
-                  </div>
-                  <div className="image-container">
-                    <Img
-                      fluid={frontmatter._03sectionimage3.childImageSharp.fluid}
-                      alt=""
-                    />
-                  </div>
+                <div className="col-two">
+                  <Img
+                    fluid={frontmatter._01sectiontopimage.childImageSharp.fluid}
+                    alt=""
+                  />
                 </div>
+                <div className="col-three">
+                  <Img
+                    fluid={
+                      frontmatter._01sectionbottomimage.childImageSharp.fluid
+                    }
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-              </BackgroundImage>
+          </BackgroundImage>
         </div>
+
+        <div className="outer-container"></div>
         <section id="row-five">
           <div className="outer-container">
             <div className="container-max-width">
@@ -223,42 +153,109 @@ const CaseStudy = ({ data }) => {
           </div>
         </section>
 
-        <div className="outer-container">
-              <BackgroundImage
-                Tag="section"
-                id="row-four"
-                fluid={
-                  frontmatter._01sectionbackgroundimage.childImageSharp.fluid
-                }
-                style={{
-                  backgroundPosition: `center`,
-                  backgroundSize: `cover`,
-                }}
-              >
+        <BackgroundImage
+          Tag="section"
+          id="row-seven"
+          fluid={frontmatter._03sectionbackgroundimage.childImageSharp.fluid}
+          style={{
+            backgroundPosition: `center`,
+            backgroundSize: `cover`,
+          }}
+        >
           <div className="container-max-width">
             <div className="inner-container">
-                <div className="col-one">
+              <div className="row-one">
+                <div className="content">
+                  <h2>{frontmatter._03section.title}</h2>
                   <span className="number">03</span>
-                  <h2>{frontmatter._01section.title}</h2>
                 </div>
-                <div className="col-two">
+                <div className="data">
+                  <div className="item">
+                    <CountUp
+                      start={0}
+                      end={parseInt(frontmatter._03section.heading1)}
+                      duration={2}
+                      suffix="%"
+                    >
+                      {({ countUpRef, start }) => (
+                        <VisibilitySensor onChange={start} delayedCall>
+                          <span ref={countUpRef} />
+                        </VisibilitySensor>
+                      )}
+                    </CountUp>
+                    <p>{frontmatter._03section.description1}</p>
+                  </div>
+                  <div className="item">
+                    <CountUp
+                      start={0}
+                      end={parseInt(frontmatter._03section.heading2)}
+                      duration={2}
+                      suffix="%"
+                    >
+                      {({ countUpRef, start }) => (
+                        <VisibilitySensor onChange={start} delayedCall>
+                          <span ref={countUpRef} />
+                        </VisibilitySensor>
+                      )}
+                    </CountUp>
+                    <p>{frontmatter._03section.description2}</p>
+                  </div>
+                  <div className="item">
+                    <CountUp
+                      start={0}
+                      end={parseInt(frontmatter._03section.heading3)}
+                      duration={2}
+                      suffix="%"
+                    >
+                      {({ countUpRef, start }) => (
+                        <VisibilitySensor onChange={start} delayedCall>
+                          <span ref={countUpRef} />
+                        </VisibilitySensor>
+                      )}
+                    </CountUp>
+                    <p>{frontmatter._03section.description3}</p>
+                  </div>
+                  <div className="item">
+                    <CountUp
+                      start={0}
+                      end={parseInt(frontmatter._03section.heading4)}
+                      duration={2}
+                      suffix="%"
+                    >
+                      {({ countUpRef, start }) => (
+                        <VisibilitySensor onChange={start} delayedCall>
+                          <span ref={countUpRef} />
+                        </VisibilitySensor>
+                      )}
+                    </CountUp>
+                    <p>{frontmatter._03section.description4}</p>
+                  </div>
+                </div>
+              </div>
+              <div className="row-two">
+                <div className="image-container">
                   <Img
-                    fluid={frontmatter._01sectiontopimage.childImageSharp.fluid}
+                    fluid={frontmatter._03sectionimage1.childImageSharp.fluid}
                     alt=""
                   />
                 </div>
-                <div className="col-three">
+                <div className="image-container">
                   <Img
-                    fluid={
-                      frontmatter._01sectionbottomimage.childImageSharp.fluid
-                    }
+                    fluid={frontmatter._03sectionimage2.childImageSharp.fluid}
                     alt=""
                   />
                 </div>
+                <div className="image-container">
+                  <Img
+                    fluid={frontmatter._03sectionimage3.childImageSharp.fluid}
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
           </div>
-              </BackgroundImage>
-        </div>
+        </BackgroundImage>
+
         <section id="row-eight">
           <div className="outer-container">
             <div className="container-max-width">

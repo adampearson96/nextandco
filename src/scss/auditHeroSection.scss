@@ -15,6 +15,7 @@
     display: flex;
     flex-flow: column nowrap;
     padding: 0;
+    align-items: center;
 
     @include devices(computer) {
       flex-flow: row nowrap;
