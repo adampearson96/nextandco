@@ -10,25 +10,25 @@ class Navbar extends React.Component {
     super(props)
     this.state = {
       active: false,
-      navBarActiveClass: "",
-      contactActiveClass: "",
+      navBarActiveClass: "is-active",
+      contactActiveClass: "is-active",
     }
   }
 
   toggleHamburger = () => {
     // toggle the active boolean in the state
-    // this.setState(
-    //   {
-    //     active: !this.state.active,
-    //   },
-    //   // after state has been updated,
-    //   () => {
-    //     // set the class in state for the navbar accordingly
-    //     this.state.active
-    //       ? this.setState({ navBarActiveClass: "is-active" })
-    //       : this.setState({ navBarActiveClass: "" })
-    //   }
-    // )
+    this.setState(
+      {
+        active: !this.state.active,
+      },
+      // after state has been updated,
+      () => {
+        // set the class in state for the navbar accordingly
+        this.state.active
+          ? this.setState({ navBarActiveClass: "is-active" })
+          : this.setState({ navBarActiveClass: "" })
+      }
+    )
   }
 
   toggleContact = () => {
@@ -229,7 +229,7 @@ class Navbar extends React.Component {
                 label="Toggle Navigation"
                 onClick={() => this.toggleContact()}
               >
-                Get in touchy
+                Get in touch
               </button>
               <div className="navbar-footer">
                 <div className="links-bar">
