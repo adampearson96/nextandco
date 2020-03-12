@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Audits from "../components/audits"
 import Buttons from "../components/buttons"
 
 import lebuns from "../case-studies/le-buns/00/le-buns-00-hero.jpg"
@@ -22,11 +23,11 @@ class IndexPage extends React.Component {
     window.addEventListener('scroll', () => {
       let activeSlide = this.state.activeSlide;
 
-      if(window.scrollY <= height * 2) {
+      if(window.scrollY <= height) {
         activeSlide = 1;
-      } else if(window.scrollY <= (height * 4)) {
+      } else if(window.scrollY <= (height * 2)) {
         activeSlide = 2;
-      } else if(window.scrollY <= (height * 6)) {
+      } else if(window.scrollY <= (height * 3)) {
         activeSlide = 3;
       } else {
         activeSlide = 4;
@@ -114,13 +115,46 @@ class IndexPage extends React.Component {
             </div>
           </section>
         </div>
+        <section className="row-capabiltiies">
+          <div className="outer-container">
+            <div className="container-max-width">
+              <div className="inner-container">
+                <div className="row-one">
+                  <h2>Capabiltiies.</h2>
+                </div>
+                <div className="row-two">
+                  <div className="col-one">
+                    <h3>Traffic</h3>
+                    <ul>
+                      <li><p>Digital Media</p></li>
+                      <li><p>Traditional Media</p></li>
+                      <li><p>Organic Search</p></li>
+                      <li><p>Social</p></li>
+                    </ul>
+                  </div>
+                  <div className="col-two">
+                    <h3>Experience</h3>
+                    <ul>
+                      <li><p>UX/CX Design</p></li>
+                      <li><p>Web &amp; App Design</p></li>
+                      <li><p>Creative</p></li>
+                      <li><p>Content</p></li>
+                      <li><p>Branding</p></li>
+                      <li><p>CRM &amp; Loyalty</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <Audits />
         <Buttons
           linktitle1="About Us"
           link1="/about"
           linktitle2="Get in touch"
           link2="/link2"
         />
-        <div id="capabilities"></div>
       </Layout>
     )
   }
