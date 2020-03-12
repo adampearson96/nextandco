@@ -164,7 +164,7 @@
       background-color: $color-black;
 
       @include devices(computer) {
-        // width: 45%;
+        width: 45%;
       }
     }
   }
