@@ -17,7 +17,7 @@ tags:
   heading: Methodology
   description: Next&Co implemented an audience-first pilot campaign and tested different creative messaging across search, social, video and display to see which audiences would resonate with which message. Once the highest converting audience/message segments were identified budget splits across each channel were flighted accordingly to achieve the ticket sales KPI set by the client. Performance and budget shifting occurred on a daily basis to ensure the correct audience had the optimal amount of spend to increase ticket sales
 03section:
-  title: Data  
+  title: Data
   heading1: '65,000'
   description1: Tickets sold in 90 days
   heading2: 70%
@@ -42,8 +42,8 @@ careers:
   link3: /link3
   linktitle3: React guru
 featuredimage: ./sesame-street/00/sesame-street-00-hero.jpg
-01sectiontopimage: ./le-buns/01/le-buns-01-ipad.jpg
-01sectionbottomimage: ./le-buns/01/le-buns-01-devices.jpg
+01sectiontopimage: ./sesame-street/01/sesame-street-01-ipad.jpg
+01sectionbottomimage: ./sesame-street/01/sesame-street-01-devices.jpg
 01sectionbackgroundimage: ./sesame-street/01/sesame-street-01-background.png
 02sectiontopleftimage: ./sesame-street/02/sesame-street-02-top-left.jpg
 02sectiontoprightimage: ./sesame-street/02/sesame-street-02-top-right.jpg
