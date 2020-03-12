@@ -1,0 +1,55 @@
+@import "./global.scss";
+
+.audits-section {
+  display: block;
+  position: relative;
+  background-color: $color-white;
+  color: $color-black;
+
+  .section-header {
+  }
+
+  .column-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-left: -$spacing-small;
+    margin-right: -$spacing-small;
+    margin-bottom: $spacing-small;
+
+    @include devices(ipad) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .column {
+      margin: $spacing-small;
+
+      a {
+        @include responsive-font(2vw, 18px, 30px);
+        text-decoration: none;
+        span {
+          color: $color-grey;
+          @include responsive-font(2vw, 18px, 30px);
+        }
+      }
+      p {
+        display: block;
+        font-size: 16px;
+        line-height: 1;
+        margin-top: $spacing-extra-large;
+        &:before {
+          display: inline-block;
+          position: relative;
+          content: '';
+          width: 30px;
+          height: 1px;
+          background-color: $color-grey;
+          vertical-align: middle;
+          margin-right: $spacing-small;
+        }
+      }
+    }
+  }
+}

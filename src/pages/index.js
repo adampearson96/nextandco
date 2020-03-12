@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Audits from "../components/audits"
 import Buttons from "../components/buttons"
 
 import lebuns from "../case-studies/le-buns/00/le-buns-00-hero.jpg"
@@ -147,6 +148,7 @@ class IndexPage extends React.Component {
             </div>
           </div>
         </section>
+        <Audits />
         <Buttons
           linktitle1="About Us"
           link1="/about"
