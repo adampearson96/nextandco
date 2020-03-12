@@ -6,27 +6,34 @@
   width: 100%;
   z-index: 99;
   background-color: $color-white;
+
   @include devices(computer) {
     background-image: none;
   }
+
   .container {
     justify-content: space-between;
+
     @include devices(ipad) {
       flex-direction: row;
     }
+
     .navbar-brand {
       display: flex;
       flex-flow: row nowrap;
       width: 100%;
       justify-content: space-between;
       align-items: center;
+
       a[title="logo"] {
         flex: 0 1 auto;
       }
+
       @include devices(ipad) {
         flex: 0;
       }
     }
+
     button.navbar-burger {
       display: block;
       position: relative;
@@ -37,28 +44,34 @@
       outline: none;
       background-color: unset;
       filter: none;
+
       span {
         display: block;
         position: absolute;
         width: 100%;
         height: 2px;
         transition: 100ms linear all;
-        transform: translate3d(0,0,0) rotate(0);
+        transform: translate3d(0, 0, 0) rotate(0);
         background-color: $color-black;
+
         &.top {
           top: 0;
         }
+
         &.middle {
           top: calc(50% - 1px);
         }
+
         &.bottom {
           top: calc(100% - 2px);
         }
       }
+
       @include devices(ipad) {
         display: none;
       }
     }
+
     .navbar-menu {
       display: flex;
       flex-flow: column nowrap;
@@ -81,18 +94,23 @@
         transition: 0ms linear all;
         box-shadow: none;
       }
+
       &.is-active {
         transform: translateX(0%);
       }
+
       .navbar-items {
         display: flex;
         flex-direction: column;
         width: 100%;
         flex: 0 1 auto;
+
         @include devices(ipad) {
           flex-direction: row;
         }
-        .navbar-item, .navbar-item-contact {
+
+        .navbar-item,
+        .navbar-item-contact {
           text-decoration: none;
           padding: 0;
           color: $color-black;
@@ -104,14 +122,14 @@
           @include responsive-font(1vw, 14px, 38px);
 
           &:hover {
-
             filter: invert(0);
             background-color: $color-white;
             color: $color-black;
           }
+
           &.navbar-item-contact {
             display: none;
-            
+
             @include devices(ipad) {
               display: block;
             }
@@ -137,7 +155,7 @@
               left: 0;
             }
           }
-          
+
           &.active {
             &:after {
               display: block;
@@ -157,6 +175,7 @@
 
           @include devices(ipad) {
             margin: 0 $spacing-medium 0 0;
+
             &:last-child {
               margin: 0;
             }
@@ -164,34 +183,41 @@
         }
       }
     }
+
     .get-in-touch {
       @include devices(ipad) {
         display: none;
       }
     }
+
     .navbar-footer {
       display: flex;
       flex-flow: row wrap;
       width: 100%;
       flex: 0 1 auto;
       font-family: $ScandiaMedium;
+
       .links-bar {
         display: flex;
         flex-flow: row nowrap;
         flex: 0 1 auto;
         width: 100%;
         justify-content: space-between;
+
         a.phone-number {
           flex: 0 1 auto;
           text-decoration: none;
         }
+
         .social-icons {
           flex: 0 1 auto;
           font-size: 0;
+
           a {
             display: inline-block;
             width: 22px;
             height: 22px;
+
             svg {
               path {
                 fill: $color-black;
@@ -200,25 +226,30 @@
           }
         }
       }
+
       .address {
         flex: 0 1 auto;
         width: 100%;
         color: $color-black;
       }
+
       @include devices(ipad) {
         display: none;
       }
     }
+
     .is-active {
       .top {
-        transform:translate3d(-8px,14px,0) rotate(90deg);
+        transform: translate3d(-8px, 14px, 0) rotate(90deg);
         width: 85%;
       }
+
       .middle {
         transform: rotate(50deg);
       }
+
       .bottom {
-        transform:translate3d(12px,-14px,0) rotate(-90deg);
+        transform: translate3d(12px, -14px, 0) rotate(-90deg);
         width: 85%;
       }
     }
