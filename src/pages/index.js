@@ -35,25 +35,25 @@ class IndexPage extends React.Component {
       this.setState({ activeSlide: activeSlide })
     })
 
-    window.addEventListener('keydown', (e) => {
-      e.preventDefault();
-      let activeSlide = this.state.activeSlide;
-      if(e.keyCode === 38 ) {
-        if(activeSlide > 1 ) {
-          activeSlide--;
-        }
-        this.setState({ activeSlide: activeSlide })
-      }
-      if(e.keyCode === 40) {
-        if(activeSlide < 4) {
-          activeSlide++;
-        }
-        if(activeSlide === 4) {
+    // window.addEventListener('keydown', (e) => {
+    //   e.preventDefault();
+    //   let activeSlide = this.state.activeSlide;
+    //   if(e.keyCode === 38 ) {
+    //     if(activeSlide > 1 ) {
+    //       activeSlide--;
+    //     }
+    //     this.setState({ activeSlide: activeSlide })
+    //   }
+    //   if(e.keyCode === 40) {
+    //     if(activeSlide < 4) {
+    //       activeSlide++;
+    //     }
+    //     if(activeSlide === 4) {
           
-        }
-        this.setState({ activeSlide: activeSlide })
-      }
-    })
+    //     }
+    //     this.setState({ activeSlide: activeSlide })
+    //   }
+    // })
   }
   
   render() {    
