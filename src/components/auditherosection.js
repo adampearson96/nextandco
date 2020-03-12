@@ -58,17 +58,18 @@ class AuditHeroSection extends React.Component {
                 <div className="form-container">
                   <h2>{this.props.formheading}</h2>
                   <form
-                        name="audit"
-                        method="post"
-                        action="/thankyou/"
-                        data-netlify="true"
-                        data-netlify-honeypot="bot-field"
-                        onSubmit={this.handleSubmit}
-                      >
+                    name="audit"
+                    method="post"
+                    action="/thankyou/"
+                    data-netlify="true"
+                    data-netlify-honeypot="bot-field"
+                    onSubmit={this.handleSubmit}
+                  >
                     <label>
                       Your Name
                       <input
                         type="text"
+                        required={true}
                         name="your-name"
                         placeholder="Your name"
                       />
@@ -77,6 +78,7 @@ class AuditHeroSection extends React.Component {
                       URL
                       <input
                         type="text"
+                        required={true}
                         name="website-url"
                         placeholder="Website URL"
                       />
@@ -85,18 +87,25 @@ class AuditHeroSection extends React.Component {
                       Email
                       <input
                         type="email"
+                        required={true}
                         name="email"
                         placeholder="Your email"
                       />
                     </label>
                     <label>
                       Phone
-                      <input type="tel" name="phone" placeholder="Your phone" />
+                      <input
+                        type="tel"
+                        name="phone"
+                        required={true}
+                        placeholder="Your phone"
+                      />
                     </label>
                     <label>
                       Message
                       <textarea
                         name="your-message"
+                        required={true}
                         rows="3"
                         placeholder="Your message"
                       />
