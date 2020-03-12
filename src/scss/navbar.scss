@@ -29,6 +29,10 @@
         flex: 0 1 auto;
       }
 
+      .navbar-item-logo {
+        font-size: 0;
+      }
+
       @include devices(ipad) {
         flex: 0;
       }
@@ -78,7 +82,7 @@
       transform: translateX(120%);
       transition: 100ms linear all;
       position: fixed;
-      top: 3.5em;
+      top: calc(30px + (#{$spacing-small} * 2));
       padding: $spacing-small;
       left: 0;
       right: 0;
@@ -89,10 +93,11 @@
 
       @include devices(ipad) {
         transform: none;
-        position: initial;
+        position: unset;
         padding: 0;
         transition: 0ms linear all;
         box-shadow: none;
+        top: unset;
       }
 
       &.is-active {
@@ -110,23 +115,46 @@
         }
 
         .navbar-item,
-        .navbar-item-contact {
+        .navbar-item-contact,
+        .navbar-item-audit {
           text-decoration: none;
           padding: 0;
           color: $color-black;
           font-family: $ScandiaMedium;
-          display: flex;
+          display: block;
           position: relative;
           margin: 0 $spacing-small;
           border: none;
-          @include responsive-font(1vw, 14px, 38px);
+          font-size: 14px;
+
+          ul.sub-menu {
+            display: none;
+            position: relative;
+            list-style-type: none;
+            padding: 0 0 0 $spacing-small;
+            margin: $spacing-small 0 0 0;
+          }
 
           &:hover {
             filter: invert(0);
             background-color: $color-white;
             color: $color-black;
+
+            > ul.sub-menu {
+              display: block;
+            }
+            
+            @include devices(computer) {
+              > ul.sub-menu {
+                display: none;
+              }
+            }
           }
 
+          &.navbar-item-audit {
+            text-align: left;
+          }
+        
           &.navbar-item-contact {
             display: none;
 
@@ -135,41 +163,43 @@
             }
           }
 
-          &:after {
-            display: block;
-            position: absolute;
-            content: '';
-            width: 0;
-            height: 5px;
-            right: 0;
-            bottom: -5px;
-            z-index: 10;
-            transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
-            transition-delay: 0ms;
-            background-color: $color-grey;
-          }
-
-          &:hover {
-            &:after {
-              width: 100%;
-              left: 0;
-            }
-          }
-
-          &.active {
+          @include devices(ipad) {
             &:after {
               display: block;
               position: absolute;
               content: '';
-              width: 100%;
+              width: 0;
               height: 5px;
-              left: 0;
               right: 0;
               bottom: -5px;
               z-index: 10;
               transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
               transition-delay: 0ms;
               background-color: $color-grey;
+            }
+  
+            &:hover {
+              &:after {
+                width: 100%;
+                left: 0;
+              }
+            }
+  
+            &.active {
+              &:after {
+                display: block;
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 5px;
+                left: 0;
+                right: 0;
+                bottom: -5px;
+                z-index: 10;
+                transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+                transition-delay: 0ms;
+                background-color: $color-grey;
+              }
             }
           }
 
