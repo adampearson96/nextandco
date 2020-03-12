@@ -5,6 +5,7 @@
     display: block;
     position: relative;
     width: 100%;
+    padding-top: 0;
 
     // padding: $spacing-small;
     @include devices(computer) {

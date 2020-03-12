@@ -147,7 +147,7 @@
       align-items: center;
 
       @include devices(computer) {
-        max-width: 600px;
+        // max-width: 600px;
       }
 
       .col-one {
