@@ -10,8 +10,8 @@ class Navbar extends React.Component {
     super(props)
     this.state = {
       active: false,
-      navBarActiveClass: "is-active",
-      contactActiveClass: "is-active",
+      navBarActiveClass: "",
+      contactActiveClass: "",
     }
   }
 
