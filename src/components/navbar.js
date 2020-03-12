@@ -111,7 +111,7 @@ class Navbar extends React.Component {
                 </Link>
                 <Link
                   className="navbar-item"
-                  to="/our-audits"
+                  to="/#our-audits"
                   activeClassName="active"
                 >
                   Our Audits

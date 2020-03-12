@@ -5,7 +5,7 @@ import "../scss/audits.scss"
 class Audits extends React.Component {
   render() {
     return (
-      <section className="section audits-section">
+      <section id="our-audits" className="section audits-section">
         <div className="outer-container">
           <div className="container-max-width">
             <div className="inner-container">

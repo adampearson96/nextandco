@@ -115,7 +115,7 @@ class IndexPage extends React.Component {
             </div>
           </section>
         </div>
-        <section className="row-capabiltiies">
+        <section id="capabilities" className="row-capabiltiies">
           <div className="outer-container">
             <div className="container-max-width">
               <div className="inner-container">
