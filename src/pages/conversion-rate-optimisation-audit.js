@@ -8,6 +8,9 @@ import iconroadmap from "../images/icon-roadmap.svg"
 import iconcomputers from "../images/icon-computers.svg"
 import iconcode from "../images/icon-code.svg"
 import heroimage from "../images/conversion-rate-optimisation-audit-hero.jpg"
+import audithelpdevice from "../images/digital-media-audit-help-device.png"
+import audithelpscorecard from "../images/digital-media-audit-help-scorecard.jpg"
+
 import "../scss/conversionRateOptimisationAudit.scss"
 import "../scss/buttons.scss"
 
@@ -48,11 +51,19 @@ const AuditConversionRateOptimisation = () => {
           paragraph4description="Implementation roadmap - Define a testing and implementation schedule to realise conversion uplift"
           formheading="Enquire about a conversion rate optimisation audit for your brand"
         />
-        <section id="row-five">
+        <section id="audit-help">
           <div className="outer-container">
             <div className="container-max-width">
               <div className="inner-container">
-                
+                <div className="col">
+                  <img src={audithelpdevice} alt="" />
+                </div>
+                <div className="col">
+                  <p>
+                    A preview of what to expect from our <strong>Converstion Rate Optimisation Audit</strong>.
+                  </p>
+                  <img src={audithelpscorecard} alt="" />
+                </div>
               </div>
             </div>
           </div>

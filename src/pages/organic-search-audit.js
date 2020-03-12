@@ -11,6 +11,8 @@ import iconroadmap from "../images/icon-roadmap.svg"
 import iconmagnifyingglass from "../images/icon-magnifying-glass.svg"
 import icongraph from "../images/icon-graph.svg"
 import heroimage from "../images/organic-search-audit-hero.jpg"
+import audithelpdevice from "../images/organic-search-audit-help-device.png"
+import audithelpscorecard from "../images/organic-search-audit-help-scorecard.jpg"
 
 import "../scss/organicSearchAudit.scss"
 
@@ -27,7 +29,7 @@ const AuditOrganicSearch = () => {
                 </div>
                 <div className="col-two">
                   <p>
-                    Understaznd the opportunity for your brand in the organic
+                    Understand the opportunity for your brand in the organic
                     search space and how to capitalise on it
                   </p>
                 </div>
@@ -51,61 +53,19 @@ const AuditOrganicSearch = () => {
           paragraph4description="Define both an immediate and long-term roadmap to capture more organic search traffic"
           formheading="Enquire about an organic search audit for your brand"
         />
-        <section id="row-two">
+        <section id="audit-help">
           <div className="outer-container">
             <div className="container-max-width">
               <div className="inner-container">
-                <div className="col-one">
-                  <h2>
-                    Competitor analysis{" "}
-                    <span>organic keyboard share of voice</span>
-                  </h2>
+                <div className="col">
+                  <img src={audithelpdevice} alt="" />
                 </div>
-                <div className="col-two">
-                  <div className="list-item vanguard">
-                    <div className="circle"></div>
-                    <p>Vanguard</p>
-                  </div>
-                  <div className="list-item blackrock">
-                    <div className="circle"></div>
-                    <p>Blackrock</p>
-                  </div>
-                  <div className="list-item fidelity">
-                    <div className="circle"></div>
-                    <p>Fidelity</p>
-                  </div>
+                <div className="col">
+                  <p>
+                    A preview of what to expect from our <strong>Organic Search Audit</strong>.
+                  </p>
+                  <img src={audithelpscorecard} alt="" />
                 </div>
-                <div className="col-three">
-                  <img src={section02image} alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="row-three">
-          <div className="outer-container">
-            <div className="container-max-width">
-              <div className="inner-container">
-                <div className="col-one">
-                  <img src={section03image} alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="row-four">
-          <div className="outer-container">
-            <div className="container-max-width">
-              <div className="inner-container">
-                <img src={section04image} alt="" />
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="row-five">
-          <div className="outer-container">
-            <div className="container-max-width">
-              <div className="inner-container">
               </div>
             </div>
           </div>

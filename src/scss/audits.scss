@@ -6,8 +6,7 @@
   background-color: $color-white;
   color: $color-black;
 
-  .section-header {
-  }
+  .section-header {}
 
   .column-container {
     display: flex;
@@ -29,16 +28,19 @@
       a {
         @include responsive-font(2vw, 18px, 30px);
         text-decoration: none;
+
         span {
           color: $color-grey;
           @include responsive-font(2vw, 18px, 30px);
         }
       }
+
       p {
         display: block;
         font-size: 16px;
         line-height: 1;
         margin-top: $spacing-extra-large;
+
         &:before {
           display: inline-block;
           position: relative;
@@ -50,6 +52,30 @@
           margin-right: $spacing-small;
         }
       }
+    }
+  }
+}
+
+#audit-help {
+  display: none;
+
+  @include devices(ipad) {
+    display: block;
+  }
+
+  .inner-container {
+    display: flex;
+    padding: $spacing-large 0 $spacing-extra-large;
+
+    .col {
+      margin: 0 $spacing-extra-small;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    img {
+      max-width: 100%;
     }
   }
 }

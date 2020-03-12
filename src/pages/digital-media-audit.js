@@ -11,6 +11,9 @@ import iconlightbulb from "../images/icon-light-bulb.svg"
 import icondata from "../images/icon-data.svg"
 import iconroadmap from "../images/icon-roadmap.svg"
 import heroimage from "../images/digital-media-audit-hero.jpg"
+import audithelpdevice from "../images/digital-media-audit-help-device.png"
+import audithelpscorecard from "../images/digital-media-audit-help-scorecard.jpg"
+
 import "../scss/digitalMediaAudit.scss"
 
 const AuditDigitalMedia = ({ data }) => {
@@ -34,7 +37,7 @@ const AuditDigitalMedia = ({ data }) => {
             </div>
           </div>
         </section>
-        <AuditHeroSection 
+        <AuditHeroSection
           heroimage={heroimage}
           paragraph1icon={iconstopwatch}
           paragraph1heading="Locate waste spend"
@@ -50,78 +53,19 @@ const AuditDigitalMedia = ({ data }) => {
           paragraph4description="Define both an immediate and long-term roadmap to optimise performance and channel strategy"
           formheading="Enquire about a digital media audit for your brand"
         />
-        <section id="row-two">
+        <section id="audit-help">
           <div className="outer-container">
             <div className="container-max-width">
               <div className="inner-container">
-                <div className="col-one">
-                  <img src={section02image1} alt="" />
-                  <h3>$45,820</h3>
-                  <p>In wasted spend</p>
+                <div className="col">
+                  <img src={audithelpdevice} alt="" />
                 </div>
-                <div className="col-two">
-                  <img src={section02image2} alt="" />
-                  <h3>75%</h3>
-                  <p>Performance uplift in 3-6 months</p>
+                <div className="col">
+                  <p>
+                    A preview of what to expect from our <strong>Digital Media Audit</strong>.
+                  </p>
+                  <img src={audithelpscorecard} alt="" />
                 </div>
-                <div className="col-three">
-                  <img src={section02image3} alt="" />
-                  <h3>$50-80</h3>
-                  <p>CPA (estimate at scale)</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="row-three">
-          <div className="outer-container">
-            <div className="container-max-width">
-              <div className="inner-container">
-                <div className="col-one">
-                  <h2>Digital media scorecard</h2>
-                  <div className="scorecard">
-                    <div className="row">
-                      <h3>Search</h3>
-                      <h3>Score</h3>
-                    </div>
-                    <div className="row">
-                      <p>Account Structure</p>
-                      <p>2/5</p>
-                    </div>
-                    <div className="row">
-                      <p>Conversion Setup</p>
-                      <p>1/5</p>
-                    </div>
-                    <div className="row">
-                      <p>
-                        Media Spend Wastage Due to Match TYpes, Ad Scheduling,
-                        Network and Location
-                      </p>
-                      <p>1/5</p>
-                    </div>
-                    <div className="row">
-                      <p>Bid Strategy</p>
-                      <p>1/5</p>
-                    </div>
-                    <div className="row">
-                      <p>Audience Coverage</p>
-                      <p>1/5</p>
-                    </div>
-                    <div className="row">
-                      <p>Campaign Metrics</p>
-                      <p>3/5</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="row-four">
-          <div className="outer-container">
-            <div className="container-max-width">
-              <div className="inner-container">
-                 
               </div>
             </div>
           </div>
