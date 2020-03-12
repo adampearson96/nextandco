@@ -17,7 +17,7 @@ tags:
   heading: Methodology
   description: After conducing a platform review, Next&Co worked closely with Le Buns to bring the digital experience to life on the Shopify platform.
 03section:
-  title: Data  
+  title: Data
   heading1: 10%
   description1: Increase in average order value
   heading2: 20%
@@ -47,7 +47,7 @@ featuredimage: ./le-buns/00/le-buns-00-hero.jpg
 02sectionbottomrightimage: ./le-buns/02/le-buns-02-bottom-right.jpg
 03sectionimage1: ./le-buns/03/le-buns-03-01.jpg
 03sectionimage2: ./le-buns/03/le-buns-03-02.jpg
-03sectionimage3: ./le-buns/03/le-buns-03-02.jpg
+03sectionimage3: ./le-buns/03/le-buns-03-03.jpg
 03sectionbackgroundimage: ./le-buns/03/le-buns-03-background.jpg
 relatedworkimage1: ./whizz/00/whizz-00-hero.jpg
 relatedworkimage2: ./whizz/00/whizz-00-hero.jpg

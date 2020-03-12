@@ -17,7 +17,7 @@ tags:
   heading: Methodology
   description: Next&Co reverse engineered the ranking factors that were working for the websites who held top page ranking for Stratton’s target phrases.  The gap in between these sites and Stratton was identified, with a projectised plan to close the gap and thereby improve Stratton’s rankings. This involved a variety of different tactics such as expanding on-site content and outreach activities designed to build up the domain authority.
 03section:
-  title: SEO  
+  title: SEO
   heading1: '500'
   description1: New keywords ranking on page one
   heading2: 30%
@@ -42,8 +42,8 @@ careers:
   link3: /link3
   linktitle3: React guru
 featuredimage: ./stratton-finance/00/stratton-finance-00-hero.jpg
-01sectiontopimage: ./le-buns/01/le-buns-01-ipad.jpg
-01sectionbottomimage: ./le-buns/01/le-buns-01-devices.jpg
+01sectiontopimage: ./stratton-finance/01/stratton-finance-01-ipad.jpg
+01sectionbottomimage: ./stratton-finance/01/stratton-finance-01-devices.jpg
 01sectionbackgroundimage: ./stratton-finance/01/stratton-finance-01-background.png
 02sectiontopleftimage: ./stratton-finance/02/stratton-finance-02-top-left.jpg
 02sectiontoprightimage: ./stratton-finance/02/stratton-finance-02-top-right.jpg

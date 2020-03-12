@@ -28,7 +28,7 @@
       flex: 0 1 auto;
 
       @include devices(computer) {
-        width: 60%;
+        width: 55%;
         padding: $spacing-small;
       }
 
@@ -42,7 +42,7 @@
       }
 
       h1 {
-        @include responsive-font(5vw, 36px, 96px);
+        @include responsive-font(5vw, 36px, 68px);
         line-height: 1.2777777778;
         font-weight: 700;
         margin: 0;
@@ -57,8 +57,12 @@
       flex: 0 1 auto;
 
       @include devices(computer) {
-        width: 40%;
+        width: 45%;
         padding: $spacing-small;
+      }
+
+      @include devices(computer-widescreen) {
+	padding: $spacing-small $spacing-small $spacing-small $spacing-extra-large*2;
       }
 
       p {
@@ -151,7 +155,7 @@
     padding: $spacing-medium;
 
     @include devices(computer) {
-      // width: 45%;
+      width: 45%;
       flex-flow: column nowrap;
       align-items: flex-start;
       padding: 0;
@@ -194,10 +198,10 @@
     width: 100%;
     flex: 0 0 auto;
     font-size: 0;
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 1.5rem auto;
 
     @include devices(computer) {
-      // width: 55%;
+      width: 55%;
     }
   }
 
@@ -208,7 +212,7 @@
     font-size: 0;
 
     @include devices(computer) {
-      width: 87.5%;
+      // width: 87.5%;
       margin-left: auto;
     }
   }

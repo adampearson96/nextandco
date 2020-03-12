@@ -297,7 +297,7 @@ const CaseStudy = ({ data }) => {
             </div>
           </div>
         </section>
-        {/* <Careers 
+        {/* <Careers
           linktitle1={frontmatter.careers.linktitle1}
           link1={frontmatter.careers.link1}
           description1={frontmatter.careers.description1}
