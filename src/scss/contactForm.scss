@@ -91,6 +91,8 @@
           font-size: 26px;
           border-bottom: 2px solid $color-black;
           margin-bottom: $spacing-small;
+          font-family: $ScandiaMedium;
+          @include responsive-font(1vw, 14px, 38px);
         }
         .textarea {
           resize: initial;
