@@ -7,7 +7,9 @@ import icondata from "../images/icon-data.svg"
 import iconroadmap from "../images/icon-roadmap.svg"
 import iconcomputers from "../images/icon-computers.svg"
 import iconcode from "../images/icon-code.svg"
+import heroimage from "../images/conversion-rate-optimisation-audit-hero.jpg"
 import "../scss/conversionRateOptimisationAudit.scss"
+import "../scss/buttons.scss"
 
 const AuditConversionRateOptimisation = () => {
   return (
@@ -31,6 +33,7 @@ const AuditConversionRateOptimisation = () => {
           </div>
         </section>
         <AuditHeroSection
+          heroimage={heroimage}
           paragraph1icon={icondata}
           paragraph1heading="Quantitative Analysis"
           paragraph1description="Each step in your digital experience is assessed and benchmarked with an overall conversion uplift opportunity quantified"
@@ -43,21 +46,13 @@ const AuditConversionRateOptimisation = () => {
           paragraph4icon={iconroadmap}
           paragraph4heading="Build testing &amp; implementation roadmap"
           paragraph4description="Implementation roadmap - Define a testing and implementation schedule to realise conversion uplift"
-          formheading="Get your audit today"
+          formheading="Enquire about a conversion rate optimisation audit for your brand"
         />
         <section id="row-five">
           <div className="outer-container">
             <div className="container-max-width">
               <div className="inner-container">
-                <div className="col-one">
-                  <h3>
-                    Many of Australia's leading businesses partner with us, you
-                    should too.
-                  </h3>
-                  <Link to="/contact" className="btn">
-                    Get in touch
-                  </Link>
-                </div>
+                
               </div>
             </div>
           </div>

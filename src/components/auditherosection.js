@@ -5,7 +5,14 @@ import "../scss/auditHeroSection.scss"
 class AuditHeroSection extends React.Component {
   render() {
     return (
-      <section className="audit-hero-section">
+      <section
+        className="audit-hero-section"
+        style={{
+          backgroundImage: `url(${this.props.heroimage})`,
+          backgroundPosition: `center center`,
+          backgroundAttachment: `fixed`,
+        }}
+      >
         <div className="outer-container">
           <div className="container-max-width">
             <div className="inner-container">
@@ -50,7 +57,14 @@ class AuditHeroSection extends React.Component {
               <div className="col-two">
                 <div className="form-container">
                   <h2>{this.props.formheading}</h2>
-                  <form>
+                  <form
+                        name="audit"
+                        method="post"
+                        action="/thankyou/"
+                        data-netlify="true"
+                        data-netlify-honeypot="bot-field"
+                        onSubmit={this.handleSubmit}
+                      >
                     <label>
                       Your Name
                       <input
@@ -87,8 +101,8 @@ class AuditHeroSection extends React.Component {
                         placeholder="Your message"
                       />
                     </label>
-                    <button className="submit" type="submit">
-                      Send message
+                    <button className="btn btn-invert" type="submit">
+                      Get your audit
                     </button>
                   </form>
                 </div>

@@ -127,18 +127,16 @@
             }
           }
 
-          button.submit {
-            display: block;
-            background-color: $color-blue;
-            color: $color-white;
-            border: none;
-            font-family: $ScandiaBold;
-            font-size: 16px;
-            line-height: 48px;
-            font-weight: 700;
-            padding: 0 $spacing-small;
-            max-width: 100%;
+          button {
             width: 100%;
+            // display: block;
+            // font-family: $ScandiaBold;
+            // font-size: 16px;
+            // line-height: 48px;
+            // font-weight: 700;
+            // padding: 0 $spacing-small;
+            // max-width: 100%;
+            // width: 100%;
           }
         }
       }

@@ -10,6 +10,7 @@ import iconstopwatch from "../images/icon-stopwatch.svg"
 import iconlightbulb from "../images/icon-light-bulb.svg"
 import icondata from "../images/icon-data.svg"
 import iconroadmap from "../images/icon-roadmap.svg"
+import heroimage from "../images/digital-media-audit-hero.jpg"
 import "../scss/digitalMediaAudit.scss"
 
 const AuditDigitalMedia = ({ data }) => {
@@ -33,7 +34,8 @@ const AuditDigitalMedia = ({ data }) => {
             </div>
           </div>
         </section>
-        <AuditHeroSection
+        <AuditHeroSection 
+          heroimage={heroimage}
           paragraph1icon={iconstopwatch}
           paragraph1heading="Locate waste spend"
           paragraph1description="Assess your brands media and find spend that is not attributed to a conversion"
@@ -46,7 +48,7 @@ const AuditDigitalMedia = ({ data }) => {
           paragraph4icon={iconroadmap}
           paragraph4heading="Build roadmap"
           paragraph4description="Define both an immediate and long-term roadmap to optimise performance and channel strategy"
-          formheading="Get your digital media audit today"
+          formheading="Enquire about a digital media audit for your brand"
         />
         <section id="row-two">
           <div className="outer-container">
@@ -119,15 +121,7 @@ const AuditDigitalMedia = ({ data }) => {
           <div className="outer-container">
             <div className="container-max-width">
               <div className="inner-container">
-                <div className="col-one">
-                  <h3>
-                    Many of Australia's leading businesses partner with us, you
-                    should too.
-                  </h3>
-                  <Link to="/contact" className="btn">
-                    Get in touch
-                  </Link>
-                </div>
+                 
               </div>
             </div>
           </div>

@@ -264,7 +264,7 @@ const CaseStudy = ({ data }) => {
             <div className="container-max-width">
               <div className="inner-container">
                 <div className="row-one">
-                  <h2>Related Works</h2>
+                  <h2>Selected works</h2>
                 </div>
                 <div className="row-two">
                   <div className="col-one">

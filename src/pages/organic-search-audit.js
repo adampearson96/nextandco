@@ -10,6 +10,7 @@ import icondata from "../images/icon-data.svg"
 import iconroadmap from "../images/icon-roadmap.svg"
 import iconmagnifyingglass from "../images/icon-magnifying-glass.svg"
 import icongraph from "../images/icon-graph.svg"
+import heroimage from "../images/organic-search-audit-hero.jpg"
 
 import "../scss/organicSearchAudit.scss"
 
@@ -35,6 +36,7 @@ const AuditOrganicSearch = () => {
           </div>
         </section>
         <AuditHeroSection
+          heroimage={heroimage}
           paragraph1icon={iconmagnifyingglass}
           paragraph1heading="Search trends"
           paragraph1description="Understand how your audiences are engaging with search and what trends are around the corner"
@@ -47,7 +49,7 @@ const AuditOrganicSearch = () => {
           paragraph4icon={iconroadmap}
           paragraph4heading="Build roadmap"
           paragraph4description="Define both an immediate and long-term roadmap to capture more organic search traffic"
-          formheading="Get your organic search audit today"
+          formheading="Enquire about an organic search audit for your brand"
         />
         <section id="row-two">
           <div className="outer-container">
@@ -104,15 +106,6 @@ const AuditOrganicSearch = () => {
           <div className="outer-container">
             <div className="container-max-width">
               <div className="inner-container">
-                <div className="col-one">
-                  <h3>
-                    Many of Australia's leading businesses partner with us, you
-                    should too.
-                  </h3>
-                  <Link to="/contact" className="btn">
-                    Get in touch
-                  </Link>
-                </div>
               </div>
             </div>
           </div>
