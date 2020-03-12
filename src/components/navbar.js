@@ -145,49 +145,79 @@ class Navbar extends React.Component {
                         <h2>Talk to us</h2>
                       </div>
                       <form
-          name="contact"
-          method="post"
-          action="/thanks/"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          onSubmit={this.handleSubmit}
-        >
-          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-          <input type="hidden" name="form-name" value="contact" />
-          <p hidden>
-            <label>
-              Don’t fill this out:{" "}
-              <input name="bot-field" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Name<br />
-              <input type="text" name="name" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Email:<br />
-              <input type="email" name="email" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Phone:<br />
-              <input type="phone" name="phone" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message<br />
-              <textarea name="message" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
+                        name="contact"
+                        method="post"
+                        action="/thanks/"
+                        data-netlify="true"
+                        data-netlify-honeypot="bot-field"
+                        onSubmit={this.handleSubmit}
+                      >
+                        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+                        <input type="hidden" name="form-name" value="contact" />
+                        <p hidden>
+                          <label>
+                            Don’t fill this out:{" "}
+                            <input
+                              name="bot-field"
+                              onChange={this.handleChange}
+                            />
+                          </label>
+                        </p>
+                        <p>
+                          <label>
+                            Name
+                            <br />
+                            <input
+                              type="text"
+                              required={true}
+                              name="name"
+                              id="name"
+                              onChange={this.handleChange}
+                            />
+                          </label>
+                        </p>
+                        <p>
+                          <label>
+                            Email:
+                            <br />
+                            <input
+                              type="email"
+                              required={true}
+                              name="email"
+                              id="email"
+                              onChange={this.handleChange}
+                            />
+                          </label>
+                        </p>
+                        <p>
+                          <label>
+                            Phone:
+                            <br />
+                            <input
+                              type="phone"
+                              required={true}
+                              name="phone"
+                              id="phone"
+                              onChange={this.handleChange}
+                            />
+                          </label>
+                        </p>
+                        <p>
+                          <label>
+                            Message
+                            <br />
+                            <textarea
+                              name="message"
+                              id="message"
+                              required={true}
+                              onChange={this.handleChange}
+                            />
+                          </label>
+                        </p>
+                        <p>
+                          <button type="submit">Send</button>
+                        </p>
+                      </form>
                     </div>
                   </div>
                 </div>

@@ -92,7 +92,7 @@
         @include devices(ipad) {
           flex-direction: row;
         }
-        .navbar-item {
+        .navbar-item, .navbar-item-contact {
           text-decoration: none;
           padding: 0;
           color: $color-black;
@@ -100,7 +100,15 @@
           display: flex;
           position: relative;
           margin: 0 $spacing-small;
+          border: none;
+          @include responsive-font(1vw, 14px, 38px);
 
+          &:hover {
+
+            filter: invert(0);
+            background-color: $color-white;
+            color: $color-black;
+          }
           &.navbar-item-contact {
             display: none;
             
