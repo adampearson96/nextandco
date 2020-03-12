@@ -17,18 +17,18 @@ class Navbar extends React.Component {
 
   toggleHamburger = () => {
     // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active,
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({ navBarActiveClass: "is-active" })
-          : this.setState({ navBarActiveClass: "" })
-      }
-    )
+    // this.setState(
+    //   {
+    //     active: !this.state.active,
+    //   },
+    //   // after state has been updated,
+    //   () => {
+    //     // set the class in state for the navbar accordingly
+    //     this.state.active
+    //       ? this.setState({ navBarActiveClass: "is-active" })
+    //       : this.setState({ navBarActiveClass: "" })
+    //   }
+    // )
   }
 
   toggleContact = () => {
@@ -147,7 +147,7 @@ class Navbar extends React.Component {
                       <form
                         name="contact"
                         method="post"
-                        action="/thanks/"
+                        action="/thankyou/"
                         data-netlify="true"
                         data-netlify-honeypot="bot-field"
                         onSubmit={this.handleSubmit}
