@@ -8,7 +8,7 @@
   top: 0;
   left: 0;
   z-index: 99;
-  background: $color-white;
+  background: rgba(255, 255, 255, 0.95);
   transition: opacity 250ms ease-in;
   padding: $spacing-small;
   opacity: 0;
@@ -17,7 +17,8 @@
   visibility: hidden;
 
   @include devices(ipad) {
-    height: 100vh;
+    top: calc(17px + (#{$spacing-small} * 2));
+    height: calc((100vh - 17px) - (#{$spacing-small} * 2));
   }
 
   .container-max-width {
