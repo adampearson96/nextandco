@@ -1,17 +1,29 @@
 import React from "react"
 import { Link } from "gatsby"
+import Img from "gatsby-image"
 import logoBlack from "../images/logo-black.svg"
 import mobileBackground from "../images/mobilebackground.png"
 import "../scss/navbar.scss"
 import "../scss/contactForm.scss"
+import "../scss/auditMenu.scss"
+
+import dmImage from "../images/dm-menu-image.jpg"
+import dmIcon from "../images/dm-icon.svg"
+import osImage from "../images/os-menu-image.jpg"
+import osIcon from "../images/os-icon.svg"
+import croImage from "../images/cro-menu-image.jpg"
+import croIcon from "../images/cro-icon.svg"
 
 class Navbar extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       active: false,
+      contactActive: false,
+      auditActive: false,
       navBarActiveClass: "",
       contactActiveClass: "",
+      auditMenuActiveClass: "",
     }
   }
 
@@ -35,14 +47,30 @@ class Navbar extends React.Component {
     // toggle the active boolean in the state
     this.setState(
       {
-        active: !this.state.active,
+        contactActive: !this.state.contactActive,
       },
       // after state has been updated,
       () => {
         // set the class in state for the navbar accordingly
-        this.state.active
+        this.state.contactActive
           ? this.setState({ contactActiveClass: "is-active" })
           : this.setState({ contactActiveClass: "" })
+      }
+    )
+  }
+
+  toggleAuditMenu = () => {
+    // toggle the active boolean in the state
+    this.setState(
+      {
+        auditMenuActive: !this.state.auditMenuActive,
+      },
+      // after state has been updated,
+      () => {
+        // set the class in state for the navbar accordingly
+        this.state.auditMenuActive
+          ? this.setState({ auditMenuActiveClass: "is-active" })
+          : this.setState({ auditMenuActiveClass: "" })
       }
     )
   }
@@ -57,11 +85,11 @@ class Navbar extends React.Component {
         <div className="container-max-width">
           <div className="container">
             <div className="navbar-brand">
-              <Link to="/" className="navbar-item" title="Logo">
+              <Link to="/" className="navbar-item navbar-item-logo" title="Logo">
                 <img
                   src={logoBlack}
                   alt="Next and Co"
-                  style={{ width: "175px" }}
+                  style={{ height: "17px" }}
                 />
               </Link>
               {/* Hamburger menu */}
@@ -91,31 +119,29 @@ class Navbar extends React.Component {
                 <Link
                   className="navbar-item"
                   to="/#capabilities"
-                  activeClassName="active"
                 >
                   Capabilities
                 </Link>
                 <Link
                   className="navbar-item"
                   to="/case-studies"
-                  activeClassName="active"
                 >
                   Case Studies
                 </Link>
                 <Link
                   className="navbar-item"
                   to="/about"
-                  activeClassName="active"
                 >
                   About
                 </Link>
-                <Link
-                  className="navbar-item"
-                  to="/#our-audits"
-                  activeClassName="active"
+                <button
+                  className={`navbar-item navbar-item-audit ${this.state.auditMenuActiveClass}`}
+                  data-target="navMenu"
+                  label="Toggle Navigation"
+                  onClick={() => this.toggleAuditMenu()}
                 >
                   Our Audits
-                </Link>
+                </button>
                 <button
                   className={`navbar-item navbar-item-contact ${this.state.contactActiveClass}`}
                   data-target="navMenu"
@@ -125,6 +151,55 @@ class Navbar extends React.Component {
                   Contact
                 </button>
               </div>
+              <section
+                id="audit-menu-container"
+                className={`${this.state.auditMenuActiveClass}`}>
+                <div className="outer-container">
+                  <div className="container-max-width">
+                    <button
+                      className={`audit-close ${this.state.navBarActiveClass}`}
+                      data-target="navMenu"
+                      label="Toggle Navigation"
+                      onClick={() => this.toggleAuditMenu()}
+                    >
+                      <span className="left" />
+                      <span className="right" />
+                    </button>
+                    <div className="inner-container">
+                      <Link
+                        className="navbar-item"
+                        to="/digital-media-audit"
+                      >
+                        <img src={dmImage} alt="" className="background" />
+                        <div className="content">
+                          <img src={dmIcon} alt="" className="icon" />
+                          Digital Media Audit
+                        </div>
+                      </Link>
+                      <Link
+                        className="navbar-item"
+                        to="/organic-search-audit"
+                      >
+                        <img src={osImage} alt="" className="background" />
+                        <div className="content">
+                          <img src={osIcon} alt="" className="icon" />
+                          Search Engine Optimisation Audit
+                        </div>
+                      </Link>
+                      <Link
+                        className="navbar-item"
+                        to="/conversion-rate-optimisation-audit"
+                      >
+                        <img src={croImage} alt="" className="background" />
+                        <div className="content">
+                          <img src={croIcon} alt="" className="icon" />
+                          Conversion Rate Optimisation Audit
+                        </div>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </section>
               <section
                 id="contact-form-container"
                 className={`${this.state.contactActiveClass}`}

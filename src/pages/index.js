@@ -137,9 +137,8 @@ class IndexPage extends React.Component {
                     <ul>
                       <li><p>UX/CX Design</p></li>
                       <li><p>Web &amp; App Design</p></li>
-                      <li><p>Creative</p></li>
-                      <li><p>Content</p></li>
-                      <li><p>Branding</p></li>
+                      <li><p>Creative & Content Production</p></li>
+                      <li><p>Conversion Rate Optimisation</p></li>
                       <li><p>CRM &amp; Loyalty</p></li>
                     </ul>
                   </div>
