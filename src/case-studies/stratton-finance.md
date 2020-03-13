@@ -13,7 +13,7 @@ tags:
   description: Stratton were not seeing growth in organic traffic and rankings for relevant ‘car finance’ related keywords and were looking to an agency who could significantly influence uplift within their organic search presence.
   title: Experience
 02section:
-  title: Experience
+  title: Methodology
   heading: Methodology
   description: Next&Co reverse engineered the ranking factors that were working for the websites who held top page ranking for Stratton’s target phrases.  The gap in between these sites and Stratton was identified, with a projectised plan to close the gap and thereby improve Stratton’s rankings. This involved a variety of different tactics such as expanding on-site content and outreach activities designed to build up the domain authority.
 03section:

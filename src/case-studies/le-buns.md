@@ -27,7 +27,7 @@ relatedwork:
   link1: "/case-studies/whizz/"
   description1: Whizz are Australia’s leading home cleaning services with over 5,000 cleaners on demand platform for both mobile and web applications.
   heading2: Stratton Finance
-  link2: "/case-studies/stratton-finances/"
+  link2: "/case-studies/stratton-finance/"
   description2: Stratton Finance are the leading car finance website in Australia, assisting Australians with buying their new car.
 careers:
   description1: ", eager to learn, create, and collaborate."

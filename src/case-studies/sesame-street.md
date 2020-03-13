@@ -13,7 +13,7 @@ tags:
   description: Sesame Street (in partnership with Lifelike Touring) where performing a live show across the country and wanted to execute a digital-only campaign to drive ticket sales. The brand had never engaged their audience with direct response marketing and were unsure which audiences purchase tickets to the live shows.
   title: Experience
 02section:
-  title: Experience
+  title: Design
   heading: Methodology
   description: Next&Co implemented an audience-first pilot campaign and tested different creative messaging across search, social, video and display to see which audiences would resonate with which message. Once the highest converting audience/message segments were identified budget splits across each channel were flighted accordingly to achieve the ticket sales KPI set by the client. Performance and budget shifting occurred on a daily basis to ensure the correct audience had the optimal amount of spend to increase ticket sales
 03section:
