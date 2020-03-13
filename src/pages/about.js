@@ -45,7 +45,7 @@ const AboutPage = ({ data }) => {
                    backgroundPosition: `center center`,
                    backgroundSize: `100% 100%`,
                    backgroundRepeat: `no-repeat`,
-                   backgroundAttachment: `cover`,
+                   backgroundSize: `cover`,
                  }}
         >
           <div className="outer-container">
