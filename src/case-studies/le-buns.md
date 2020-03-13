@@ -24,8 +24,10 @@ tags:
   description2: Increase in overall traffic
 relatedwork:
   heading1: Whizz
+  link1: "/case-studies/whizz/"
   description1: Whizz are Australia’s leading home cleaning services with over 5,000 cleaners on demand platform for both mobile and web applications.
   heading2: Sesame Street
+  link2: "/case-studies/whizz/"
   description2: With an abundance of iconic characters instantly recognisable across multiple generations.
 careers:
   description1: ", eager to learn, create, and collaborate."

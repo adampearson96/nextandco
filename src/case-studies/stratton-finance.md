@@ -28,8 +28,10 @@ tags:
   description4: Increase in conversions
 relatedwork:
   heading1: Whizz
+  link1: "/case-studies/whizz/"
   description1: Whizz are Australia’s leading home cleaning services with over 5,000 cleaners on demand platform for both
   heading2: Le Buns
+  link2: "/case-studies/le-buns/"
   description2: Le Buns is an up and coming Australian swimwear label that puts sustainability and environmental consciousness at the centre of what they do.
 careers:
   description1: ", eager to learn, create, and collaborate."

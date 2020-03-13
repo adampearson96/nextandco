@@ -28,8 +28,10 @@ tags:
   description4: Increase in ad recall
 relatedwork:
   heading1: Le Buns
+  link1: "/case-studies/le-buns/"
   description1: Le Buns is an up and coming Australian swimwear label that puts sustainability and environmental consciousness at the centre of what they do.
   heading2: Stratton Finance
+  link2: "/case-studies/stratton-finance/"
   description2: Stratton Finance are the leading car finance website in Australia, assisting Australians with buying their new car.
 careers:
   description1: ", eager to learn, create, and collaborate."

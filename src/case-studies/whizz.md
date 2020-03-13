@@ -27,12 +27,12 @@ tags:
   heading4: 135%
   description4: increase in new customer acquisition
 relatedwork:
-  heading1: Sesame Street
-  description1: With an abundance of iconic characters instantly recognisable across multiple generations.
-  image1: /le-buns/00/le-buns-00-hero.jpg
-  heading2: Stratton Finance
-  description2: Stratton Finance are the leading car finance website in Australia, assisting Australians with buying their new car.
-  image2: /stratton-finance/00/stratton-finance-00-hero.jpg
+  heading1: Stratton Finance
+  link1: "/case-studies/stratton-finance/"
+  description1: Stratton Finance are the leading car finance website in Australia, assisting Australians with buying their new car.
+  heading2: Sesame Street
+  link2: "/case-studies/sesame-street/"
+  description2: With an abundance of iconic characters instantly recognisable across multiple generations.
 careers:
   description1: ", eager to learn, create, and collaborate."
   link1: /link1
