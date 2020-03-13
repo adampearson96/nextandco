@@ -2,6 +2,8 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import HeroSection from "../components/herosection"
+import aboutuswhowearehero from "../images/about-us-who-we-are-hero.jpg"
+import aboutusourcorevalueshero from "../images/about-us-our-core-values-hero.jpg"
 
 import "../scss/about.scss"
 
@@ -25,6 +27,8 @@ const AboutPage = ({ data }) => {
                     We exist to make the digital world a better place. Our goal
                     is to work with our clients to define what ‘better’ looks
                     like and how it can be measured in a digital environment.
+                  </p>
+                  <p>
                     More sales, enquiries, downloads, or any other form of
                     engagement – we take accountability for measuring the
                     outcomes of our work and the pursuit of continuous
@@ -35,7 +39,15 @@ const AboutPage = ({ data }) => {
             </div>
           </div>
         </section>
-        <section id="row-two">
+        <section id="row-two"
+                 style={{
+                   backgroundImage: `url(${aboutuswhowearehero})`,
+                   backgroundPosition: `center center`,
+                   backgroundSize: `100% 100%`,
+                   backgroundRepeat: `no-repeat`,
+                   backgroundAttachment: `cover`,
+                 }}
+        >
           <div className="outer-container">
             <div className="container-max-width">
               <div className="inner-container">
@@ -55,7 +67,7 @@ const AboutPage = ({ data }) => {
         <section id="row-three">
           <div className="outer-container">
             <div className="container-max-width">
-              <div className="inner-container">
+              <div className="inner-container row">
                 <div className="col-one">
                   <h2>Our core values</h2>
                   <div className="list-items">
@@ -67,7 +79,7 @@ const AboutPage = ({ data }) => {
                       </div>
                     </div>
                     <div className="list-item">
-                      <span className="number">'02'</span>
+                      <span className="number">02</span>
                       <div className="content">
                         <h3>Continuous Learning</h3>
                         <p>Be humble and always aim to know more tomorrow</p>
@@ -96,7 +108,9 @@ const AboutPage = ({ data }) => {
                     </div>
                   </div>
                 </div>
-                <div className="col-two"></div>
+                <div className="col-two">
+                  <img src={aboutusourcorevalueshero} alt="" />
+                </div>
               </div>
             </div>
           </div>
