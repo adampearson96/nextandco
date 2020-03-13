@@ -124,9 +124,13 @@ const AboutPage = ({ data }) => {
                     Many of Australia's leading businesses partner with us, you
                     should too.
                   </h3>
-                  <Link to="/contact" className="btn">
-                    Get in touch
-                  </Link>
+                  <button
+                  className="btn"
+                  label="Toggle Navigation"
+                  onClick={() => this.toggleContact()}
+                >
+                  Get in touch
+                </button>
                 </div>
               </div>
             </div>

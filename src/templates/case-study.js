@@ -259,13 +259,17 @@ const CaseStudy = ({ data }) => {
           </div>
         </BackgroundImage>
 
-         <section id="contact-us">
+        <section id="contact-us">
           <div className="outer-container">
             <div className="container-max-width">
               <div className="inner-container">
-                  <Link to="/contact" className="btn btn-invert">
-                    Get in touch about your project
-                  </Link>
+                <button
+                  className="btn btn-invert"
+                  label="Toggle Navigation"
+                  onClick={() => this.toggleContact()}
+                >
+                  Get in touch about your project
+                </button>
               </div>
             </div>
           </div>

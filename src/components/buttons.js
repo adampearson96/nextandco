@@ -14,13 +14,14 @@ class Buttons extends React.Component {
           >
             {this.props.linktitle1}
           </Link>
-          <Link
+          <button
             to={this.props.link2}
             className="btn btn-invert"
             title={this.props.linktitle2}
+            onClick={() => this.toggleContact()}
           >
             {this.props.linktitle2}
-          </Link>
+          </button>
         </div>
       </section>
     )

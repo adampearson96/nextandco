@@ -491,7 +491,7 @@
     @include devices(ipad) {
       padding-left: $spacing-extra-large;
     }
- 
+
     h2 {
       font-size: 36px;
       line-height: 1.4444444444;
@@ -568,7 +568,7 @@
   }
 
   .btn {
-    margin: 0 auto;
+    align-self: center;
     padding:0 $spacing-extra-large;
   }
 }
