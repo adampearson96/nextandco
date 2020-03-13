@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import Img from "gatsby-image"
 import logoBlack from "../images/logo-black.svg"
 import mobileBackground from "../images/mobilebackground.png"
 import "../scss/navbar.scss"

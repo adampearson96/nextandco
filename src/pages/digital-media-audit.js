@@ -1,11 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import AuditHeroSection from "../components/auditherosection"
 
-import section02image1 from "../images/digital-media-icon-1.svg"
-import section02image2 from "../images/digital-media-icon-2.svg"
-import section02image3 from "../images/digital-media-icon-3.svg"
 import iconstopwatch from "../images/icon-stopwatch.svg"
 import iconlightbulb from "../images/icon-light-bulb.svg"
 import icondata from "../images/icon-data.svg"
