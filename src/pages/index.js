@@ -1,5 +1,6 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
+import HomepageSlides from "../components/homepageSlides"
 import Layout from "../components/layout"
 import Audits from "../components/audits"
 import Buttons from "../components/buttons"
@@ -59,8 +60,10 @@ class IndexPage extends React.Component {
   render() {    
     return (
       <Layout>
-        <div id="homepage-scroller">
-          <section className={this.state.activeSlide === 1 ? 'home-section home-section-1 is-active' : 'home-section home-section-1'}>
+        {/* <div id="homepage-scroller">
+          <Link 
+            className={this.state.activeSlide === 1 ? 'home-section home-section-1 is-active' : 'home-section home-section-1'}
+            to="/case-studies/whizz">
             <div 
               className="background-image" 
               style={{ backgroundImage: `url(${whizz})`}}>
@@ -74,8 +77,10 @@ class IndexPage extends React.Component {
               <h2>Clean your house mate</h2>
               <p>Our full service strategy made these guys some money.</p>
             </div>
-          </section>
-          <section className={this.state.activeSlide === 2 ? 'home-section home-section-2 is-active' : 'home-section home-section-2'}>
+          </Link>
+          <Link
+            className={this.state.activeSlide === 2 ? 'home-section home-section-2 is-active' : 'home-section home-section-2'}
+            to="/case-studies/le-buns">
             <div className="background-image" style={{ backgroundImage: `url(${lebuns})`}}>
               <div className="slide-number-wrapper container-max-width">
                 02.
@@ -87,34 +92,39 @@ class IndexPage extends React.Component {
               <h2>Clean your house mate</h2>
               <p>Our full service strategy made these guys some money.</p>
             </div>
-          </section>
-          <section className={this.state.activeSlide === 3 ? 'home-section home-section-3 is-active' : 'home-section home-section-3'}>
-            <div className="background-image" style={{ backgroundImage: `url(${strattonfinance})`}}>
-              <div className="slide-number-wrapper container-max-width">
-                03.
-                <span className="line"></span>
-                selected works
+          </Link>
+          <Link 
+            className={this.state.activeSlide === 3 ? 'home-section home-section-3 is-active' : 'home-section home-section-3'}
+            to="/case-studies/stratton-finance">
+              <div className="background-image" style={{ backgroundImage: `url(${strattonfinance})`}}>
+                <div className="slide-number-wrapper container-max-width">
+                  03.
+                  <span className="line"></span>
+                  selected works
+                </div>
               </div>
-            </div>
-            <div className="slide-content-wrapper container-max-width">
-              <h2>Clean your house mate</h2>
-              <p>Our full service strategy made these guys some money.</p>
-            </div>
-          </section>
-          <section className={this.state.activeSlide === 4 ? 'home-section home-section-4 is-active' : 'home-section home-section-4'}>
-            <div className="background-image" style={{ backgroundImage: `url(${sesamestreet})`}}>
-              <div className="slide-number-wrapper container-max-width">
-                04.
-                <span className="line"></span>
-                selected works
+              <div className="slide-content-wrapper container-max-width">
+                <h2>Clean your house mate</h2>
+                <p>Our full service strategy made these guys some money.</p>
               </div>
-            </div>
-            <div className="slide-content-wrapper container-max-width">
-              <h2>Clean your house mate</h2>
-              <p>Our full service strategy made these guys some money.</p>
-            </div>
-          </section>
-        </div>
+          </Link>
+          <Link
+            className={this.state.activeSlide === 4 ? 'home-section home-section-4 is-active' : 'home-section home-section-4'}
+            to="/case-studies/sesame-street">
+              <div className="background-image" style={{ backgroundImage: `url(${sesamestreet})`}}>
+                <div className="slide-number-wrapper container-max-width">
+                  04.
+                  <span className="line"></span>
+                  selected works
+                </div>
+              </div>
+              <div className="slide-content-wrapper container-max-width">
+                <h2>Clean your house mate</h2>
+                <p>Our full service strategy made these guys some money.</p>
+              </div>
+          </Link>
+        </div> */}
+        <HomepageSlides />
         <section id="capabilities" className="row-capabiltiies">
           <div className="outer-container">
             <div className="container-max-width">

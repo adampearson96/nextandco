@@ -1,0 +1,113 @@
+@import "global.scss";
+
+.home-section {
+  background: transparent;
+  height: 100vh;
+  
+  a {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  .background {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+  .number-wrapper {
+    display: block;
+    position: relative;
+    padding: $spacing-extra-large*2 $spacing-small $spacing-small $spacing-small;
+    font-family: $ScandiaBold;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 700;
+    color: $color-white;
+    text-transform: uppercase;
+    opacity: 0;
+    @include devices(computer) {
+      padding: 0 $spacing-extra-large $spacing-extra-large $spacing-extra-large;
+    }
+    span.line {
+      display: inline-block;
+      width: 120px;
+      height: 1px;
+      margin: 0 $spacing-small;
+      background-color: $color-white;
+      vertical-align: middle;
+    }
+  }
+  .content-wrapper {
+    display: block;
+    position: relative;
+    padding: $spacing-small;
+    opacity: 0;
+    @include devices(computer) {
+      padding: $spacing-extra-large * 2;
+    }
+    h2 {
+      font-family: $ScandiaBold;
+      font-size: 68px;
+      line-height: 1;
+      font-weight: 700;
+      color: $color-white;
+      @include devices(computer) {
+        max-width: 50%;
+      }
+    }
+    p {
+      font-family: $AbhayaLibre;
+      font-size: 24px;
+      line-height: 1.4166666667;
+      font-weight: 400;
+      color: $color-white;
+      @include devices(computer) {
+        max-width: 50%;
+      }
+    }
+  }
+  &.home-section-1 {
+    .background {
+      background-image: url(../case-studies/whizz/00/whizz-00-hero.jpg);
+    }
+  }
+  &.home-section-2 {
+    .background {
+      background-image: url(../case-studies/le-buns/00/le-buns-00-hero.jpg);
+    }
+  }
+  &.home-section-3 {
+    .background {
+      background-image: url(../case-studies/stratton-finance/00/stratton-finance-00-hero.jpg);
+    }
+  }
+  &.home-section-4 {
+    .background {
+      background-image: url(../case-studies/sesame-street/00/sesame-street-00-hero.jpg);
+    }
+  }
+  &.is-active {
+    .background {
+      opacity: 1;
+      transition: opacity 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    .number-wrapper {
+      opacity: 1;
+      transition: opacity 500ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    .content-wrapper {
+      opacity: 1;
+      transition: opacity 600ms cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+  }
+}
