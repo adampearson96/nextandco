@@ -26,7 +26,9 @@
   }
   .number-wrapper {
     display: block;
-    position: relative;
+    position: fixed;
+    top: 10vh;
+    left: 0;
     padding: $spacing-extra-large*2 $spacing-small $spacing-small $spacing-small;
     font-family: $ScandiaBold;
     font-size: 16px;
@@ -37,6 +39,7 @@
     opacity: 0;
     @include devices(computer) {
       padding: 0 $spacing-extra-large $spacing-extra-large $spacing-extra-large;
+      top: 25vh;
     }
     span.line {
       display: inline-block;
@@ -95,8 +98,17 @@
     .background {
       background-image: url(../case-studies/sesame-street/00/sesame-street-00-hero.jpg);
     }
-    .content-wrapper {
+    .number-wrapper {
       color: $color-black;
+      span.line {
+        background-color: $color-black;
+      }
+    }
+    .content-wrapper {
+      h2,
+      p {
+        color: $color-black;
+      }
     }
   }
   &.is-active {

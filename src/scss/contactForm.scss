@@ -15,7 +15,8 @@
   z-index: -1;
   pointer-events: none;
   visibility: hidden;
-
+  overflow-y: scroll;
+  overflow-x: hidden;
   @include devices(ipad) {
     top: calc(17px + (#{$spacing-small} * 2));
     height: calc((100vh - 17px) - (#{$spacing-small} * 2));

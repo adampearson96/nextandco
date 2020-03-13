@@ -1,14 +1,9 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import HomepageSlides from "../components/homepageSlides"
 import Layout from "../components/layout"
 import Audits from "../components/audits"
 import Buttons from "../components/buttons"
-
-import lebuns from "../case-studies/le-buns/00/le-buns-00-hero.jpg"
-import sesamestreet from "../case-studies/sesame-street/00/sesame-street-00-hero.jpg"
-import strattonfinance from "../case-studies/stratton-finance/00/stratton-finance-00-hero.jpg"
-import whizz from "../case-studies/whizz/00/whizz-00-hero.jpg"
 
 import "../scss/index.scss"
 
@@ -60,70 +55,6 @@ class IndexPage extends React.Component {
   render() {    
     return (
       <Layout>
-        {/* <div id="homepage-scroller">
-          <Link 
-            className={this.state.activeSlide === 1 ? 'home-section home-section-1 is-active' : 'home-section home-section-1'}
-            to="/case-studies/whizz">
-            <div 
-              className="background-image" 
-              style={{ backgroundImage: `url(${whizz})`}}>
-              <div className="slide-number-wrapper container-max-width">
-                01.
-                <span className="line"></span>
-                selected works
-              </div>
-            </div>
-            <div className="slide-content-wrapper container-max-width">
-              <h2>Clean your house mate</h2>
-              <p>Our full service strategy made these guys some money.</p>
-            </div>
-          </Link>
-          <Link
-            className={this.state.activeSlide === 2 ? 'home-section home-section-2 is-active' : 'home-section home-section-2'}
-            to="/case-studies/le-buns">
-            <div className="background-image" style={{ backgroundImage: `url(${lebuns})`}}>
-              <div className="slide-number-wrapper container-max-width">
-                02.
-                <span className="line"></span>
-                selected works
-              </div>
-            </div>
-            <div className="slide-content-wrapper container-max-width">
-              <h2>Clean your house mate</h2>
-              <p>Our full service strategy made these guys some money.</p>
-            </div>
-          </Link>
-          <Link 
-            className={this.state.activeSlide === 3 ? 'home-section home-section-3 is-active' : 'home-section home-section-3'}
-            to="/case-studies/stratton-finance">
-              <div className="background-image" style={{ backgroundImage: `url(${strattonfinance})`}}>
-                <div className="slide-number-wrapper container-max-width">
-                  03.
-                  <span className="line"></span>
-                  selected works
-                </div>
-              </div>
-              <div className="slide-content-wrapper container-max-width">
-                <h2>Clean your house mate</h2>
-                <p>Our full service strategy made these guys some money.</p>
-              </div>
-          </Link>
-          <Link
-            className={this.state.activeSlide === 4 ? 'home-section home-section-4 is-active' : 'home-section home-section-4'}
-            to="/case-studies/sesame-street">
-              <div className="background-image" style={{ backgroundImage: `url(${sesamestreet})`}}>
-                <div className="slide-number-wrapper container-max-width">
-                  04.
-                  <span className="line"></span>
-                  selected works
-                </div>
-              </div>
-              <div className="slide-content-wrapper container-max-width">
-                <h2>Clean your house mate</h2>
-                <p>Our full service strategy made these guys some money.</p>
-              </div>
-          </Link>
-        </div> */}
         <HomepageSlides />
         <section id="capabilities" className="row-capabiltiies">
           <div className="outer-container">
