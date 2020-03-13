@@ -23,6 +23,7 @@
     opacity: 0;
     z-index: -1;
     pointer-events: none;
+    transition: opacity 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
   }
   .number-wrapper {
     display: block;
@@ -35,6 +36,7 @@
     color: $color-white;
     text-transform: uppercase;
     opacity: 0;
+    transition: opacity 500ms cubic-bezier(0.25, 0.1, 0.25, 1);
     @include devices(computer) {
       padding: 0 $spacing-extra-large $spacing-extra-large $spacing-extra-large;
     }
@@ -52,6 +54,7 @@
     position: relative;
     padding: $spacing-small;
     opacity: 0;
+    transition: opacity 600ms cubic-bezier(0.25, 0.1, 0.25, 1);
     @include devices(computer) {
       padding: $spacing-extra-large * 2;
     }
