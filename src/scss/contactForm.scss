@@ -8,14 +8,15 @@
   top: 0;
   left: 0;
   z-index: 99;
-  background: rgba(255, 255, 255, 0.95);
+  background: $color-white;
   transition: opacity 250ms ease-in;
   padding: $spacing-small;
   opacity: 0;
   z-index: -1;
   pointer-events: none;
   visibility: hidden;
-
+  overflow-y: scroll;
+  overflow-x: hidden;
   @include devices(ipad) {
     top: calc(17px + (#{$spacing-small} * 2));
     height: calc((100vh - 17px) - (#{$spacing-small} * 2));
@@ -98,7 +99,7 @@
           font-weight: bold;
           max-height: 64px;
           font-size: 26px;
-          border-bottom: 2px solid $color-black;
+          border-bottom: 1px solid $color-black;
           margin-bottom: $spacing-small;
           font-family: $ScandiaMedium;
           @include responsive-font(1vw, 14px, 38px);

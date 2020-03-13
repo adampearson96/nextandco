@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Link } from "gatsby"; 
 import { Controller, Scene } from 'react-scrollmagic';
 
@@ -14,7 +13,7 @@ const HomepageSlides = () => (
           <div className="number-wrapper">01 <span className="line"></span> selected works</div>
           <div className="content-wrapper">
             <h2>Clean your house mate</h2>
-            <p>Our full service strategy made these guys some money</p>
+            <p>Whizz are Australia’s leading home cleaning services with over 5,000 cleaners on demand platform for both mobile and web applications.</p>
           </div>
         </Link>
       </div>
@@ -26,7 +25,7 @@ const HomepageSlides = () => (
           <div className="number-wrapper">02 <span className="line"></span> selected works</div>
           <div className="content-wrapper">
             <h2>Le Buns</h2>
-            <p>Lorem Ipsum</p>
+            <p>Le Buns is an up and coming Australian swimwear label that puts sustainability and environmental consciousness at the centre of what they do.</p>
           </div>
         </Link>
       </div>
@@ -38,7 +37,7 @@ const HomepageSlides = () => (
           <div className="number-wrapper">03 <span className="line"></span> selected works</div>
           <div className="content-wrapper">
             <h2>Stratton Finance</h2>
-            <p>Lorem Ipsum</p>
+            <p>Stratton Finance are the leading car finance website in Australia, assisting Australians with buying their new car.</p>
           </div>
         </Link>
       </div>
@@ -50,7 +49,7 @@ const HomepageSlides = () => (
           <div className="number-wrapper">04 <span className="line"></span> selected works</div>
           <div className="content-wrapper">
             <h2>Sesame Street</h2>
-            <p>Lorem Ipsum</p>
+            <p>With an abundance of iconic characters instantly recognisable across multiple generations.</p>
           </div>
         </Link>
       </div>
