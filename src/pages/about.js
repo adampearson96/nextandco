@@ -43,7 +43,6 @@ const AboutPage = ({ data }) => {
                  style={{
                    backgroundImage: `url(${aboutuswhowearehero})`,
                    backgroundPosition: `center center`,
-                   backgroundSize: `100% 100%`,
                    backgroundRepeat: `no-repeat`,
                    backgroundSize: `cover`,
                  }}
