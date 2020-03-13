@@ -3,7 +3,7 @@
 .home-section {
   background: transparent;
   height: 100vh;
-  
+
   a {
     display: flex;
     flex-flow: column nowrap;
@@ -23,6 +23,8 @@
     opacity: 0;
     z-index: -1;
     pointer-events: none;
+    background-size: cover;
+    background-position: center center;
   }
   .number-wrapper {
     display: block;
@@ -96,7 +98,7 @@
   }
   &.home-section-4 {
     .background {
-      background-image: url(../case-studies/sesame-street/00/sesame-street-00-hero.jpg);
+      background-image: url(../case-studies/sesame-street/00/sesame-street-00-hero-alternative.jpg);
     }
     .number-wrapper {
       color: $color-black;
