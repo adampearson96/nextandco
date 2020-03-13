@@ -95,6 +95,9 @@
     .background {
       background-image: url(../case-studies/sesame-street/00/sesame-street-00-hero.jpg);
     }
+    .content-wrapper {
+      color: $color-black;
+    }
   }
   &.is-active {
     .background {
