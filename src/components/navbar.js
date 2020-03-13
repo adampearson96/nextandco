@@ -121,12 +121,12 @@ class Navbar extends React.Component {
                 >
                   Capabilities
                 </Link>
-                {/* <Link
+                <Link
                   className="navbar-item"
-                  to="/case-studies"
+                  to="/#homepage-scroller"
                 >
                   Case Studies
-                </Link> */}
+                </Link>
                 <Link
                   className="navbar-item"
                   to="/about"
