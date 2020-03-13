@@ -24,7 +24,7 @@
 button,
 .btn {
   border: 1px solid $color-black;
-  padding: $spacing-extra-small $spacing-extra-large;
+  padding: 0 $spacing-extra-large;
   text-decoration: none;
   text-align: center;
   background-color: $color-white;
@@ -32,6 +32,7 @@ button,
   transition: all .2s ease;
   font-family: $ScandiaBold;
   font-size: 16px;
+  line-height: 3;
 
   &.btn-invert {
     background-color: $color-black;

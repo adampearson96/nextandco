@@ -1,9 +1,15 @@
-<svg width="36" height="31" viewBox="0 0 36 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.3 19.3L8 23.6L13.3 27.9" stroke="#999999" stroke-width="1.44" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M23 19.3L28.3 23.6L23 27.9" stroke="#999999" stroke-width="1.44" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M19.7996 17.2001L17.0996 30.0001" stroke="#999999" stroke-width="1.44" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M34.6002 1H1.7002V30C20.1002 30 25.2002 30 34.6002 30V1Z" stroke="#999999" stroke-width="1.44" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M34.6002 7.90002H1.7002" stroke="#999999" stroke-width="1.44" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M30.4998 3.80005C30.0998 3.80005 29.7998 4.10005 29.7998 4.50005C29.7998 4.90005 30.0998 5.20005 30.4998 5.20005C30.8998 5.20005 31.1998 4.90005 31.1998 4.50005C31.1998 4.20005 30.8998 3.80005 30.4998 3.80005Z" stroke="#999999" stroke-width="1.44" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M25.7995 3.80005C25.3995 3.80005 25.0995 4.10005 25.0995 4.50005C24.9995 5.00005 25.3995 5.30005 25.7995 5.30005C26.1995 5.30005 26.4995 5.00005 26.4995 4.60005C26.4995 4.20005 26.1995 3.80005 25.7995 3.80005Z" stroke="#999999" stroke-width="1.44" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 36 31" style="enable-background:new 0 0 36 31;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:1.44;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256;}
+</style>
+<path class="st0" d="M13.3,19.3L8,23.6l5.3,4.3"/>
+<path class="st0" d="M23,19.3l5.3,4.3L23,27.9"/>
+<path class="st0" d="M19.8,17.2L17.1,30"/>
+<path class="st0" d="M34.6,1H1.7v29c18.4,0,23.5,0,32.9,0V1z"/>
+<path class="st0" d="M34.6,7.9H1.7"/>
+<path class="st0" d="M30.5,3.8c-0.4,0-0.7,0.3-0.7,0.7s0.3,0.7,0.7,0.7s0.7-0.3,0.7-0.7C31.2,4.2,30.9,3.8,30.5,3.8z"/>
+<path class="st0" d="M25.8,3.8c-0.4,0-0.7,0.3-0.7,0.7C25,5,25.4,5.3,25.8,5.3s0.7-0.3,0.7-0.7S26.2,3.8,25.8,3.8z"/>
 </svg>

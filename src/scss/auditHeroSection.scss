@@ -89,6 +89,7 @@
           line-height: 2.25;
           text-align: center;
           margin-top: 0;
+          text-align: left;
 
           @include devices(computer) {
             font-size: 21px;
@@ -138,6 +139,9 @@
             // padding: 0 $spacing-small;
             // max-width: 100%;
             // width: 100%;
+            -webkit-box-shadow: 2px 0px 15px 0px rgba(0,0,0,0.24);
+            -moz-box-shadow: 2px 0px 15px 0px rgba(0,0,0,0.24);
+            box-shadow: 2px 0px 15px 0px rgba(0,0,0,0.24);
           }
         }
       }

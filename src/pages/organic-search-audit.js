@@ -1,18 +1,14 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import AuditHeroSection from "../components/auditherosection"
 
-import section02image from "../images/organic-search-image-02.png"
-import section03image from "../images/organic-search-image-03.png"
-import section04image from "../images/organic-search-image-04.png"
 import icondata from "../images/icon-data.svg"
 import iconroadmap from "../images/icon-roadmap.svg"
 import iconmagnifyingglass from "../images/icon-magnifying-glass.svg"
 import icongraph from "../images/icon-graph.svg"
 import heroimage from "../images/organic-search-audit-hero.jpg"
 import audithelpdevice from "../images/organic-search-audit-help-device.png"
-import audithelpscorecard from "../images/organic-search-audit-help-scorecard.jpg"
+import audithelpscorecard from "../images/organic-search-audit-help-scorecard.png"
 
 import "../scss/organicSearchAudit.scss"
 
@@ -61,9 +57,6 @@ const AuditOrganicSearch = () => {
                   <img src={audithelpdevice} alt="" />
                 </div>
                 <div className="col">
-                  <p>
-                    A preview of what to expect from our <strong>Organic Search Audit</strong>.
-                  </p>
                   <img src={audithelpscorecard} alt="" />
                 </div>
               </div>
