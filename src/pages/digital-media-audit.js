@@ -12,7 +12,7 @@ import icondata from "../images/icon-data.svg"
 import iconroadmap from "../images/icon-roadmap.svg"
 import heroimage from "../images/digital-media-audit-hero.jpg"
 import audithelpdevice from "../images/digital-media-audit-help-device.png"
-import audithelpscorecard from "../images/digital-media-audit-help-scorecard.jpg"
+import audithelpscorecard from "../images/digital-media-audit-help-scorecard.png"
 
 import "../scss/digitalMediaAudit.scss"
 
@@ -61,9 +61,6 @@ const AuditDigitalMedia = ({ data }) => {
                   <img src={audithelpdevice} alt="" />
                 </div>
                 <div className="col">
-                  <p>
-                    A preview of what to expect from our <strong>Digital Media Audit</strong>.
-                  </p>
                   <img src={audithelpscorecard} alt="" />
                 </div>
               </div>

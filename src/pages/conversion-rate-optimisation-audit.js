@@ -9,7 +9,7 @@ import iconcomputers from "../images/icon-computers.svg"
 import iconcode from "../images/icon-code.svg"
 import heroimage from "../images/conversion-rate-optimisation-audit-hero.jpg"
 import audithelpdevice from "../images/conversion-rate-optimisation-audit-help-device.png"
-import audithelpscorecard from "../images/conversion-rate-optimisation-audit-help-scorecard.jpg"
+import audithelpscorecard from "../images/conversion-rate-optimisation-audit-help-scorecard.png"
 
 import "../scss/conversionRateOptimisationAudit.scss"
 import "../scss/buttons.scss"
@@ -59,9 +59,6 @@ const AuditConversionRateOptimisation = () => {
                   <img src={audithelpdevice} alt="" />
                 </div>
                 <div className="col">
-                  <p>
-                    A preview of what to expect from our <strong>Converstion Rate Optimisation Audit</strong>.
-                  </p>
                   <img src={audithelpscorecard} alt="" />
                 </div>
               </div>

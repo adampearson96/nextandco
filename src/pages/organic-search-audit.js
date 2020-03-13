@@ -12,7 +12,7 @@ import iconmagnifyingglass from "../images/icon-magnifying-glass.svg"
 import icongraph from "../images/icon-graph.svg"
 import heroimage from "../images/organic-search-audit-hero.jpg"
 import audithelpdevice from "../images/organic-search-audit-help-device.png"
-import audithelpscorecard from "../images/organic-search-audit-help-scorecard.jpg"
+import audithelpscorecard from "../images/organic-search-audit-help-scorecard.png"
 
 import "../scss/organicSearchAudit.scss"
 
@@ -61,9 +61,6 @@ const AuditOrganicSearch = () => {
                   <img src={audithelpdevice} alt="" />
                 </div>
                 <div className="col">
-                  <p>
-                    A preview of what to expect from our <strong>Organic Search Audit</strong>.
-                  </p>
                   <img src={audithelpscorecard} alt="" />
                 </div>
               </div>
