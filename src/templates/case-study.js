@@ -145,12 +145,10 @@ const CaseStudy = ({ data }) => {
           <div className="outer-container">
             <div className="container-max-width">
               <div className="inner-container">
-                <div className="outer-container">
                   <div className="col-one">
                     <h2>{frontmatter._02section.heading}</h2>
                     <p>{frontmatter._02section.description}</p>
                   </div>
-                </div>
               </div>
             </div>
           </div>

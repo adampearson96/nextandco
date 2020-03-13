@@ -33,12 +33,15 @@
       }
 
       span.project-name {
-        display: block;
-        font-family: $ScandiaBold;
+    	font-weight: 400;
+	padding-bottom: $spacing-medium*2;
+	text-transform: uppercase;
         @include responsive-font(1vw, 16px, 40px);
-        line-height: 1;
+        color: $color-black;
+        font-family: $ScandiaBold;
         font-weight: 700;
-        color: #000;
+        line-height: 1;
+	display: block;
       }
 
       h1 {
@@ -99,15 +102,16 @@
   // padding: $spacing-small;
 
   @include devices(computer) {
-    // padding: $spacing-large;
+    padding: $spacing-large;
   }
 
   .inner-container {
     display: block;
     width: 100%;
+    padding: $spacing-small;
 
     @include devices(computer) {
-      // margin: 0 auto;
+      padding: 0;
     }
 
     .col-one {
@@ -225,19 +229,27 @@
   padding: $spacing-small 0;
   overflow: hidden;
 
+  .inner-container {
+    padding: $spacing-small;
+
+    @include devices(computer) {
+      padding: 0;
+    }
+  }
+
   .row-one {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     width: 100%;
     flex: 0 0 auto;
-    padding: $spacing-medium;
+    padding: $spacing-large $spacing-medium;
 
     @include devices(computer) {
       width: 100%;
       justify-content: space-between;
       align-items: flex-start;
-      padding: $spacing-large 0;
+      padding: $spacing-extra-large 0;
     }
 
     span.number {
@@ -265,7 +277,7 @@
 
       @include devices(computer) {
         order: 1;
-        margin-left: 12.5vw;
+        margin-left: $spacing-large;
       }
     }
   }
@@ -323,6 +335,7 @@
     display: block;
     width: 100%;
 
+
     @include devices(computer) {
       // margin: 0 auto;
     }
@@ -330,6 +343,12 @@
     .col-one {
       display: block;
       width: 100%;
+      padding-bottom: $spacing-large;
+
+      @include devices(computer) {
+	padding-left: $spacing-extra-large;
+      }
+
 
       h2 {
         @include responsive-font(3vw, 18px, 36px);
@@ -568,7 +587,7 @@
   }
 
   .btn {
-    align-self: center;
+    margin: 0 auto;
     padding:0 $spacing-extra-large;
   }
 }
