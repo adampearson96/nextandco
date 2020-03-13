@@ -13,11 +13,11 @@ tags:
   description: Whizz we’re looking for rapid scale from new customer acquisitions and increasing share of wallet from existing customers. The key challenge for Whizz was that they needed significant improvements in both the digital media efficiencies and simultaneous improvement within the front-end digital customer experience.
   title: Experience
 02section:
-  title: Design  
+  title: Design
   heading: Methodology
   description: Next&Co conducted an end-to-end audit of the current digital experience including all digital media, web assets and customer life-cycle communications. Using analytics to determine key points of uplift within the customer journey – a roadmap of activity was prioritised and rolled out. Significant effort was put into setting up the correct reporting and optimisation cadence to ensure application of efforts was yielding continuous improvement from results.
 03section:
-  title: Data  
+  title: Data
   heading1: '300'
   description1: Increase in revenue year on year
   heading2: 60%
@@ -27,11 +27,11 @@ tags:
   heading4: 135%
   description4: increase in new customer acquisition
 relatedwork:
-  heading1: Work 01
-  description1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend volutpat libero.
+  heading1: Sesame Street
+  description1: With an abundance of iconic characters instantly recognisable across multiple generations.
   image1: /le-buns/00/le-buns-00-hero.jpg
-  heading2: Work 02
-  description2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend volutpat libero.
+  heading2: Stratton Finance
+  description2: Stratton Finance are the leading car finance website in Australia, assisting Australians with buying their new car.
   image2: /le-buns/00/le-buns-00-hero.jpg
 careers:
   description1: ", eager to learn, create, and collaborate."
@@ -55,6 +55,6 @@ featuredimage: ./whizz/00/whizz-00-hero.jpg
 03sectionimage2: ./whizz/03/whizz-03-02.jpg
 03sectionimage3: ./whizz/03/whizz-03-03.jpg
 03sectionbackgroundimage: ./whizz/03/whizz-03-background.png
-relatedworkimage1: ./le-buns/00/le-buns-00-hero.jpg
-relatedworkimage2: ./le-buns/00/le-buns-00-hero.jpg
+relatedworkimage1: ./stratton-finance/00/stratton-finance-00-hero.jpg
+relatedworkimage2: ./sesame-street/00/sesame-street-00-hero.jpg
 ---

@@ -23,10 +23,10 @@ tags:
   heading2: 20%
   description2: Increase in overall traffic
 relatedwork:
-  heading1: Work 01
-  description1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend volutpat libero.
-  heading2: Work 02
-  description2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend volutpat libero.
+  heading1: Whizz
+  description1: Whizz are Australia’s leading home cleaning services with over 5,000 cleaners on demand platform for both mobile and web applications.
+  heading2: Sesame Street
+  description2: With an abundance of iconic characters instantly recognisable across multiple generations.
 careers:
   description1: ", eager to learn, create, and collaborate."
   link1: /link1
@@ -50,5 +50,5 @@ featuredimage: ./le-buns/00/le-buns-00-hero.jpg
 03sectionimage3: ./le-buns/03/le-buns-03-03.jpg
 03sectionbackgroundimage: ./le-buns/03/le-buns-03-background.jpg
 relatedworkimage1: ./whizz/00/whizz-00-hero.jpg
-relatedworkimage2: ./whizz/00/whizz-00-hero.jpg
+relatedworkimage2: ./sesame-street/00/sesame-street-00-hero.jpg
 ---

@@ -27,10 +27,10 @@ tags:
   heading4: 20%
   description4: Increase in conversions
 relatedwork:
-  heading1: Work 01
-  description1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend volutpat libero.
-  heading2: Work 02
-  description2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend volutpat libero.
+  heading1: Whizz
+  description1: Whizz are Australia’s leading home cleaning services with over 5,000 cleaners on demand platform for both
+  heading2: Le Buns
+  description2: Le Buns is an up and coming Australian swimwear label that puts sustainability and environmental consciousness at the centre of what they do.
 careers:
   description1: ", eager to learn, create, and collaborate."
   link1: /link1
@@ -54,5 +54,5 @@ featuredimage: ./stratton-finance/00/stratton-finance-00-hero.jpg
 03sectionimage3: ./stratton-finance/03/stratton-finance-03-03.jpg
 03sectionbackgroundimage: ./stratton-finance/03/stratton-finance-03-background.png
 relatedworkimage1: ./whizz/00/whizz-00-hero.jpg
-relatedworkimage2: ./whizz/00/whizz-00-hero.jpg
+relatedworkimage2: ./le-buns/00/le-buns-00-hero.jpg
 ---

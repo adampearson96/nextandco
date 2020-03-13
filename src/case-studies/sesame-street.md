@@ -27,10 +27,10 @@ tags:
   heading4: 800%
   description4: Increase in ad recall
 relatedwork:
-  heading1: Work 01
-  description1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend volutpat libero.
-  heading2: Work 02
-  description2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend volutpat libero.
+  heading1: Le Buns
+  description1: Le Buns is an up and coming Australian swimwear label that puts sustainability and environmental consciousness at the centre of what they do.
+  heading2: Stratton Finance
+  description2: Stratton Finance are the leading car finance website in Australia, assisting Australians with buying their new car.
 careers:
   description1: ", eager to learn, create, and collaborate."
   link1: /link1
@@ -53,6 +53,6 @@ featuredimage: ./sesame-street/00/sesame-street-00-hero.jpg
 03sectionimage2: ./sesame-street/03/sesame-street-03-02.jpg
 03sectionimage3: ./sesame-street/03/sesame-street-03-03.jpg
 03sectionbackgroundimage: ./sesame-street/03/sesame-street-03-background.png
-relatedworkimage1: ./whizz/00/whizz-00-hero.jpg
-relatedworkimage2: ./whizz/00/whizz-00-hero.jpg
+relatedworkimage1: ./le-buns/00/le-buns-00-hero.jpg
+relatedworkimage2: ./stratton-finance/00/stratton-finance-00-hero.jpg
 ---
