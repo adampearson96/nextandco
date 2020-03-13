@@ -30,26 +30,6 @@ class IndexPage extends React.Component {
       }
       this.setState({ activeSlide: activeSlide })
     })
-
-    // window.addEventListener('keydown', (e) => {
-    //   e.preventDefault();
-    //   let activeSlide = this.state.activeSlide;
-    //   if(e.keyCode === 38 ) {
-    //     if(activeSlide > 1 ) {
-    //       activeSlide--;
-    //     }
-    //     this.setState({ activeSlide: activeSlide })
-    //   }
-    //   if(e.keyCode === 40) {
-    //     if(activeSlide < 4) {
-    //       activeSlide++;
-    //     }
-    //     if(activeSlide === 4) {
-          
-    //     }
-    //     this.setState({ activeSlide: activeSlide })
-    //   }
-    // })
   }
   
   render() {    
@@ -78,7 +58,7 @@ class IndexPage extends React.Component {
                     <ul>
                       <li><p>UX/CX Design</p></li>
                       <li><p>Web &amp; App Design</p></li>
-                      <li><p>Creative & Content Production</p></li>
+                      <li><p>Creative &amp; Content Production</p></li>
                       <li><p>Conversion Rate Optimisation</p></li>
                       <li><p>CRM &amp; Loyalty</p></li>
                     </ul>
