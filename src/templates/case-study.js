@@ -53,7 +53,7 @@ const CaseStudy = ({ data }) => {
           </div>
         </section>
 
-        <div className="outer-container">
+        <div id="experience-01" className="outer-container">
           <BackgroundImage
             Tag="section"
             id="row-four"
@@ -64,7 +64,7 @@ const CaseStudy = ({ data }) => {
             }}
           >
             <div className="container-max-width">
-              <div className="inner-container">
+              <div className="inner-container row">
                 <div className="col-one">
                   <span className="number">01</span>
                   <h2>{frontmatter._01section.title}</h2>
@@ -75,6 +75,8 @@ const CaseStudy = ({ data }) => {
                     alt=""
                   />
                 </div>
+              </div>
+              <div className="inner-container">
                 <div className="col-three">
                   <Img
                     fluid={
