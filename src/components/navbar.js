@@ -18,11 +18,7 @@ class Navbar extends React.Component {
     super(props)
     this.state = {
       active: false,
-      contactActive: false,
-      auditActive: false,
       navBarActiveClass: "",
-      contactActiveClass: "",
-      auditMenuActiveClass: "",
     }
   }
 
@@ -38,38 +34,6 @@ class Navbar extends React.Component {
         this.state.active
           ? this.setState({ navBarActiveClass: "is-active" })
           : this.setState({ navBarActiveClass: "" })
-      }
-    )
-  }
-
-  toggleContact = () => {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        contactActive: !this.state.contactActive,
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.contactActive
-          ? this.setState({ contactActiveClass: "is-active" })
-          : this.setState({ contactActiveClass: "" })
-      }
-    )
-  }
-
-  toggleAuditMenu = () => {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        auditMenuActive: !this.state.auditMenuActive,
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.auditMenuActive
-          ? this.setState({ auditMenuActiveClass: "is-active" })
-          : this.setState({ auditMenuActiveClass: "" })
       }
     )
   }
@@ -134,32 +98,32 @@ class Navbar extends React.Component {
                   About
                 </Link>
                 <button
-                  className={`navbar-item navbar-item-audit ${this.state.auditMenuActiveClass}`}
+                  className={`navbar-item navbar-item-audit ${this.props.auditMenuActiveClass}`}
                   data-target="navMenu"
                   label="Toggle Navigation"
-                  onClick={() => this.toggleAuditMenu()}
+                  onClick={() => this.props.toggleAuditMenu()}
                 >
                   Our Audits
                 </button>
                 <button
-                  className={`navbar-item navbar-item-contact ${this.state.contactActiveClass}`}
+                  className={`navbar-item navbar-item-contact ${this.props.contactActiveClass}`}
                   data-target="navMenu"
                   label="Toggle Navigation"
-                  onClick={() => this.toggleContact()}
+                  onClick={() => this.props.toggleContact()}
                 >
                   Contact
                 </button>
               </div>
               <section
                 id="audit-menu-container"
-                className={`${this.state.auditMenuActiveClass}`}>
+                className={`${this.props.auditMenuActiveClass}`}>
                 <div className="outer-container">
                   <div className="container-max-width">
                     <button
-                      className={`audit-close ${this.state.navBarActiveClass}`}
+                      className={`audit-close ${this.props.navBarActiveClass}`}
                       data-target="navMenu"
                       label="Toggle Navigation"
-                      onClick={() => this.toggleAuditMenu()}
+                      onClick={() => this.props.toggleAuditMenu()}
                     >
                       <span className="left" />
                       <span className="right" />
@@ -201,7 +165,7 @@ class Navbar extends React.Component {
               </section>
               <section
                 id="contact-form-container"
-                className={`${this.state.contactActiveClass}`}
+                className={`${this.props.contactActiveClass}`}
               >
                 <div className="outer-container">
                   <div className="container-max-width">
@@ -209,7 +173,7 @@ class Navbar extends React.Component {
                       className={`contact-close ${this.state.navBarActiveClass}`}
                       data-target="navMenu"
                       label="Toggle Navigation"
-                      onClick={() => this.toggleContact()}
+                      onClick={() => this.props.toggleContact()}
                     >
                       <span className="left" />
                       <span className="right" />
