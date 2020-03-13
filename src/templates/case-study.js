@@ -6,6 +6,7 @@ import VisibilitySensor from "react-visibility-sensor"
 import Img from "gatsby-image"
 import BackgroundImage from "gatsby-background-image"
 import Layout from "../components/layout"
+import { Link } from "gatsby"
 
 import "../scss/caseStudy.scss"
 
@@ -266,49 +267,58 @@ const CaseStudy = ({ data }) => {
                   <h2>Selected works</h2>
                 </div>
                 <div className="row-two">
+
                   <div className="col-one">
+
                     <div className="image-container">
-                      <Img
-                        fluid={
-                          frontmatter.relatedworkimage1.childImageSharp.fluid
-                        }
-                        alt=""
-                      />
+                      <Link to={frontmatter.relatedwork.link1}>
+                        <Img
+                          fluid={
+                            frontmatter.relatedworkimage1.childImageSharp.fluid
+                          }
+                          alt=""
+                        />
+                      </Link>
                     </div>
                     <div className="content">
                       <h3>{frontmatter.relatedwork.heading1}</h3>
                       <p>{frontmatter.relatedwork.description1}</p>
                     </div>
+
+
                   </div>
                   <div className="col-two">
                     <div className="image-container">
-                      <Img
-                        fluid={
-                          frontmatter.relatedworkimage2.childImageSharp.fluid
-                        }
-                        alt=""
-                      />
+                      <Link to={frontmatter.relatedwork.link2}>
+                        <Img
+                          fluid={
+                            frontmatter.relatedworkimage2.childImageSharp.fluid
+                          }
+                          alt=""
+                        />
+                      </Link>
                     </div>
                     <div className="content">
                       <h3>{frontmatter.relatedwork.heading2}</h3>
                       <p>{frontmatter.relatedwork.description2}</p>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
           </div>
         </section>
         {/* <Careers
-          linktitle1={frontmatter.careers.linktitle1}
-          link1={frontmatter.careers.link1}
-          description1={frontmatter.careers.description1}
-          linktitle2={frontmatter.careers.linktitle2}
-          link2={frontmatter.careers.link2}
-          description2={frontmatter.careers.description2}
-          linktitle3={frontmatter.careers.linktitle3}
-          link3={frontmatter.careers.link3}
-          description3={frontmatter.careers.description3} /> */}
+           linktitle1={frontmatter.careers.linktitle1}
+           link1={frontmatter.careers.link1}
+           description1={frontmatter.careers.description1}
+           linktitle2={frontmatter.careers.linktitle2}
+           link2={frontmatter.careers.link2}
+           description2={frontmatter.careers.description2}
+           linktitle3={frontmatter.careers.linktitle3}
+           link3={frontmatter.careers.link3}
+           description3={frontmatter.careers.description3} /> */}
       </article>
     </Layout>
   )
@@ -369,11 +379,11 @@ export const pageQuery = graphql`
         }
         relatedwork {
           heading1
+          link1
           description1
-          image1
           heading2
+          link2
           description2
-          image2
         }
         featuredimage {
           childImageSharp {
