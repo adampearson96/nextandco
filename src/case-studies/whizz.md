@@ -32,7 +32,7 @@ relatedwork:
   image1: /le-buns/00/le-buns-00-hero.jpg
   heading2: Stratton Finance
   description2: Stratton Finance are the leading car finance website in Australia, assisting Australians with buying their new car.
-  image2: /le-buns/00/le-buns-00-hero.jpg
+  image2: /stratton-finance/00/stratton-finance-00-hero.jpg
 careers:
   description1: ", eager to learn, create, and collaborate."
   link1: /link1
