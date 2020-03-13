@@ -125,8 +125,15 @@
           position: relative;
           margin: 0 $spacing-small;
           border: none;
-          font-size: 14px;
-          line-height: 17px;
+	  line-height: 2em;
+ 	  font-size: 28px;
+
+	  @include devices(ipad) {
+	    font-size: 14px;
+            line-height: 17px;
+	  }
+	  @include devices(computer) {
+	  }
 
           ul.sub-menu {
             display: none;
@@ -144,7 +151,7 @@
             > ul.sub-menu {
               display: block;
             }
-            
+
             @include devices(computer) {
               > ul.sub-menu {
                 display: none;
@@ -155,7 +162,7 @@
           &.navbar-item-audit {
             text-align: left;
           }
-        
+
           &.navbar-item-contact {
             display: none;
 
@@ -178,14 +185,14 @@
               transition-delay: 0ms;
               background-color: $color-grey;
             }
-  
+
             &:hover {
               &:after {
                 width: 100%;
                 left: 0;
               }
             }
-  
+
             &.active {
               &:after {
                 display: block;
