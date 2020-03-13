@@ -259,6 +259,18 @@ const CaseStudy = ({ data }) => {
           </div>
         </BackgroundImage>
 
+         <section id="contact-us">
+          <div className="outer-container">
+            <div className="container-max-width">
+              <div className="inner-container">
+                  <Link to="/contact" className="btn btn-invert">
+                    Get in touch about your project
+                  </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="row-eight">
           <div className="outer-container">
             <div className="container-max-width">
@@ -267,9 +279,7 @@ const CaseStudy = ({ data }) => {
                   <h2>Selected works</h2>
                 </div>
                 <div className="row-two">
-
                   <div className="col-one">
-
                     <div className="image-container">
                       <Link to={frontmatter.relatedwork.link1}>
                         <Img
@@ -284,8 +294,6 @@ const CaseStudy = ({ data }) => {
                       <h3>{frontmatter.relatedwork.heading1}</h3>
                       <p>{frontmatter.relatedwork.description1}</p>
                     </div>
-
-
                   </div>
                   <div className="col-two">
                     <div className="image-container">
@@ -303,7 +311,6 @@ const CaseStudy = ({ data }) => {
                       <p>{frontmatter.relatedwork.description2}</p>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>

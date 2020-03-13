@@ -486,12 +486,17 @@
     display: block;
     flex: 0 1 auto;
     width: 100%;
-    // padding: $spacing-small;
+    padding-left: $spacing-small;
 
+    @include devices(ipad) {
+      padding-left: $spacing-extra-large;
+    }
+ 
     h2 {
       font-size: 36px;
       line-height: 1.4444444444;
-
+      font-family: $ScandiaMedium;
+      font-weight: 400;
     }
   }
 
@@ -537,6 +542,7 @@
         h3 {
           font-size: 36px;
           line-height: 1.4444444444;
+	  font-family: $ScandiaMedium;
           font-weight: 500;
         }
 
@@ -555,6 +561,17 @@
   }
 }
 
+#contact-us {
+  padding: $spacing-large*3 0 $spacing-large;
+  .inner-container {
+    display: flex;
+  }
+
+  .btn {
+    margin: 0 auto;
+    padding:0 $spacing-extra-large;
+  }
+}
 // Offset hero - don't use for now
 // #experience-01 {
 //   .col-one {
